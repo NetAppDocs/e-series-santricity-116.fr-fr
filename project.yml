@@ -1,0 +1,41 @@
+---
+settings:
+  name: SANtricity 11.6
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  versions:
+  - name: Logiciel SANtricity
+    url: "/e-series-santricity-116"
+    version-number: '11.6'
+  - name: Logiciel SANtricity
+    url: "/e-series-santricity"
+    version-number: '11.7'
+  - name: Logiciel SANtricity
+    url: "/e-series-santricity-115"
+    version-number: '11.5'
+  langs: fr-fr,us-en,ja-jp,zh-cn,zh-tw,ko-kr,de-de
+sidebar:
+  entries:
+  - title: Documentation SANtricity 11.6
+    url: "/index.html"
+  - title: System Manager
+    entries:
+    - section: sm-interface
+    - section: sm-storage
+    - section: sm-mirroring
+    - section: sm-hardware
+    - section: sm-settings
+    - section: sm-support
+  - title: Unified Manager
+    entries:
+    - section: um-admin
+    - section: um-manage
+    - section: um-certificates
+  - title: Mentions légales
+    url: "/legal-notices.html"
+product-family:
+  name: E-Series
+  repo: e-series-family

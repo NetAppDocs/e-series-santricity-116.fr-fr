@@ -1,0 +1,110 @@
+---
+permalink: sm-settings/iscsi-terminology.html 
+sidebar: sidebar 
+keywords: iscsi, storage array, terms apply 
+summary: 'Découvrez comment les termes iSCSI s"appliquent à votre baie de stockage.' 
+---
+= Terminologie iSCSI
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Découvrez comment les termes iSCSI s'appliquent à votre baie de stockage.
+
+[cols="1a,3a"]
+|===
+| Durée | Description 
+
+
+ a| 
+CHAP
+ a| 
+La méthode CHAP (Challenge Handshake Authentication Protocol) valide l'identité des cibles et des initiateurs pendant la liaison initiale. L'authentification est basée sur une clé de sécurité partagée appelée CHAP__secret_.
+
+
+
+ a| 
+Contrôleur
+ a| 
+Un contrôleur se compose d'une carte, d'un micrologiciel et d'un logiciel. Il contrôle les entraînements et met en œuvre les fonctions de System Manager.
+
+
+
+ a| 
+DHCP
+ a| 
+Le protocole DHCP (Dynamic Host Configuration Protocol) est un protocole utilisé sur les réseaux IP (Internet Protocol) pour la distribution dynamique des paramètres de configuration du réseau, tels que les adresses IP.
+
+
+
+ a| 
+RÉMUNÉRATION VARIABLE
+ a| 
+InfiniBand (IB) est une norme de communication pour la transmission des données entre les serveurs hautes performances et les systèmes de stockage.
+
+
+
+ a| 
+Réponse PING ICMP
+ a| 
+Le protocole ICMP (Internet Control message Protocol) est un protocole utilisé par les systèmes d'exploitation d'ordinateurs en réseau pour envoyer des messages. Les messages ICMP déterminent si un hôte est accessible et combien de temps il faut pour obtenir des paquets depuis et vers cet hôte.
+
+
+
+ a| 
+IQN
+ a| 
+Un identificateur IQN (iSCSI qualifié Name) est un nom unique pour un initiateur iSCSI ou une cible iSCSI.
+
+
+
+ a| 
+Iser
+ a| 
+ISCSI Extensions for RDMA (iser) est un protocole qui étend le protocole iSCSI aux transports RDMA, comme InfiniBand ou Ethernet.
+
+
+
+ a| 
+ISNS
+ a| 
+Le service iSNS (Internet Storage Name Service) est un protocole qui permet la découverte, la gestion et la configuration automatisées des périphériques iSCSI et Fibre Channel sur les réseaux TCP/IP.
+
+
+
+ a| 
+Adresse MAC
+ a| 
+Les identificateurs de contrôle d'accès aux médias (adresses MAC) sont utilisés par Ethernet pour faire la distinction entre des canaux logiques distincts connectant deux ports sur la même interface réseau de transport physique.
+
+
+
+ a| 
+Client de gestion
+ a| 
+Un client de gestion est l'ordinateur sur lequel un navigateur est installé pour accéder à System Manager.
+
+
+
+ a| 
+MTU
+ a| 
+Une unité de transmission maximale (MTU) est le paquet ou la trame de la plus grande taille qui peut être envoyé dans un réseau.
+
+
+
+ a| 
+RDMA
+ a| 
+Remote Direct Memory Access (RDMA) est une technologie qui permet aux ordinateurs réseau d'échanger des données dans la mémoire principale sans impliquer le système d'exploitation de l'un ou l'autre des ordinateurs.
+
+
+
+ a| 
+Session de découverte sans nom
+ a| 
+Lorsque l'option pour les sessions de découverte sans nom est activée, les initiateurs iSCSI ne sont pas nécessaires pour spécifier l'IQN cible afin d'extraire les informations du contrôleur.
+
+|===

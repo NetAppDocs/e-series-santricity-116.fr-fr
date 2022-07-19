@@ -1,0 +1,46 @@
+---
+permalink: sm-storage/application-specific-workloads.html 
+sidebar: sidebar 
+keywords: workload, storage, object, support, application, define, instance, application, system manager, configure, contain, volume, similar, underlying, characteristics, optimized, type, microsoft server, subsequent 
+summary: 'Un workload est un objet de stockage qui prend en charge une application. Vous pouvez définir une ou plusieurs charges de travail ou instances par application. System Manager configure parfois la charge de travail de manière à contenir des volumes dont les caractéristiques des volumes sous-jacents sont similaires. Ces caractéristiques de volume sont optimisées en fonction du type d"application pris en charge par les workloads. Par exemple, si vous créez une charge de travail prenant en charge une application Microsoft SQL Server, puis que vous créez des volumes pour cette charge de travail, les caractéristiques du volume sous-jacent sont optimisées pour prendre en charge Microsoft SQL Server.' 
+---
+= Charges de travail spécifiques aux applications
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un workload est un objet de stockage qui prend en charge une application. Vous pouvez définir une ou plusieurs charges de travail ou instances par application. System Manager configure parfois la charge de travail de manière à contenir des volumes dont les caractéristiques des volumes sous-jacents sont similaires. Ces caractéristiques de volume sont optimisées en fonction du type d'application pris en charge par les workloads. Par exemple, si vous créez une charge de travail prenant en charge une application Microsoft SQL Server, puis que vous créez des volumes pour cette charge de travail, les caractéristiques du volume sous-jacent sont optimisées pour prendre en charge Microsoft SQL Server.
+
+Lors de la création de volume, System Manager vous invite à répondre aux questions relatives à l'utilisation d'un workload. Par exemple, si vous créez des volumes pour Microsoft Exchange, vous devez connaître le nombre de boîtes aux lettres dont vous avez besoin, les besoins moyens de vos boîtes aux lettres et le nombre de copies de la base de données que vous souhaitez. System Manager utilise ces informations pour créer une configuration de volume optimale, qui peut être modifiée selon vos besoins. Vous pouvez également ignorer cette étape dans la séquence de création du volume.
+
+
+
+== Types de charges de travail
+
+Vous pouvez créer deux types de charges de travail : spécifique à l'application et autres.
+
+* *Spécifique à l'application*. Lorsque vous créez des volumes à l'aide d'une charge de travail spécifique à l'application, le système peut recommander une configuration de volume optimisée afin de limiter les conflits entre les E/S de charge de travail d'application et tout autre trafic de votre instance d'application. Les caractéristiques de volume comme le type d'E/S, la taille de segment, la propriété des contrôleurs et le cache de lecture et d'écriture sont automatiquement recommandées et optimisées pour les charges de travail créées pour les types d'applications suivants.
++
+** Microsoft® SQL Server™
+** Microsoft® Exchange Server™
+** Applications de vidéosurveillance
+** VMware ESXi™ (pour les volumes à utiliser avec le système de fichiers de machine virtuelle)
++
+Vous pouvez consulter la configuration de volume recommandée et modifier, ajouter ou supprimer les volumes et les caractéristiques recommandés par le système à l'aide de la boîte de dialogue *Ajouter/Modifier volumes*.
+
+
+
+* *Autre* (ou applications sans support de création de volume spécifique). D'autres charges de travail utilisent une configuration de volume que vous devez spécifier manuellement lorsque vous souhaitez créer un workload non associé à une application spécifique ou si System Manager n'a pas d'optimisation intégrée pour l'application que vous prévoyez d'utiliser sur la baie de stockage. Vous devez spécifier manuellement la configuration du volume à l'aide de la boîte de dialogue *Ajouter/Modifier volumes*.
+
+
+
+
+== Vues d'applications et de workloads
+
+Vous pouvez afficher les informations associées à une charge de travail spécifique aux applications de deux manières différentes :
+
+* Vous pouvez sélectionner l'onglet *applications et charges de travail* dans la mosaïque *volumes* pour afficher les volumes de la baie de stockage regroupés par charge de travail et le type d'application auquel la charge de travail est associée.
+* Vous pouvez sélectionner l'onglet *applications et charges de travail* dans la mosaïque *Performance* pour afficher les mesures de performance (latence, IOPS et Mo) pour les objets logiques. Les objets sont regroupés par application et charge de travail associée. En recueillant ces données de performances à intervalles réguliers, vous pouvez établir les mesures de base et analyser les tendances, ce qui peut vous aider à étudier les problèmes liés aux performances d'E/S.
+

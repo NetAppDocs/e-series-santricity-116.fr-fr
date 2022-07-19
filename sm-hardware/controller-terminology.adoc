@@ -1,0 +1,117 @@
+---
+permalink: sm-hardware/controller-terminology.html 
+sidebar: sidebar 
+keywords: controller, terms, storage, array 
+summary: 'Découvrez les conditions générales des contrôleurs qui s"appliquent à votre baie de stockage.' 
+---
+= Terminologie du contrôleur
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Découvrez les conditions générales des contrôleurs qui s'appliquent à votre baie de stockage.
+
+[cols="1a,3a"]
+|===
+| Composant | Description 
+
+
+ a| 
+Contrôleur
+ a| 
+Un contrôleur se compose d'une carte, d'un micrologiciel et d'un logiciel. Il contrôle les entraînements et met en œuvre les fonctions de System Manager.
+
+
+
+ a| 
+Tiroir contrôleur
+ a| 
+Un tiroir de contrôleur contient un ensemble de disques et un ou plusieurs boîtiers de contrôleur. Un boîtier de contrôleur contient les contrôleurs, les cartes d'interface hôte (HIC) et les batteries.
+
+
+
+ a| 
+DHCP
+ a| 
+Le protocole DHCP (Dynamic Host Configuration Protocol) est un protocole utilisé sur les réseaux IP (Internet Protocol) pour la distribution dynamique des paramètres de configuration du réseau, tels que les adresses IP.
+
+
+
+ a| 
+DNS
+ a| 
+Le système de noms de domaine (DNS) est un système d'attribution de nom aux périphériques connectés à Internet ou à un réseau privé. Le serveur DNS gère un répertoire de noms de domaine et les convertit en adresses IP (Internet Protocol).
+
+
+
+ a| 
+Configurations recto verso
+ a| 
+Le mode duplex est une configuration à deux contrôleurs dans la matrice de stockage. Les systèmes duplex sont entièrement redondants pour les contrôleurs, les chemins de volume logique et les chemins de disque. En cas de panne d'un contrôleur, l'autre contrôleur prend le relais afin de maintenir la disponibilité. Les systèmes duplex sont également dotés de ventilateurs et d'alimentations redondants.
+
+
+
+ a| 
+Connexions duplex intégral / semi-duplex
+ a| 
+Duplex intégral et semi-duplex font référence aux modes de connexion. En mode duplex intégral, deux périphériques peuvent communiquer simultanément dans les deux sens. En mode semi-duplex, les périphériques peuvent communiquer dans une direction à la fois (un périphérique envoie un message pendant que l'autre périphérique le reçoit).
+
+
+
+ a| 
+HIC
+ a| 
+Une carte d'interface hôte (HIC) peut être installée en option dans un boîtier de contrôleur. Les ports hôtes intégrés au contrôleur sont appelés ports hôtes de base. Les ports hôtes intégrés dans la HIC sont appelés ports HIC.
+
+
+
+ a| 
+Réponse PING ICMP
+ a| 
+Le protocole ICMP (Internet Control message Protocol) est un protocole utilisé par les systèmes d'exploitation d'ordinateurs en réseau pour envoyer des messages. Les messages ICMP déterminent si un hôte est accessible et combien de temps il faut pour obtenir des paquets depuis et vers cet hôte.
+
+
+
+ a| 
+Adresse MAC
+ a| 
+Les identificateurs de contrôle d'accès aux médias (adresses MAC) sont utilisés par Ethernet pour faire la distinction entre des canaux logiques distincts connectant deux ports sur la même interface réseau de transport physique.
+
+
+
+ a| 
+client de gestion
+ a| 
+Un client de gestion est l'ordinateur sur lequel un navigateur est installé pour accéder à System Manager.
+
+
+
+ a| 
+MTU
+ a| 
+Une unité de transmission maximale (MTU) est le paquet ou la trame de la plus grande taille qui peut être envoyé dans un réseau.
+
+
+
+ a| 
+NTP
+ a| 
+Le protocole NTP (Network Time Protocol) est un protocole de mise en réseau pour la synchronisation de l'horloge entre les systèmes informatiques des réseaux de données.
+
+
+
+ a| 
+Configurations simplex
+ a| 
+Simplex est une configuration à un contrôleur dans la baie de stockage. Un système simplex n'offre pas la redondance des contrôleurs ou des chemins d'accès aux disques, mais dispose de ventilateurs et d'alimentations redondants.
+
+
+
+ a| 
+VLAN
+ a| 
+Un réseau local virtuel (VLAN) est un réseau logique qui se comporte comme s'il est physiquement séparé des autres réseaux pris en charge par les mêmes périphériques (commutateurs, routeurs, etc.).
+
+|===

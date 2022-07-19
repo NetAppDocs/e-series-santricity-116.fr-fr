@@ -1,0 +1,64 @@
+---
+permalink: sm-hardware/erase-drive.html 
+sidebar: sidebar 
+keywords: erase, secure, enabled, drive, reuse, volume, group, pool, ssd cache, storage array 
+summary: 'Vous pouvez effacer un disque sécurisé afin qu"il puisse être réutilisé dans un autre groupe de volumes, un pool, un cache SSD ou dans une autre baie de stockage. Cette procédure réinitialise les attributs de sécurité du lecteur et garantit que les données ne peuvent pas être lues à nouveau.' 
+---
+= Effacer le lecteur sécurisé
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez effacer un disque sécurisé afin qu'il puisse être réutilisé dans un autre groupe de volumes, un pool, un cache SSD ou dans une autre baie de stockage. Cette procédure réinitialise les attributs de sécurité du lecteur et garantit que les données ne peuvent pas être lues à nouveau.
+
+Le lecteur sécurisé doit être à l'état non affecté.
+
+Utilisez l'option Suppression sécurisée uniquement si vous souhaitez supprimer toutes les données d'un disque sécurisé et réinitialiser les attributs de sécurité du disque.
+
+[CAUTION]
+====
+*Perte de données possible* -- l'opération Secure Erase ne peut pas être annulée. Assurez-vous de sélectionner le lecteur approprié pendant la procédure.
+
+====
+.Étapes
+. Sélectionnez *matériel*.
+. Si le graphique montre les contrôleurs, cliquez sur *Afficher le recto du tiroir*.
++
+Le graphique change pour afficher les disques au lieu des contrôleurs.
+
+. Utilisez les champs de filtre pour afficher tous les disques sécurisés et non assignés dans le tiroir. Dans les listes déroulantes *Afficher les lecteurs qui sont...*, sélectionnez *Secure-enabled* et *non attribués*.
++
+[NOTE]
+====
+Si tous les lecteurs partagent les mêmes attributs physiques, le champ de filtre *Afficher les lecteurs qui sont...* n'apparaît pas. Si tous les lecteurs partagent les mêmes attributs logiques, *Anywhere dans le champ filtre de la matrice de stockage* n'apparaît pas.
+
+La vue du tiroir affiche uniquement les disques sécurisés et non attribués ; tous les autres disques sont grisés.
+
+====
+. Sélectionnez le lecteur sécurisé que vous souhaitez effacer.
++
+[CAUTION]
+====
+*Perte possible de données* -- Assurez-vous que vous avez sélectionné le bon lecteur. Une fois l'opération Secure Erase terminée, vous ne pouvez pas restaurer les données.
+
+====
++
+Le menu contextuel du lecteur s'ouvre.
+
+. Sélectionnez *Effacer sécurisé*.
++
+L'option Suppression sécurisée n'apparaît que si vous sélectionnez un disque non affecté, activé en toute sécurité.
+
++
+[NOTE]
+====
+Pour les disques SED NVMe, vous devez fournir l'ID PSID. Vous trouverez le PSID sur l'étiquette du lecteur. Cette opération est nécessaire si vous ne disposez pas de la clé de verrouillage de secours.
+
+====
+. Dans la boîte de dialogue Secure Erase Drive, lisez les informations importantes sur la perte de données.
+. Confirmez l'opération, puis cliquez sur *Effacer*.
+
+
+Le lecteur peut désormais être utilisé dans un autre groupe de volumes ou un autre pool de disques, ou dans une autre matrice de stockage.

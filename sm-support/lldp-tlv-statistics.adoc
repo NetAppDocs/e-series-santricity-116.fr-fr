@@ -1,0 +1,61 @@
+---
+permalink: sm-support/lldp-tlv-statistics.html 
+sidebar: sidebar 
+keywords: statistics, select, link, discovery, protocol, length 
+summary: Statistiques TLV LLDP 
+---
+= Statistiques TLV LLDP
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+Lorsque vous sélectionnez Link Layer Discovery Protocol (LLDP) Type Length Value (TLV) Statistics (Statistiques de longueur de type (LLDP)), ces statistiques s'affichent. Deux ensembles de statistiques apparaissent : un pour le périphérique local et un pour le périphérique distant. Le périphérique local fait référence au contrôleur. Le périphérique distant fait référence au périphérique homologue auquel le contrôleur est connecté, généralement un commutateur.
+
+[cols="2*"]
+|===
+| Statistique | Définition 
+
+
+ a| 
+Port hôte iSCSI
+ a| 
+Indique l'emplacement du port hôte détecté au format Controller #, Port #.
+
+
+
+ a| 
+ID de châssis
+ a| 
+Indique l'ID du châssis.
+
+
+
+ a| 
+Sous-type d'ID de châssis
+ a| 
+Indique le sous-type d'ID de châssis.
+
+
+
+ a| 
+ID de port
+ a| 
+Indique l'ID du port.
+
+
+
+ a| 
+Sous-type ID port
+ a| 
+Indique le sous-type d'ID de port.
+
+
+
+ a| 
+Temps de vie
+ a| 
+Indique le nombre de secondes pendant lesquelles l'agent LLDP du destinataire considère que les informations sont valides.
+
+|===
+Vous trouverez des statistiques LLDP TLV supplémentaires dans le fichier de capture d'état.

@@ -1,0 +1,39 @@
+---
+permalink: sm-settings/edit-community-names-for-snmp-traps.html 
+sidebar: sidebar 
+keywords: edit, community, names, snmp traps, destination 
+summary: Vous pouvez modifier les noms de communauté pour les interruptions SNMP et associer un nom de communauté différent à une destination de déroutement SNMP. 
+---
+= Modifier les noms de communauté pour les interruptions SNMP
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez modifier les noms de communauté pour les interruptions SNMP et associer un nom de communauté différent à une destination de déroutement SNMP.
+
+Un nom de communauté doit être créé, composé uniquement de caractères ASCII imprimables. Le nom de communauté, qui est une chaîne qui agit comme un mot de passe pour les serveurs réseau, est créé par un administrateur réseau.
+
+.Étapes
+. Sélectionnez *menu:Paramètres[alertes]*.
+. Sélectionnez l'onglet *SNMP*.
++
+Les destinations d'interruption et les noms de communauté apparaissent dans le tableau.
+
+. Modifier les noms de communauté comme suit :
++
+** Pour modifier un nom de communauté, sélectionnez *configurer les communautés*. Entrez le nouveau nom de communauté, puis cliquez sur *Enregistrer*. Les noms de communauté ne peuvent contenir que des caractères ASCII imprimables.
+** Pour associer un nom de communauté à une nouvelle destination de trappe, sélectionnez le nom de communauté dans le tableau, puis cliquez sur l'icône *Edit* (crayon) à l'extrême droite. Dans la liste déroulante Nom de communauté, sélectionnez un nouveau nom de communauté pour une destination de déroutement SNMP, puis cliquez sur l'icône *Enregistrer* (coche).
++
+[NOTE]
+====
+Pour annuler les modifications, sélectionnez l'icône *Annuler* (X).
+
+====
+
+
+
+
+L'onglet *SNMP* de la page *alertes* affiche les communautés mises à jour.

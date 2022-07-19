@@ -1,0 +1,27 @@
+---
+permalink: sm-interface/setup-wizard-overview.html 
+sidebar: sidebar 
+keywords: setup wizard, configure, storage, array, hardware, host, application workload, alert, autosupport 
+summary: 'Utilisez l"assistant d"installation pour configurer votre baie de stockage, y compris le matériel, les hôtes, les applications, les charges de travail Pools, alertes et AutoSupport.' 
+---
+= Présentation de l'assistant d'installation
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilisez l'assistant d'installation pour configurer votre baie de stockage, y compris le matériel, les hôtes, les applications, les charges de travail Pools, alertes et AutoSupport.
+
+Lorsque vous ouvrez System Manager pour la première fois, l'assistant d'installation démarre.
+
+L'assistant d'installation vous invite à effectuer des tâches de configuration de base, telles que l'attribution d'un nom à votre baie de stockage, la configuration de vos hôtes, la sélection d'applications et la création de pools de stockage.
+
+Si vous annulez l'assistant, vous ne pouvez pas le relancer manuellement.
+
+L'assistant redémarre automatiquement lorsque vous ouvrez System Manager ou actualisez votre navigateur et _au moins une_ des conditions suivantes est remplie :
+
+* Aucun pool et groupe de volumes n'est détecté.
+* Aucune charge de travail n'est détectée.
+* Aucune notification n'est configurée.
+

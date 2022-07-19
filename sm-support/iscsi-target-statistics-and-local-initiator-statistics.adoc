@@ -1,0 +1,88 @@
+---
+permalink: sm-support/iscsi-target-statistics-and-local-initiator-statistics.html 
+sidebar: sidebar 
+keywords: target, statistics, local, initiator, statistics, select, target 
+summary: Statistiques des cibles iSCSI et statistiques des initiateurs locaux 
+---
+= Statistiques des cibles iSCSI et statistiques des initiateurs locaux
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+Lorsque vous sélectionnez les statistiques cible (protocole) ou initiateur local (protocole), les statistiques suivantes s'affichent. Vous pouvez afficher chacune de ces statistiques sous forme de statistiques brutes ou en tant que statistiques de base.
+
+[cols="2*"]
+|===
+| Statistique | Définition 
+
+
+ a| 
+SL
+ a| 
+Nombre de connexions iSCSI réussi
+
+
+
+ a| 
+UL
+ a| 
+Nombre de connexions iSCSI non valide
+
+
+
+ a| 
+SA
+ a| 
+Nombre d'authentification iSCSI réussi (lorsque l'authentification est activée)
+
+
+
+ a| 
+UA
+ a| 
+Nombre d'authentification iSCSI non valide (lorsque l'authentification est activée)
+
+
+
+ a| 
+PDU
+ a| 
+Nombre correct de PDU iSCSI traitées
+
+
+
+ a| 
+HDE
+ a| 
+Unités de distribution d'alimentation iSCSI avec le nombre d'erreurs de digestion en-tête
+
+
+
+ a| 
+DDE
+ a| 
+Unités de distribution iSCSI avec le nombre d'erreurs de digestion des données
+
+
+
+ a| 
+EN PE
+ a| 
+Unités de distribution d'alimentation avec nombre d'erreurs de protocole iSCSI
+
+
+
+ a| 
+TÉU
+ a| 
+Nombre de cessations d'emploi de sessions iSCSI inattendues
+
+
+
+ a| 
+UCT
+ a| 
+Nombre de connexions iSCSI inattendues
+
+|===

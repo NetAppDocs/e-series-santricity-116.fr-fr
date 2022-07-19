@@ -1,0 +1,40 @@
+---
+permalink: sm-settings/what-do-i-need-to-know-before-creating-a-security-key.html 
+sidebar: sidebar 
+keywords: security, key, storage array, unauthorized access 
+summary: 'Une clé de sécurité est partagée par les contrôleurs et les disques sécurisés au sein d"une matrice de stockage. Si un disque sécurisé est retiré de la matrice de stockage, la clé de sécurité protège les données contre tout accès non autorisé.' 
+---
+= Que dois-je savoir avant de créer une clé de sécurité ?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Une clé de sécurité est partagée par les contrôleurs et les disques sécurisés au sein d'une matrice de stockage. Si un disque sécurisé est retiré de la matrice de stockage, la clé de sécurité protège les données contre tout accès non autorisé.
+
+Vous pouvez créer et gérer des clés de sécurité en utilisant l'une des méthodes suivantes :
+
+* Gestion des clés interne sur la mémoire persistante du contrôleur.
+* Gestion externe des clés sur un serveur de gestion externe des clés
+
+
+Avant de créer une clé de sécurité interne, vous devez procéder comme suit :
+
+. Installez des disques sécurisés dans la baie de stockage. Ces disques peuvent être des disques FDE (Full Disk Encryption) ou FIPS (Federal information Processing Standard).
+. Assurez-vous que la fonction sécurité du lecteur est activée. Si nécessaire, contactez votre fournisseur de stockage pour obtenir des instructions sur l'activation de la fonction de sécurité des lecteurs.
+
+
+Vous pouvez ensuite créer une clé de sécurité interne, qui implique la définition d'un identifiant et d'une phrase de passe. L'identifiant est une chaîne associée à la clé de sécurité, qui est stockée sur le contrôleur et sur tous les disques associés à la clé. La phrase de passe est utilisée pour crypter la clé de sécurité à des fins de sauvegarde. Lorsque vous avez terminé, la clé de sécurité est stockée sur le contrôleur dans un emplacement non accessible. Vous pouvez ensuite créer des pools ou des groupes de volumes sécurisés, ou activer la sécurité sur des groupes de volumes et des pools existants.
+
+Avant de créer une clé de sécurité externe, vous devez effectuer les opérations suivantes :
+
+. Installez des disques sécurisés dans la baie de stockage. Ces disques peuvent être des disques FDE (Full Disk Encryption) ou FIPS (Federal information Processing Standard).
+. Assurez-vous que la fonction sécurité du lecteur est activée. Si nécessaire, contactez votre fournisseur de stockage pour obtenir des instructions sur l'activation de la fonction de sécurité des lecteurs.
+. Remplir et télécharger une requête client de signature de certificat (RSC) pour l'authentification entre la matrice de stockage et le serveur de gestion des clés. Accédez à *menu:Paramètres[certificats > gestion des clés > CSR complète]*.
+. Créez et téléchargez un certificat client à partir du serveur de gestion des clés à l'aide du fichier CSR téléchargé.
+. Assurez-vous que le certificat client et une copie du certificat du serveur de gestion des clés sont disponibles sur votre hôte local.
+
+
+Vous pouvez ensuite créer une clé externe qui implique de définir l'adresse IP du serveur de gestion des clés et le numéro de port utilisé pour les communications KMIP. Au cours de ce processus, vous chargez également des fichiers de certificat. Lorsque vous avez terminé, le système se connecte au serveur de gestion des clés avec les informations d'identification que vous avez saisies. Vous pouvez ensuite créer des pools ou des groupes de volumes sécurisés, ou activer la sécurité sur des groupes de volumes et des pools existants.

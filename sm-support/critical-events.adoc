@@ -1,0 +1,18 @@
+---
+permalink: sm-support/critical-events.html 
+sidebar: sidebar 
+keywords: critical, events, indicate, problem, storage, array, resolve, immediately, might, prevent, loss, data, access 
+summary: 'Les événements critiques indiquent un problème au niveau de la baie de stockage. Si vous résolvez immédiatement l"événement critique, vous risquez d"éviter toute perte d"accès aux données.' 
+---
+= Événements critiques
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les événements critiques indiquent un problème au niveau de la baie de stockage. Si vous résolvez immédiatement l'événement critique, vous risquez d'éviter toute perte d'accès aux données.
+
+Lorsqu'un événement critique se produit, il est consigné dans le journal des événements. Tous les événements critiques sont envoyés à la console de gestion SNMP ou au destinataire que vous avez configuré pour recevoir des notifications d'alerte. Si l'ID du tiroir n'est pas connu au moment de l'événement, l'ID du tiroir est indiqué par « tiroir inconnu ».
+
+Lorsque vous recevez un événement critique, reportez-vous à la procédure Recovery Guru qui décrit la description détaillée de l'événement critique. Suivez la procédure Recovery Guru pour corriger les événements stratégiques. Pour corriger certains événements critiques, contactez le support technique.

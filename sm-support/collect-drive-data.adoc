@@ -1,0 +1,39 @@
+---
+permalink: sm-support/collect-drive-data.html 
+sidebar: sidebar 
+keywords: collect, log, data, drives, storage, array, send, file, technical, support, analysis, task 
+summary: Vous pouvez collecter des données de journal de tous les lecteurs de votre matrice de stockage et envoyer le fichier au support technique pour analyse. 
+---
+= Collecte des données de disque
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez collecter des données de journal de tous les lecteurs de votre matrice de stockage et envoyer le fichier au support technique pour analyse.
+
+Les données du journal sont des informations statistiques gérées par chacun des lecteurs de votre matrice de stockage. Le support technique peut utiliser ces informations pour analyser les performances de vos disques et pour résoudre les problèmes potentiels.
+
+[NOTE]
+====
+Effectuez cette opération uniquement lorsque le support technique vous y invite.
+
+====
+.Étapes
+. Sélectionnez l'onglet support[Centre de support > Diagnostics].
+. Sélectionnez *collecter les données de lecteur*.
++
+Une boîte de dialogue s'affiche avec la liste de tous les lecteurs de la matrice de stockage.
+
+. Dans la première colonne du tableau, vous pouvez sélectionner les lecteurs individuels pour lesquels vous souhaitez collecter des données (cochez la case en regard de chaque lecteur) ou sélectionnez tous les lecteurs (cochez la case dans l'en-tête du tableau).
++
+Pour rechercher des lecteurs particuliers, vous pouvez trier n'importe quelle colonne ou saisir des caractères dans la zone *Filter*.
+
+. Cliquez sur *collect*.
++
+Le fichier est enregistré dans le dossier Téléchargements de votre navigateur portant le nom `drive-data.7z`.
+
+. Suivez les instructions fournies par le support technique pour leur envoyer le fichier.
+

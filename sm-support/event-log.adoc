@@ -1,0 +1,27 @@
+---
+permalink: sm-support/event-log.html 
+sidebar: sidebar 
+keywords: event, log, provide, historical, record, occur, storage, array, aid, technical, support, troubleshooting, leading, failures 
+summary: Le journal des événements fournit un historique des événements survenus sur la baie de stockage et aide le support technique dans les situations de dépannage entraînant des défaillances. 
+---
+= Journal des événements
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le journal des événements fournit un historique des événements survenus sur la baie de stockage et aide le support technique dans les situations de dépannage entraînant des défaillances.
+
+Le journal des événements est un enregistrement détaillé des événements qui se produisent dans la matrice de stockage. Il enregistre les événements de configuration et les défaillances des composants de la matrice de stockage. Vous pouvez utiliser le journal des événements comme outil de diagnostic supplémentaire du Recovery Guru pour le suivi des événements de la matrice de stockage. Référez-vous toujours au gourou de la restauration lorsque vous tentez de récupérer des pannes de composants dans la baie de stockage.
+
+Les événements du journal des événements sont classés selon la catégorie des États. Les événements sur lesquels vous devez prendre des mesures ont les États suivants :
+
+* Primordial
+* Avertissement
+
+
+Les événements à titre informatif et ne nécessitant aucune action immédiate sont les suivants :
+
+* Informatif
+

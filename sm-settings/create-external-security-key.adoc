@@ -1,0 +1,101 @@
+---
+permalink: sm-settings/create-external-security-key.html 
+sidebar: sidebar 
+keywords: drive security, feature, key management server, external key, secure capable drive, storage array 
+summary: Pour utiliser la fonction sécurité des lecteurs avec un serveur de gestion des clés, vous devez créer une clé externe partagée par le serveur de gestion des clés et les lecteurs sécurisés dans la matrice de stockage. 
+---
+= Créer une clé de sécurité externe
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour utiliser la fonction sécurité des lecteurs avec un serveur de gestion des clés, vous devez créer une clé externe partagée par le serveur de gestion des clés et les lecteurs sécurisés dans la matrice de stockage.
+
+.Avant de commencer
+* Les lecteurs sécurisés doivent être installés dans la baie. Ces disques peuvent être des disques FDE (Full Disk Encryption) ou FIPS (Federal information Processing Standard).
++
+[NOTE]
+====
+Si des disques FDE et FIPS sont tous deux installés dans la baie de stockage, ils partagent la même clé de sécurité.
+
+====
+* La fonction de sécurité du lecteur doit être activée. Sinon, une boîte de dialogue *Impossible de créer la clé de sécurité* s'ouvre pendant cette tâche. Si nécessaire, contactez votre fournisseur de stockage pour obtenir des instructions sur l'activation de la fonction de sécurité des lecteurs.
+* Les certificats client et serveur sont disponibles sur votre hôte local afin que la matrice de stockage et le serveur de gestion des clés puissent s'authentifier mutuellement. Le certificat client valide les contrôleurs, tandis que le certificat serveur valide le serveur de gestion des clés.
+
+
+Dans cette tâche, vous définissez l'adresse IP du serveur de gestion des clés et le numéro de port qu'il utilise, puis chargez les certificats pour la gestion des clés externes.
+
+.Étapes
+. Sélectionnez *menu:Paramètres[système]*.
+. Sous *gestion des clés de sécurité*, sélectionnez *Créer une clé externe*.
++
+[NOTE]
+====
+Si la gestion interne des clés est actuellement configurée, une boîte de dialogue s'ouvre et vous demande de confirmer que vous souhaitez basculer vers la gestion externe des clés.
+
+====
++
+La boîte de dialogue *Créer une clé de sécurité externe* s'ouvre.
+
+. Sous *connexion au serveur de clés*, entrez les informations dans les champs suivants :
++
+** *Adresse du serveur de gestion des clés* -- Entrez le nom de domaine complet ou l'adresse IP (IPv4 ou IPv6) du serveur utilisé pour la gestion des clés.
+** *Numéro de port de gestion des clés* -- Entrez le numéro de port utilisé pour les communications KMIP (Key Management Interoperability Protocol). Le numéro de port le plus utilisé pour les communications du serveur de gestion des clés est 5696.
+** *Sélectionner le certificat client* -- cliquez sur le premier bouton *Parcourir* pour sélectionner le fichier de certificat pour les contrôleurs de la matrice de stockage.
+** *Sélectionnez le certificat de serveur de gestion de clés* -- cliquez sur le deuxième bouton *Parcourir* pour sélectionner le fichier de certificat pour le serveur de gestion de clés.
+
+
+. Cliquez sur *Suivant*.
+. Sous *Créer/clé de sauvegarde*, entrez les informations dans le champ suivant :
++
+** *Définir une phrase de passe/saisir à nouveau la phrase de passe* -- entrer et confirmer une phrase de passe. La valeur peut comporter entre 8 et 32 caractères et doit comprendre chacun des éléments suivants :
++
+*** Une lettre majuscule (une ou plusieurs). Gardez à l'esprit que la phrase de passe est sensible à la casse.
+*** Un nombre (un ou plusieurs).
+*** Caractère non alphanumérique, tel que !, *, @ (un ou plusieurs).
+
+
+
+
++
+[CAUTION]
+====
+Assurez-vous d'enregistrer vos entrées pour une utilisation ultérieure. Si vous devez déplacer un lecteur sécurisé de la matrice de stockage, vous devez connaître la phrase de passe pour déverrouiller les données du lecteur.
+
+====
+. Cliquez sur *Terminer*.
++
+Le système se connecte au serveur de gestion des clés avec les informations d'identification que vous avez saisies. Une copie de la clé de sécurité est ensuite enregistrée sur votre système local.
+
++
+[NOTE]
+====
+Le chemin du fichier téléchargé peut dépendre de l'emplacement de téléchargement par défaut de votre navigateur.
+
+====
+. Enregistrez votre phrase de passe et l'emplacement du fichier de clé téléchargé, puis cliquez sur *Fermer*.
++
+La page affiche le message suivant, ainsi que des liens supplémentaires pour la gestion externe des clés :
+
++
+`Current key management method: External`
+
+. Testez la connexion entre la matrice de stockage et le serveur de gestion des clés en sélectionnant *Test communication*.
++
+Les résultats du test s'affichent dans la boîte de dialogue.
+
+
+
+Lorsque la gestion externe des clés est activée, vous pouvez créer des groupes ou des pools de volumes sécurisés ou activer la sécurité sur les groupes et pools de volumes existants.
+
+[NOTE]
+====
+Chaque fois que l'alimentation des lecteurs est coupée, puis remise sous tension, tous les lecteurs sécurisés sont mis à l'état verrouillé par sécurité. Dans cet état, les données sont inaccessibles jusqu'à ce que le contrôleur applique la clé de sécurité correcte lors de l'initialisation du lecteur. Si quelqu'un supprime physiquement un disque verrouillé et l'installe dans un autre système, l'état sécurité verrouillée empêche l'accès non autorisé à ses données.
+
+====
+.Une fois que vous avez terminé
+* Vous devez valider la clé de sécurité pour vous assurer que le fichier clé n'est pas corrompu.
+

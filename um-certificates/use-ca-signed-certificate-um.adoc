@@ -1,0 +1,94 @@
+---
+permalink: um-certificates/use-ca-signed-certificate-um.html 
+sidebar: sidebar 
+keywords: ca certificate, secure, access, management, system, unified manager 
+summary: Vous pouvez obtenir et importer des certificats signés par une autorité de certification pour un accès sécurisé au système de gestion hébergeant Unified Manager. 
+---
+= Utiliser des certificats signés CA
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez obtenir et importer des certificats signés par une autorité de certification pour un accès sécurisé au système de gestion hébergeant Unified Manager.
+
+.Avant de commencer
+* Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Sinon, les fonctions de certificat n'apparaissent pas.
+
+
+L'utilisation de certificats signés CA est une procédure en deux étapes.
+
+
+
+== Étape 1 : remplir et soumettre une RSC
+
+Vous devez d'abord générer un fichier de demande de signature de certificat (CSR) et l'envoyer à l'autorité de certification.
+
+.Avant de commencer
+* Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Sinon, les fonctions de certificat n'apparaissent pas.
+
+
+Cette tâche décrit comment générer le fichier CSR que vous envoyez à une autorité de certification pour recevoir des certificats de gestion signés pour le système hébergeant Unified Manager et le proxy des services Web. Vous devez fournir des informations sur votre organisation, ainsi que l'adresse IP ou le nom DNS du système hôte.
+
+[CAUTION]
+====
+Ne générez pas de nouvelle RSC après la soumission à l'AC. Lorsque vous générez une RSC, le système crée une paire de clés privée et publique. La clé publique fait partie de la RSC, tandis que la clé privée est conservée dans le magasin de clés. Lorsque vous recevez les certificats signés et que vous les importez dans le magasin de clés, le système s'assure que les clés privées et publiques sont la paire d'origine. Par conséquent, vous ne devez pas générer de nouvelle RSC après en avoir soumis une à l'autorité de certification. Dans ce cas, les contrôleurs génèrent de nouvelles clés et les certificats que vous recevez de l'autorité de certification ne fonctionneront pas.
+
+====
+.Étapes
+. Sélectionnez *gestion des certificats*.
+. Dans l'onglet *Management*, sélectionnez *Complete CSR*.
+. Entrez les informations suivantes, puis cliquez sur *Suivant* :
++
+** *Organisation* -- le nom légal complet de votre entreprise ou organisation. Inclure les suffixes, tels que Inc. Ou Corp
+** *Unité organisationnelle (facultative)* -- la division de votre organisation qui gère le certificat.
+** *Ville/localité* -- la ville où votre système hôte ou entreprise est situé.
+** *État/région (facultatif)* -- l'état ou la région où se trouve votre système hôte ou votre entreprise.
+** *Code ISO de pays* -- le code ISO à deux chiffres de votre pays (Organisation internationale de normalisation), tel que les États-Unis.
+
+
+. Entrez les informations suivantes sur le système hôte :
++
+** *Nom commun* -- l'adresse IP ou le nom DNS du système hôte sur lequel le proxy de services Web est installé. Assurez-vous que cette adresse est correcte ; elle doit correspondre exactement à ce que vous entrez pour accéder à Unified Manager dans le navigateur. Ne pas inclure http:// ou https://.
+** *Adresses IP alternatives* -- si le nom commun est une adresse IP, vous pouvez éventuellement entrer des adresses IP ou des alias supplémentaires pour le système hôte. Pour plusieurs entrées, utilisez un format délimité par des virgules.
+** *Noms DNS alternatifs* -- si le nom commun est un nom DNS, entrez tout nom DNS supplémentaire pour le système hôte. Pour plusieurs entrées, utilisez un format délimité par des virgules. S'il n'y a pas de noms DNS alternatifs, mais que vous avez saisi un nom DNS dans le premier champ, copiez ce nom ici.
+
+
+. Cliquez sur *Terminer*.
++
+Un fichier CSR est téléchargé sur votre système local. L'emplacement du dossier de téléchargement dépend de votre navigateur.
+
+. Soumettez le fichier CSR à une autorité de certification et demandez des certificats signés au format PEM ou DER.
+
+
+Attendez que l'autorité de certification retourne les fichiers de certificat, puis allez à link:step-3-import-management-certificates-unified.html["Étape 2 : certificats de gestion des importations"].
+
+
+
+== Étape 2 : certificats de gestion des importations
+
+Une fois les certificats signés reçus, importez la chaîne de certificats du système hôte sur lequel l'interface Unified Manager est installée.
+
+.Avant de commencer
+* Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Sinon, les fonctions de certificat n'apparaissent pas.
+* Vous avez généré une demande de signature de certificat (.CSR file) et l'avez envoyée à l'autorité de certification.
+* L'autorité de certification a renvoyé des fichiers de certificat approuvés.
+* Les fichiers de certificat sont installés sur votre système local.
+* Si l'autorité de certification a fourni un certificat enchaîné (par exemple, un fichier .p7b), vous devez déballer le fichier chaîné dans des fichiers individuels : le certificat racine, un ou plusieurs certificats intermédiaires et le certificat de serveur. Vous pouvez utiliser Windows `certmgr` Utilitaire pour décompresser les fichiers (cliquez avec le bouton droit de la souris et sélectionnez *menu:toutes les tâches[Exporter]*). Une fois les exportations terminées, un fichier CER est affiché pour chaque fichier de certificat de la chaîne.
+
+
+.Étapes
+. Sélectionnez *gestion des certificats*.
+. Dans l'onglet *Management*, sélectionnez *Import*.
++
+Une boîte de dialogue s'ouvre pour importer les fichiers de certificat.
+
+. Cliquez sur *Parcourir* pour sélectionner d'abord les fichiers racine et intermédiaire, puis sélectionnez le certificat du serveur.
++
+Les noms de fichier s'affichent dans la boîte de dialogue.
+
+. Cliquez sur *Importer*.
+
+
+Les fichiers sont chargés et validés. Les informations de certificat s'affichent sur la page gestion des certificats.

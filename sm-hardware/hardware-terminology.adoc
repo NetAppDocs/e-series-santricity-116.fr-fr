@@ -1,0 +1,104 @@
+---
+permalink: sm-hardware/hardware-terminology.html 
+sidebar: sidebar 
+keywords: hardware, terms, apply, storage 
+summary: 'Découvrez les conditions matérielles qui s"appliquent à votre baie de stockage.' 
+---
+= Terminologie matérielle
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Découvrez les conditions matérielles qui s'appliquent à votre baie de stockage.
+
+[cols="1a,3a"]
+|===
+| Composant | Description 
+
+
+ a| 
+Baie de stockage
+ a| 
+Une baie de stockage comprend les tiroirs, les contrôleurs, les disques, les logiciels et les firmwares.
+
+
+
+ a| 
+Tiroir
+ a| 
+Un tiroir est une armoire installée dans une armoire ou un rack. Il contient les composants matériels de la matrice de stockage. Il existe deux types de tiroirs : un tiroir contrôleur et un tiroir disque. Un tiroir contrôleur inclut des contrôleurs et des disques. Un tiroir disque inclut des modules d'entrée/sortie (IOM) et des disques.
+
+
+
+ a| 
+Contrôleur
+ a| 
+Un contrôleur se compose d'une carte, d'un micrologiciel et d'un logiciel. Il contrôle les entraînements et met en œuvre les fonctions de System Manager.
+
+
+
+ a| 
+Lecteur
+ a| 
+Un lecteur est un périphérique mécanique électromagnétique ou une mémoire à semi-conducteurs qui fournit le support de stockage physique pour les données.
+
+
+
+ a| 
+Baie
+ a| 
+Une baie est un slot dans le shelf où un lecteur ou un autre composant est installé.
+
+
+
+ a| 
+Tiroir disque
+ a| 
+Un tiroir disque, également appelé tiroir d'extension, contient un ensemble de disques et deux modules d'entrée/sortie (IOM). Les IOM contiennent des ports SAS qui connectent un tiroir disque à un tiroir contrôleur ou à d'autres tiroirs disques.
+
+[NOTE]
+====
+Les tiroirs disques ne sont pas disponibles pour les systèmes de stockage EF600.
+
+====
+
+
+ a| 
+Tiroir contrôleur
+ a| 
+Un tiroir de contrôleur contient un ensemble de disques et un ou plusieurs boîtiers de contrôleur. Un boîtier de contrôleur contient les contrôleurs, les cartes d'interface hôte (HIC) et les batteries.
+
+
+
+ a| 
+Cartouche d'alimentation/ventilateur
+ a| 
+Une cartouche d'alimentation/ventilateur est un ensemble qui glisse dans une étagère. Elle comprend une alimentation électrique et un ventilateur intégré.
+
+
+
+ a| 
+MODULE D'E/S (ESM)
+ a| 
+Un module d'E/S est un module d'entrée/sortie qui inclut des ports SAS pour la connexion du tiroir disque au tiroir contrôleur.
+
+[NOTE]
+====
+Les tiroirs disques ne sont pas disponibles pour les systèmes de stockage EF600.
+
+====
+[NOTE]
+====
+Dans les précédents modèles de contrôleur, le module d'E/S était appelé module de services environnementaux (ESM).
+
+====
+
+
+ a| 
+SFP
+ a| 
+Un SFP est un émetteur-récepteur SFP (Small Form-Factor Pluggable).
+
+|===

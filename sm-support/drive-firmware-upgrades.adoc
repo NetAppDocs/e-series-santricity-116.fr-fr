@@ -1,0 +1,59 @@
+---
+permalink: sm-support/drive-firmware-upgrades.html 
+sidebar: sidebar 
+keywords: drive, firmware, control, low, level, operating, characteristics, periodically, manufacturer, release, update, add, new, features, improve, performance, fix, detects 
+summary: 'Le micrologiciel du lecteur contrôle les caractéristiques de fonctionnement d"un lecteur. Régulièrement, les fabricants de disques publient des mises à jour de firmware pour générer de nouvelles fonctionnalités, améliorer la performance et corriger les défauts.' 
+---
+= Mises à niveau du firmware des disques
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le micrologiciel du lecteur contrôle les caractéristiques de fonctionnement d'un lecteur. Régulièrement, les fabricants de disques publient des mises à jour de firmware pour générer de nouvelles fonctionnalités, améliorer la performance et corriger les défauts.
+
+
+
+== Mises à niveau hors ligne et en ligne du firmware des disques
+
+Il existe deux types de méthodes de mise à niveau du micrologiciel des lecteurs : en ligne et hors ligne.
+
+
+
+== En ligne
+
+Lors d'une mise à niveau en ligne, les disques sont mis à niveau séquentiellement, un à la fois. La baie de stockage continue de traiter les E/S pendant la mise à niveau. Il n'est donc pas nécessaire d'arrêter les E/S. Si un lecteur peut effectuer une mise à niveau en ligne, la méthode en ligne est utilisée automatiquement.
+
+Les lecteurs qui peuvent effectuer une mise à niveau en ligne sont les suivants :
+
+* Disques dans un pool optimal
+* Disques dans un groupe de volumes redondants optimal (RAID 1, RAID 5 et RAID 6)
+* Disques non assignés
+* Disques de secours de secours
+
+
+L'exécution d'une mise à niveau du firmware de disque en ligne peut prendre plusieurs heures, exposant ainsi la baie de stockage à des pannes de volume potentielles. Une défaillance de volume peut se produire dans les cas suivants :
+
+* Dans un groupe de volumes RAID 1 ou RAID 5, un disque tombe en panne pendant la mise à niveau d'un autre disque du groupe de volumes.
+* Dans un pool ou un groupe de volumes RAID 6, deux disques tombent en panne pendant la mise à niveau d'un autre disque dans le pool ou le groupe de volumes.
+
+
+
+
+== Hors ligne (parallèle)
+
+Lors d'une mise à niveau hors ligne, tous les lecteurs du même type sont mis à niveau en même temps. Cette méthode nécessite l'arrêt de l'activité d'E/S sur les volumes associés aux disques sélectionnés. Comme plusieurs disques peuvent être mis à niveau simultanément (en parallèle), les temps d'indisponibilité sont considérablement réduits. Si un lecteur ne peut effectuer qu'une mise à niveau hors ligne, la méthode hors ligne est utilisée automatiquement.
+
+Les lecteurs suivants DOIVENT utiliser la méthode offline :
+
+* Disques dans un groupe de volumes non redondant (RAID 0)
+* Disques dans un pool ou un groupe de volumes non optimal
+* Disques dans SSD cache
+
+
+
+
+== Compatibilité
+
+Chaque fichier de micrologiciel de lecteur contient des informations sur le type de lecteur sur lequel le micrologiciel s'exécute. Vous ne pouvez télécharger le fichier de micrologiciel spécifié que sur un lecteur compatible. System Manager vérifie automatiquement la compatibilité lors du processus de mise à niveau.

@@ -1,0 +1,45 @@
+---
+permalink: um-admin/home-page-unified.html 
+sidebar: sidebar 
+keywords: unified, manager, web, interface, allow, manage, multiple, storage, arrays, single, view 
+summary: 'Unified Manager est une interface web qui permet de gérer plusieurs baies de stockage à partir d"une seule vue.' 
+---
+= Présentation de l'interface
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager est une interface web qui permet de gérer plusieurs baies de stockage à partir d'une seule vue.
+
+
+
+== Page principale
+
+Lorsque vous vous connectez à Unified Manager, la page principale s'ouvre sur *Manage - All*. À partir de cette page, vous pouvez faire défiler la liste des matrices de stockage détectées sur votre réseau, afficher leur état et effectuer des opérations sur une seule matrice ou sur un groupe de matrices.
+
+
+
+== Barre latérale de navigation
+
+La barre latérale de navigation offre les éléments suivants :
+
+* *Gérer* -- Rechercher des matrices de stockage dans votre réseau, lancer SANtricity System Manager pour une matrice, importer des paramètres d'une matrice vers plusieurs matrices et gérer des groupes de baies. Cochez les cases en regard des noms de tableau pour effectuer des opérations sur ces derniers, telles que l'importation de paramètres et la création de groupes de matrices. Les points de suspension à la fin de chaque ligne fournissent un menu en ligne pour les opérations sur un tableau unique, comme le renommer.
+* *Opérations* -- permet d'afficher la progression des opérations par lots, comme l'importation de paramètres d'une matrice à une autre.
++
+[NOTE]
+====
+Certaines opérations ne sont pas disponibles lorsqu'une matrice de stockage présente un état non optimal.
+
+====
+* *Gestion des certificats* -- gérer les certificats pour s'authentifier entre les navigateurs et les clients.
+* *Access Management* -- établissez l'authentification des utilisateurs pour l'interface Unified Manager.
+* *Support* -- permet d'afficher les options, les ressources et les contacts d'assistance technique.
+
+
+
+
+== Fonctions de bannière
+
+Dans la bannière supérieure, vous pouvez accéder à l'aide et à d'autres documents relatifs à l'interface de Unified Manager. Vous pouvez également accéder aux options d'administration disponibles dans la liste déroulante située à côté de votre nom de connexion.

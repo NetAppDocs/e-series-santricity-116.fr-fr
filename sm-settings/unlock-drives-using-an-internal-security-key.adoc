@@ -1,0 +1,53 @@
+---
+permalink: sm-settings/unlock-drives-using-an-internal-security-key.html 
+sidebar: sidebar 
+keywords: secure, enable, storage array, appropriate, importing, new storage, drive 
+summary: 'Si vous déplacez des lecteurs sécurisés d"une matrice de stockage à une autre, vous devez importer la clé de sécurité appropriée dans la nouvelle matrice de stockage. L"importation de la clé déverrouille les données sur les lecteurs.' 
+---
+= Déverrouillez les disques à l'aide d'une clé de sécurité
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si vous déplacez des lecteurs sécurisés d'une matrice de stockage à une autre, vous devez importer la clé de sécurité appropriée dans la nouvelle matrice de stockage. L'importation de la clé déverrouille les données sur les lecteurs.
+
+.Avant de commencer
+* La matrice de stockage cible (où vous déplacez les disques) doit déjà avoir une clé de sécurité configurée. Les disques migrés seront re-clés vers la baie de stockage cible.
+* Vous devez connaître la clé de sécurité associée aux lecteurs que vous souhaitez déverrouiller.
+* Le fichier de clé de sécurité est disponible sur le client de gestion (le système avec un navigateur utilisé pour accéder à System Manager). Si vous déplacez les disques vers une matrice de stockage gérée par un autre système, vous devez déplacer le fichier de clé de sécurité vers ce client de gestion.
+
+
+Cette tâche explique comment déverrouiller les données des disques sécurisés qui ont été supprimés d'une matrice de stockage et réinstallés dans une autre. Une fois que la baie détecte les disques, une condition « nécessite une intervention » s'affiche avec l'état « clé de sécurité requise » pour ces disques rélocalisés. Vous pouvez déverrouiller les données du lecteur en important leur clé de sécurité dans la matrice de stockage. Au cours de ce processus, vous sélectionnez le fichier de clé de sécurité et entrez la phrase de passe de la clé.
+
+[NOTE]
+====
+La phrase de passe n'est pas identique au mot de passe administrateur de la matrice de stockage.
+
+====
+Si d'autres lecteurs sécurisés sont installés dans la nouvelle matrice de stockage, ils peuvent utiliser une clé de sécurité différente de celle que vous importez. Pendant le processus d'importation, l'ancienne clé de sécurité est utilisée uniquement pour déverrouiller les données des lecteurs que vous installez. Lorsque le processus de déverrouillage réussit, les disques nouvellement installés sont de nouveau inscrits sur la clé de sécurité de la baie de stockage cible.
+
+.Étapes
+. Sélectionnez menu:Paramètres[système].
+. Sous *gestion des clés de sécurité*, sélectionnez *déverrouiller les lecteurs sécurisés*.
++
+La boîte de dialogue déverrouiller les lecteurs sécurisés s'ouvre. Tous les disques nécessitant une clé de sécurité sont indiqués dans le tableau.
+
+. *Facultatif:* passez la souris sur un numéro de lecteur pour voir l'emplacement du lecteur (numéro de tiroir et numéro de baie).
+. Cliquez sur *Parcourir*, puis sélectionnez le fichier de clé de sécurité correspondant au lecteur que vous souhaitez déverrouiller.
++
+Le fichier clé sélectionné apparaît dans la boîte de dialogue.
+
+. Saisissez la phrase de passe associée à ce fichier de clé.
++
+Les caractères que vous entrez sont masqués.
+
+. Cliquez sur *déverrouiller*.
++
+Si l'opération de déverrouillage a réussi, la boîte de dialogue affiche : « les disques sécurisés associés ont été déverrouillés ».
+
+
+
+Lorsque tous les disques sont verrouillés et déverrouillés, chaque contrôleur de la baie de stockage est redémarré. Toutefois, si certains disques sont déjà déverrouillés dans la baie de stockage cible, les contrôleurs ne redémarreront pas.

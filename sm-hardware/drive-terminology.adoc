@@ -1,0 +1,110 @@
+---
+permalink: sm-hardware/drive-terminology.html 
+sidebar: sidebar 
+keywords: drive, apply, storage array 
+summary: 'Découvrez les conditions du lecteur s"appliquant à votre baie de stockage.' 
+---
+= Terminologie utilisée
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Découvrez les conditions du lecteur s'appliquant à votre baie de stockage.
+
+[cols="1a,3a"]
+|===
+| Composant | Description 
+
+
+ a| 
+DA
+ a| 
+Data assurance (DA) est une fonctionnalité qui vérifie et corrige les erreurs susceptibles de se produire lors du transfert des données entre les contrôleurs et les disques. Data assurance peut être activé au niveau du pool ou du groupe de volumes, avec des hôtes qui utilisent une interface d'E/S DA, telle que Fibre Channel.
+
+
+
+ a| 
+Fonction de sécurité du lecteur
+ a| 
+La sécurité des disques est une fonctionnalité de baie de stockage qui fournit une couche de sécurité supplémentaire avec des disques FDE (Full Disk Encryption) ou FIPS (Federal information Processing Standard). Lorsque ces disques sont utilisés avec la fonction sécurité des lecteurs, ils ont besoin d'une clé de sécurité pour accéder à leurs données. Lorsque les lecteurs sont physiquement retirés de la matrice, ils ne peuvent pas fonctionner tant qu'ils ne sont pas installés dans une autre matrice. À ce moment, ils seront dans un état de sécurité verrouillé jusqu'à ce que la clé de sécurité correcte soit fournie.
+
+
+
+ a| 
+Tiroir disque
+ a| 
+Un tiroir disque, également appelé tiroir d'extension, contient un ensemble de disques et deux modules d'entrée/sortie (IOM). Les IOM contiennent des ports SAS qui connectent un tiroir disque à un tiroir contrôleur ou à d'autres tiroirs disques.
+
+
+
+ a| 
+DULBE
+ a| 
+La gestion des erreurs de bloc logique (DULBE) est une option sur les disques NVMe qui permet à une baie de stockage de désallouer les blocs faisant partie d'un volume. La gestion de la désallocation des blocs sur un disque peut réduire considérablement le temps nécessaire à l'initialisation des volumes. De plus, les hôtes peuvent désallouer les blocs logiques du volume à l'aide de la commande NVMe Dataset Management.
+
+
+
+ a| 
+Disques FDE
+ a| 
+Les disques FDE (Full Disk Encryption) cryptant les disques au niveau du matériel. Le disque dur contient une puce ASIC qui chiffre les données pendant les écritures, puis décrypte les données pendant les lectures.
+
+
+
+ a| 
+Disques FIPS
+ a| 
+Les disques FIPS utilisent la norme FIPS (Federal information Processing Standards) 140-2 de niveau 2. Ce sont pour l'essentiel des disques FDE conformes aux normes gouvernementales américaines en matière de sécurité des algorithmes et des méthodes de cryptage solides. Les disques FIPS sont plus stricts que les disques FDE.
+
+
+
+ a| 
+DISQUES DURS
+ a| 
+Les disques durs sont des dispositifs de stockage des données qui utilisent des plateaux en métal rotatifs avec un revêtement magnétique.
+
+
+
+ a| 
+Disques de secours
+ a| 
+Les disques de secours servent de disques de secours au sein des groupes de volumes RAID 1, RAID 5 ou RAID 6. Il s'agit de lecteurs entièrement fonctionnels qui ne contiennent aucune donnée. Si un disque tombe en panne dans le groupe de volumes, le contrôleur reconstruit automatiquement les données du disque défectueux vers un disque de secours.
+
+
+
+ a| 
+NVMe
+ a| 
+Le protocole NVMe (non-volatile Memory Express) est une interface conçue pour les périphériques de stockage Flash, tels que les disques SSD. NVMe réduit la surcharge E/S et améliore les performances par rapport aux interfaces de périphérique logique précédentes.
+
+
+
+ a| 
+SAS
+ a| 
+SAS (Serial Attached SCSI) est un protocole série point à point qui relie les contrôleurs directement aux disques durs.
+
+
+
+ a| 
+Disques sécurisés
+ a| 
+Les disques sécurisés peuvent être des disques FDE (Full Disk Encryption) ou FIPS (Federal information Processing Standard), qui cryptent les données pendant les écritures et décomposent les données pendant les lectures. Ces lecteurs sont considérés comme sécurisés-_compatibles_ car ils peuvent être utilisés pour des raisons de sécurité supplémentaires à l'aide de la fonction sécurité des lecteurs. Si la fonction de sécurité des disques est activée pour les groupes de volumes et les pools utilisés avec ces disques, les lecteurs deviennent sécurisés --_Enabled_.
+
+
+
+ a| 
+Disques sécurisés
+ a| 
+Les lecteurs sécurisés sont utilisés avec la fonction de sécurité des lecteurs. Lorsque vous activez la fonction sécurité du lecteur, puis appliquez la sécurité du lecteur à un pool ou à un groupe de volumes sur des lecteurs sécurisés_ compatibles_, les lecteurs deviennent sécurisés___-activés____. L'accès en lecture et en écriture n'est disponible que par l'intermédiaire d'un contrôleur configuré avec la clé de sécurité adéquate. Cette sécurité supplémentaire empêche tout accès non autorisé aux données d'un disque physiquement retiré de la matrice de stockage.
+
+
+
+ a| 
+SSD
+ a| 
+Les disques SSD sont des dispositifs de stockage de données qui utilisent la mémoire Flash pour stocker les données de manière persistante. Les SSD émulent des disques durs classiques et sont disponibles avec les mêmes interfaces que les disques durs.
+
+|===

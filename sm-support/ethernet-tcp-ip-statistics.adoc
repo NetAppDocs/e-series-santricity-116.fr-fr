@@ -1,0 +1,192 @@
+---
+permalink: sm-support/ethernet-tcp-ip-statistics.html 
+sidebar: sidebar 
+keywords: ethernet, statistics, definition, statistics, transmitted, byte, expired 
+summary: Statistiques TCP/IP Ethernet 
+---
+= Statistiques TCP/IP Ethernet
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+Lorsque vous sélectionnez Ethernet TCP/IP statistics, les statistiques TCP de ce tableau s'affichent. Vous pouvez afficher chacune de ces statistiques sous forme de statistiques brutes ou en tant que statistiques de base.
+
+[cols="2*"]
+|===
+| Statistique | Définition 
+
+
+ a| 
+TXS
+ a| 
+Nombre de segments transmis
+
+
+
+ a| 
+TXB
+ a| 
+Nombre d'octets transmis
+
+
+
+ a| 
+RTxTE
+ a| 
+Décompte du compteur de réémission expiré
+
+
+
+ a| 
+TxDACK
+ a| 
+Transmettre le nombre d'accusé de réception retardé
+
+
+
+ a| 
+TxACK
+ a| 
+Transmettre le compte ACK
+
+
+
+ a| 
+Rxs
+ a| 
+Nombre de segments reçus
+
+
+
+ a| 
+RXB
+ a| 
+Nombre d'octets reçus
+
+
+
+ a| 
+RxDACK
+ a| 
+Nombre d'accusé de réception en double
+
+
+
+ a| 
+RxACK
+ a| 
+Accusé de réception
+
+
+
+ a| 
+RxSEC
+ a| 
+Nombre d'erreurs de segment reçues
+
+
+
+ a| 
+RxSOOC
+ a| 
+Nombre de segments reçus hors commande
+
+
+
+ a| 
+RxWP
+ a| 
+Nombre de sondes de fenêtre reçues
+
+
+
+ a| 
+RxWU
+ a| 
+Nombre de mises à jour de fenêtre reçues
+
+|===
+Lorsque vous sélectionnez Ethernet TCP/IP statistics, les statistiques IP de ce tableau s'affichent.
+
+[cols="2*"]
+|===
+| Statistique | Définition 
+
+
+ a| 
+TXP
+ a| 
+Nombre de paquets transmis
+
+
+
+ a| 
+TXB
+ a| 
+Nombre d'octets transmis
+
+
+
+ a| 
+TxF
+ a| 
+Nombre de fragments transmis
+
+
+
+ a| 
+RXP
+ a| 
+Nombre de paquets reçus. Sélectionnez *Afficher IPv4* pour afficher le nombre de paquets IPv4 reçus. Sélectionnez *Afficher IPv6* pour afficher le nombre de paquets IPv6 reçus.
+
+
+
+ a| 
+RXB
+ a| 
+Nombre d'octets reçus
+
+
+
+ a| 
+RXF
+ a| 
+Nombre de fragments reçus
+
+
+
+ a| 
+RxPE
+ a| 
+Nombre d'erreurs de paquets reçus
+
+
+
+ a| 
+REPRISE APRÈS INCIDENT
+ a| 
+Comptage du remontage du datagramme
+
+
+
+ a| 
+DRE-OLFC
+ a| 
+Erreur de réassemblage du datagramme, chevauchement du nombre de fragments
+
+
+
+ a| 
+DRE-OOFC
+ a| 
+Erreur de réassemblage du datagramme, comptage de fragments non-ordres
+
+
+
+ a| 
+DRE-TOC
+ a| 
+Erreur de réassemblage du datagramme, décompte du délai d'exécution
+
+|===

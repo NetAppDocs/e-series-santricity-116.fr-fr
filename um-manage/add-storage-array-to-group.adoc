@@ -1,0 +1,22 @@
+---
+permalink: um-manage/add-storage-array-to-group.html 
+sidebar: sidebar 
+keywords: add, storage, array, to, group, manage, 
+summary: 'Vous pouvez ajouter une ou plusieurs matrices de stockage à un groupe créé par l"utilisateur.' 
+---
+= Ajoutez une matrice de stockage au groupe
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez ajouter une ou plusieurs matrices de stockage à un groupe créé par l'utilisateur.
+
+.Étapes
+. Dans la vue principale, sélectionnez *gérer*, puis sélectionnez le groupe auquel vous souhaitez ajouter des matrices de stockage.
+. Sélectionnez menu:gérer les groupes[Ajouter des matrices de stockage au groupe].
+. Sélectionnez les matrices de stockage que vous souhaitez ajouter au groupe.
+. Cliquez sur *Ajouter.*
+

@@ -1,0 +1,149 @@
+---
+section: sm-mirroring
+title: Mise en miroir
+entries:
+- title: La mise en miroir asynchrone
+  entries:
+  - title: Concepts
+    entries:
+    - title: Fonctionnement de la mise en miroir asynchrone
+      url: "/sm-mirroring/how-asynchronous-mirroring-works.html"
+    - title: Terminologie de la mise en miroir asynchrone
+      url: "/sm-mirroring/asynchronous-terminology.html"
+    - title: Workflow de mise en miroir asynchrone d'un volume
+      url: "/sm-mirroring/workflow-for-mirroring-a-volume-asynchronously.html"
+    - title: Requise pour l'utilisation de la mise en miroir asynchrone
+      url: "/sm-mirroring/requirements-for-using-asynchronous-mirroring.html"
+    - title: État de la mise en miroir asynchrone
+      url: "/sm-mirroring/asynchronous-mirror-status.html"
+    - title: Propriété de volume
+      url: "/sm-mirroring/volume-ownership-async.html"
+    - title: Changement de rôle d'un groupe de cohérence miroir
+      url: "/sm-mirroring/role-change-of-a-mirror-consistency-group.html"
+  - title: Comment
+    entries:
+    - title: Gérez les groupes de cohérence en miroir
+      entries:
+      - title: Testez la communication pour les groupes de cohérence miroir
+        url: "/sm-mirroring/test-communication-for-mirror-consistency-groups.html"
+      - title: Suspendre ou reprendre la synchronisation pour le groupe de cohérence
+          miroir
+        url: "/sm-mirroring/suspend-or-resume-mirror-consistency-group.html"
+      - title: Modifiez les paramètres de synchronisation d'un groupe de cohérence
+          miroir
+        url: "/sm-mirroring/change-synchronization-settings-for-a-mirror-consistency-group.html"
+      - title: Synchronisez à nouveau le groupe de cohérence miroir manuellement
+        url: "/sm-mirroring/re-synchronize-mirror-consistency-group-manually.html"
+      - title: Afficher la quantité de données non synchronisées entre les groupes
+          de cohérence miroir
+        url: "/sm-mirroring/view-unsynchronized-data-amount-between-mirror-consistency-groups.html"
+      - title: Mettre à jour l'adresse IP distante
+        url: "/sm-mirroring/update-remote-ip-address.html"
+      - title: Modifiez le rôle de groupe de cohérence du miroir sur principal ou
+          secondaire
+        url: "/sm-mirroring/change-mirror-consistency-group-role-to-primary-or-secondary.html"
+      - title: Supprimez le groupe de cohérence en miroir
+        url: "/sm-mirroring/delete-mirror-consistency-group.html"
+    - title: Gérez les paires asynchrones en miroir
+      entries:
+      - title: Supprimer la relation de miroir asynchrone
+        url: "/sm-mirroring/remove-mirrored-pair.html"
+      - title: Augmenter la capacité réservée
+        url: "/sm-mirroring/increase-reserved-capacity.html"
+      - title: Modifiez les paramètres de capacité réservée pour un volume de paire
+          en miroir
+        url: "/sm-mirroring/change-the-reserved-capacity-settings-for-a-mirrored-pair-volume.html"
+      - title: Paire mise en miroir complète pour les volumes primaires créés sur
+          le système existant
+        url: "/sm-mirroring/complete-mirrored-pair-for-primary-volumes-created-on-legacy-system.html"
+    - title: Désactiver la mise en miroir asynchrone
+      url: "/sm-mirroring/deactivate-asynchronous-mirroring.html"
+  - title: FAQ
+    entries:
+    - title: En quoi la mise en miroir asynchrone est-elle différente de la mise en
+        miroir synchrone ?
+      url: "/sm-mirroring/how-does-asynchronous-mirroring-differ-from-synchronous-mirroring-async.html"
+    - title: Pourquoi ne puis-je pas accéder à la fonction de mise en miroir choisie
+        ?
+      url: "/sm-mirroring/why-cant-i-access-my-chosen-mirroring-feature.html"
+    - title: Que dois-je savoir avant de créer un groupe de cohérence miroir ?
+      url: "/sm-mirroring/what-do-i-need-to-know-before-creating-a-mirror-consistency-group.html"
+    - title: 'Mise en miroir asynchrone : que faut-il savoir avant de créer une paire
+        en miroir ?'
+      url: "/sm-mirroring/asynchronous-mirroring-what-do-i-need-to-know-before-creating-a-mirrored-pair.html"
+    - title: Que dois-je savoir avant d'augmenter la capacité réservée sur un volume
+        en miroir ?
+      url: "/sm-mirroring/what-do-i-need-to-know-before-increasing-my-reserved-capacity-on-a-mirrored-pair-volume.html"
+    - title: Pourquoi ne puis-je pas augmenter la capacité réservée avec le montant
+        demandé ?
+      url: "/sm-mirroring/why-cant-i-increase-reserved-capacity-with-my-requested-amount.html"
+    - title: Pourquoi changer ce pourcentage ?
+      url: "/sm-mirroring/why-would-i-change-this-percentage.html"
+    - title: Pourquoi vois-je plusieurs candidats à la capacité réservée ?
+      url: "/sm-mirroring/why-do-i-see-more-than-one-reserved-capacity-candidate.html"
+    - title: Pourquoi les valeurs non disponibles sont-elles affichées dans le tableau
+        ?
+      url: "/sm-mirroring/why-do-i-see-not-available-values-displayed-in-the-table.html"
+    - title: Pourquoi ne vois-je pas tous mes pools et groupes de volumes ?
+      url: "/sm-mirroring/why-dont-i-see-all-of-my-pools-and-volume-groups.html"
+    - title: Mise en miroir asynchrone - Pourquoi ne pas voir tous mes volumes ?
+      url: "/sm-mirroring/asynchronous-mirroring-why-dont-i-see-all-my-volumes.html"
+    - title: Mise en miroir asynchrone - Pourquoi ne vois-je pas tous les volumes
+        de la baie de stockage distante ?
+      url: "/sm-mirroring/asynchronous-mirroring-why-dont-i-see-all-the-volumes-on-the-remote-storage-array.html"
+    - title: Pourquoi mettre à jour l'adresse IP de ma matrice de stockage distante
+        ?
+      url: "/sm-mirroring/why-would-i-update-my-remote-storage-arrays-ip-address.html"
+- title: La mise en miroir synchrone
+  entries:
+  - title: Concepts
+    entries:
+    - title: Fonctionnement de la mise en miroir synchrone
+      url: "/sm-mirroring/how-synchronous-mirroring-works.html"
+    - title: Terminologie de la mise en miroir synchrone
+      url: "/sm-mirroring/synchronous-mirroring-terminology.html"
+    - title: Workflow de mise en miroir d'un volume de manière synchrone
+      url: "/sm-mirroring/workflow-for-mirroring-a-volume-synchronously.html"
+    - title: Requise pour l'utilisation de la mise en miroir synchrone
+      url: "/sm-mirroring/requirements-for-using-synchronous-mirroring.html"
+    - title: État de la mise en miroir synchrone
+      url: "/sm-mirroring/synchronous-mirroring-status.html"
+    - title: Propriété de volume
+      url: "/sm-mirroring/volume-ownership-sync.html"
+    - title: Changement de rôle entre les volumes d'une paire en miroir
+      url: "/sm-mirroring/role-change-of-volumes-in-a-mirrored-pair.html"
+  - title: Comment
+    entries:
+    - title: Gestion des paires mises en miroir synchrones
+      entries:
+      - title: Tester la communication pour la mise en miroir synchrone
+        url: "/sm-mirroring/test-communication-for-synchronous-mirroring.html"
+      - title: Suspendre et reprendre la synchronisation pour une paire en miroir
+        url: "/sm-mirroring/suspend-and-resume-synchronization-for-a-mirrored-pair.html"
+      - title: Changer le rôle entre les volumes d'une paire en miroir
+        url: "/sm-mirroring/change-role-between-volumes-in-a-mirrored-pair.html"
+      - title: Modifier les paramètres de synchronisation d'une paire symétrique
+        url: "/sm-mirroring/change-synchronization-settings-for-a-mirrored-pair.html"
+      - title: Supprimer la relation de miroir synchrone
+        url: "/sm-mirroring/remove-synchronous-mirror-relationship.html"
+    - title: Désactiver la mise en miroir synchrone
+      url: "/sm-mirroring/deactivate-synchronous-mirroring.html"
+  - title: FAQ
+    entries:
+    - title: En quoi la mise en miroir synchrone est-elle différente de la mise en
+        miroir asynchrone ?
+      url: "/sm-mirroring/how-does-asynchronous-mirroring-differ-from-synchronous-mirroring-sync.html"
+    - title: Mise en miroir synchrone - Pourquoi ne pas voir tous mes volumes ?
+      url: "/sm-mirroring/synchronous-mirroring-why-dont-i-see-all-my-volumes.html"
+    - title: Mise en miroir synchrone - Pourquoi ne vois-je pas tous les volumes de
+        la baie de stockage distante ?
+      url: "/sm-mirroring/synchronous-mirroring-why-dont-i-see-all-the-volumes-on-the-remote-storage-array.html"
+    - title: 'Mise en miroir synchrone : que faut-il savoir avant de créer une paire
+        en miroir ?'
+      url: "/sm-mirroring/synchronous-mirroring-what-do-i-need-to-know-before-creating-a-mirrored-pair.html"
+    - title: Quel est l'impact de la priorité de synchronisation sur les taux de synchronisation
+        ?
+      url: "/sm-mirroring/what-impact-does-synchronization-priority-have-on-synchronization-rates.html"
+    - title: Pourquoi est-il recommandé d'utiliser une stratégie de synchronisation
+        manuelle ?
+      url: "/sm-mirroring/why-is-it-recommended-to-use-a-manual-synchronization-policy.html"

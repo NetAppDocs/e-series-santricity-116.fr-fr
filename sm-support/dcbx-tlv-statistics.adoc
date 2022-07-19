@@ -1,0 +1,73 @@
+---
+permalink: sm-support/dcbx-tlv-statistics.html 
+sidebar: sidebar 
+keywords: statistics, typical, definition, logical, host, port, indicate 
+summary: Statistiques DCBX TLV 
+---
+= Statistiques DCBX TLV
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+Lorsque vous sélectionnez Statistiques de type valeur de longueur (TLV) d'échange de pontage de centre de données (DCBX), ces statistiques apparaissent :
+
+* *Statistiques locales* -- les paramètres DCBX configurés en usine sur le contrôleur.
+* *Statistiques opérationnelles* -- les paramètres DCBX résultant des négociations de DCBX.
+* *Statistiques distantes* -- les paramètres DCBX du périphérique homologue auquel le contrôleur est connecté, généralement un commutateur.
+
+
+[cols="2*"]
+|===
+| Statistique | Définition 
+
+
+ a| 
+Port hôte iSCSI
+ a| 
+Indique l'emplacement du port hôte détecté au format Controller #, Port #.
+
+
+
+ a| 
+Mode de contrôle de flux
+ a| 
+Mode de contrôle de flux de l'ensemble du port. Les valeurs valides sont désactivées, Standard, par priorité ou indéterminée.
+
+
+
+ a| 
+Protocole
+ a| 
+Le protocole de communication. Les valeurs valides sont FCoE, FIP, iSCSI ou INCONNU.
+
+
+
+ a| 
+Priorité
+ a| 
+Valeur entière indiquant le numéro de priorité de la communication.
+
+
+
+ a| 
+Groupe de priorité
+ a| 
+Valeur entière représentant le groupe de priorité auquel le protocole a été affecté.
+
+
+
+ a| 
+Bande passante % du groupe de priorité
+ a| 
+Pourcentage indiquant la quantité de bande passante allouée au groupe de priorité.
+
+
+
+ a| 
+État PFC DCBX
+ a| 
+Statut du contrôle de flux basé sur les priorités (PFC) du port spécifique. La valeur est soit activée, soit désactivée.
+
+|===
+Vous trouverez d'autres statistiques DCBX TLV dans le fichier de capture d'état.

@@ -1,0 +1,61 @@
+---
+permalink: sm-support/dcbx-operational-state-statistics.html 
+sidebar: sidebar 
+keywords: operational, state, statistics 
+summary: 'Statistiques de l"état de fonctionnement DCBX' 
+---
+= Statistiques de l'état de fonctionnement DCBX
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+Lorsque vous sélectionnez Statistiques sur l'état opérationnel de l'échange de pontage de centre de données (DCBX), ces statistiques s'affichent.
+
+[cols="2*"]
+|===
+| Statistique | Définition 
+
+
+ a| 
+Port hôte iSCSI
+ a| 
+Indique l'emplacement du port hôte détecté au format Controller #, Port #.
+
+
+
+ a| 
+Groupe de priorité
+ a| 
+Indique l'état opérationnel de l'application Groupe de priorité (PG). L'état est activé ou désactivé.
+
+
+
+ a| 
+Contrôle des flux basé sur des priorités
+ a| 
+Indique l'état de fonctionnement de la fonctionnalité PFC (Priority-Based Flow Control). L'état est activé ou désactivé.
+
+
+
+ a| 
+Fonctionnalité iSCSI
+ a| 
+Indique l'état de fonctionnement de l'application iSCSI (Internet Small Computer System interface). L'état est activé ou désactivé.
+
+
+
+ a| 
+Bande passante FCoE
+ a| 
+Indique l'état de la bande passante Fibre Channel over Ethernet (FCoE). L'état est vrai ou faux.
+
+
+
+ a| 
+Pas de correspondance de mappage FCoE/FIP
+ a| 
+Indique si une discordance de carte existe entre FCoE et le protocole d'initialisation FCoE (FIP). La valeur est vrai ou faux.
+
+|===
+Vous trouverez des statistiques supplémentaires sur l'état opérationnel DCBX dans le fichier de capture d'état.

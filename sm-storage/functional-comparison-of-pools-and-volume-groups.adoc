@@ -1,0 +1,215 @@
+---
+permalink: sm-storage/functional-comparison-of-pools-and-volume-groups.html 
+sidebar: sidebar 
+keywords: function, purpose, pool, volume, group, same, objects, set, drives, logically, together, storage, array, create, host, access 
+summary: 'La fonction et l"objectif d"un pool et d"un groupe de volumes sont identiques. Ces deux objets sont un ensemble de disques regroupés de manière logique dans une baie de stockage et sont utilisés pour créer des volumes auxquels un hôte peut accéder.' 
+---
+= Comparaison fonctionnelle des pools et des groupes de volumes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La fonction et l'objectif d'un pool et d'un groupe de volumes sont identiques. Ces deux objets sont un ensemble de disques regroupés de manière logique dans une baie de stockage et sont utilisés pour créer des volumes auxquels un hôte peut accéder.
+
+Le tableau suivant vous permet de décider si un pool ou un groupe de volumes est le mieux adapté à vos besoins en stockage.
+
+[cols="3*""]
+|===
+| Fonction | Piscine | Groupe de volumes 
+
+
+ a| 
+Différents niveaux RAID pris en charge
+ a| 
+Non Toujours RAID 6.
+ a| 
+Oui. RAID 0, 1, 10, 5 et 6 disponibles.
+
+
+
+ a| 
+Volumes fins pris en charge
+ a| 
+Oui.
+ a| 
+Non
+
+
+
+ a| 
+Prise en charge du chiffrement de disque complet (FDE)
+ a| 
+Oui.
+ a| 
+Oui.
+
+
+
+ a| 
+Data assurance (DA) prise en charge
+ a| 
+Oui.
+ a| 
+Oui.
+
+
+
+ a| 
+Protection contre les pertes de tiroirs prise en charge
+ a| 
+Oui.
+ a| 
+Oui.
+
+
+
+ a| 
+Protection contre les pertes de tiroirs
+ a| 
+Oui.
+ a| 
+Oui.
+
+
+
+ a| 
+Prise en charge des vitesses de disques mixtes
+ a| 
+Recommandé pour être le même, mais pas obligatoire. La vitesse d'entraînement la plus lente détermine la vitesse de tous les entraînements.
+ a| 
+Recommandé pour être le même, mais pas obligatoire. La vitesse d'entraînement la plus lente détermine la vitesse de tous les entraînements.
+
+
+
+ a| 
+Capacité de disques mixtes prise en charge
+ a| 
+Recommandé pour être le même, mais pas obligatoire. Le disque le plus petit détermine la capacité de tous les disques.
+ a| 
+Recommandé pour être le même, mais pas obligatoire. Le disque le plus petit détermine la capacité de tous les disques.
+
+
+
+ a| 
+Nombre minimal de disques
+ a| 
+11
+ a| 
+Dépend du niveau RAID. RAID 0 requiert 1. Les configurations RAID 1 ou 10 ont besoin de 2 (nombre pair requis). RAID 5 minimum est 3. RAID 6 minimum est 5.
+
+
+
+ a| 
+Nombre maximal de disques
+ a| 
+Jusqu'à la limite maximale de la baie de stockage
+ a| 
+RAID 1 et 10- jusqu'à la limite maximale de la matrice de stockage RAID 5, disques de 6--30
+
+
+
+ a| 
+Peut choisir des disques individuels lors de la création d'un volume
+ a| 
+Non
+ a| 
+Oui.
+
+
+
+ a| 
+Peut spécifier la taille du segment lors de la création d'un volume
+ a| 
+Oui. 128 Ko pris en charge.
+ a| 
+Oui.
+
+
+
+ a| 
+Peut spécifier les caractéristiques d'E/S lors de la création d'un volume
+ a| 
+Non
+ a| 
+Oui. Système de fichiers, base de données, multimédia et personnalisé pris en charge.
+
+
+
+ a| 
+Protection contre les pannes disques
+ a| 
+Utilise une capacité de conservation sur chaque disque du pool afin d'accélérer la reconstruction.
+ a| 
+Utilise un disque de secours. La reconstruction est limitée par les IOPS du disque.
+
+
+
+ a| 
+Avertissement lorsque la limite de capacité est atteinte
+ a| 
+Oui. Peut définir une alerte lorsque la capacité utilisée atteint un pourcentage de la capacité maximale.
+ a| 
+Non
+
+
+
+ a| 
+Migration vers une autre baie de stockage prise en charge
+ a| 
+Non Vous devez d'abord migrer vers un groupe de volumes.
+ a| 
+Oui.
+
+
+
+ a| 
+Taille de segment dynamique (DSS)
+ a| 
+Non
+ a| 
+Oui.
+
+
+
+ a| 
+Peut modifier le niveau RAID
+ a| 
+Non
+ a| 
+Oui.
+
+
+
+ a| 
+Extension de volume (augmentation de la capacité)
+ a| 
+Oui.
+ a| 
+Oui.
+
+
+
+ a| 
+Extension de la capacité (ajoutez de la capacité)
+ a| 
+Oui.
+ a| 
+Oui.
+
+
+
+ a| 
+Réduction de capacité
+ a| 
+Oui.
+ a| 
+Non
+
+|===
+[NOTE]
+====
+Les types de disques mixtes (disques durs et disques SSD) ne sont pas pris en charge par les pools ou les groupes de volumes.
+
+====

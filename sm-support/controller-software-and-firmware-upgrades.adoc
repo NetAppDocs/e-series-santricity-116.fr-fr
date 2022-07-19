@@ -1,0 +1,61 @@
+---
+permalink: sm-support/controller-software-and-firmware-upgrades.html 
+sidebar: sidebar 
+keywords: can, upgrade, storage, array, software, firmware, latest, feature, bug, fixes 
+summary: Vous pouvez mettre à niveau le logiciel et le micrologiciel de votre matrice de stockage pour obtenir les dernières fonctionnalités et correctifs de bogues. 
+---
+= Mises à niveau du firmware et des logiciels du contrôleur
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez mettre à niveau les logiciels et les micrologiciels de votre baie de stockage pour obtenir les dernières fonctionnalités et correctifs de bogues.
+
+
+
+== Composants inclus dans la mise à niveau logicielle du contrôleur SANtricity OS
+
+Plusieurs composants de matrice de stockage contiennent des logiciels ou du matériel que vous pouvez souhaiter mettre à niveau occasionnellement.
+
+* *Logiciel de gestion* -- System Manager est le logiciel qui gère la matrice de stockage.
+* *Micrologiciel de contrôleur* -- le micrologiciel de contrôleur gère les E/S entre les hôtes et les volumes.
+* *NVSRAM de contrôleur* -- NVSRAM de contrôleur est un fichier de contrôleur qui spécifie les paramètres par défaut des contrôleurs.
+* *Micrologiciel IOM* -- le firmware du module d'E/S (IOM) gère la connexion entre un contrôleur et un tiroir de disque. Il surveille également l'état des composants.
+* *Supervisor Software* -- le logiciel Supervisor est la machine virtuelle sur un contrôleur dans lequel le logiciel s'exécute.
+
+
+image::../media/sam1130-dwg-upgrade-firmware-locations.gif[emplacements du micrologiciel de mise à niveau sam1130 dwg]
+
+^1^ tiroir contrôleur ; ^2^ tiroir disque ; ^3^ logiciel, micrologiciel de contrôleur, NVSRAM contrôleur, Logiciel de supervision ; ^4^ microprogramme de lecteur ; ^5^ microprogramme de module d'E/S ; ^6^ microprogramme de lecteur
+
+Vous pouvez afficher les versions actuelles de vos logiciels et micrologiciels dans la boîte de dialogue *Inventaire des logiciels et micrologiciels*. Accédez au menu :support[Upgrade Center], puis cliquez sur le lien *Software and Firmware Inventory*.
+
+Dans le cadre du processus de mise à niveau, le pilote multivoie/relais et/ou le pilote HBA de l'hôte peuvent également être mis à niveau afin que l'hôte puisse interagir correctement avec les contrôleurs. Pour déterminer si c'est le cas, reportez-vous à la https://imt.netapp.com/matrix/#welcome["Matrice d'interopérabilité NetApp"^].
+
+
+
+== Quand arrêter les E/S.
+
+Si votre baie de stockage contient deux contrôleurs et qu'un pilote multivoie est installé, la baie de stockage peut continuer à traiter les E/S pendant la mise à niveau. Lors de la mise à niveau, le contrôleur A bascule tous ses volumes vers le contrôleur B, réeffectue les volumes et l'ensemble des volumes du contrôleur B, puis procède à la mise à niveau du contrôleur B.
+
+
+
+== Vérification de l'état de pré-mise à niveau
+
+Une vérification de l'état de pré-mise à niveau s'effectue dans le cadre du processus de mise à niveau. Un contrôle avant la mise à niveau de l'état de santé vérifie tous les composants de la baie de stockage afin de vérifier que la mise à niveau peut se poursuivre. Les conditions suivantes peuvent empêcher la mise à niveau :
+
+* Disques affectés en panne
+* Disques de secours en cours d'utilisation
+* Groupes de volumes incomplets
+* Opérations exclusives en cours d'exécution
+* Volumes manquants
+* Contrôleur en état non optimal
+* Nombre excessif d'événements du journal des événements
+* Échec de validation de la base de données de configuration
+* Lecteurs avec les anciennes versions de DACstore
+
+
+Vous pouvez également exécuter le contrôle d'état de pré-mise à niveau séparément sans effectuer de mise à niveau.

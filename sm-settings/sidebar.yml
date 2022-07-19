@@ -1,0 +1,353 @@
+---
+section: sm-settings
+title: Paramètres
+entries:
+- title: Alertes
+  entries:
+  - title: Concepts
+    entries:
+    - title: Fonctionnement des alertes
+      url: "/sm-settings/how-alerts-work.html"
+    - title: Terminologie des alertes
+      url: "/sm-settings/alerts-terminology.html"
+  - title: Comment
+    entries:
+    - title: Gérer les alertes par e-mail
+      entries:
+      - title: Configurer le serveur de messagerie et les destinataires pour les alertes
+        url: "/sm-settings/configure-mail-server-and-recipients-for-alerts.html"
+      - title: Modifiez les adresses e-mail des alertes
+        url: "/sm-settings/edit-alert-email-addresses.html"
+      - title: Ajoutez des adresses e-mail pour les alertes
+        url: "/sm-settings/add-alert-email-addresses.html"
+      - title: Supprimez le serveur de messagerie ou les adresses e-mail pour les
+          alertes
+        url: "/sm-settings/delete-alert-email-addresses.html"
+      - title: Modifiez le serveur de messagerie pour les alertes
+        url: "/sm-settings/edit-mail-server-for-alerts.html"
+    - title: Gérer les alertes SNMP
+      entries:
+      - title: Configuration des communautés et destinations des alertes SNMP
+        url: "/sm-settings/configure-snmp-alerts.html"
+      - title: Modifier les noms de communauté pour les interruptions SNMP
+        url: "/sm-settings/edit-community-names-for-snmp-traps.html"
+      - title: Ajouter des noms de communauté pour les interruptions SNMP
+        url: "/sm-settings/add-community-names-for-snmp-traps.html"
+      - title: Supprimer le nom de communauté des traps SNMP
+        url: "/sm-settings/remove-community-name-for-snmp-traps.html"
+      - title: Configurer les variables MIB SNMP
+        url: "/sm-settings/configure-snmp-mib-variables.html"
+      - title: Ajoutez des destinations d'interruption pour les alertes SNMP
+        url: "/sm-settings/add-trap-destinations-for-snmp-alerts.html"
+      - title: Supprimer les destinations d'interruption
+        url: "/sm-settings/delete-trap-destinations.html"
+    - title: Gérer les alertes syslog
+      entries:
+      - title: Configurer le serveur syslog pour les alertes
+        url: "/sm-settings/configure-syslog-server-for-alerts.html"
+      - title: Modifier les serveurs syslog pour les alertes
+        url: "/sm-settings/edit-syslog-servers-for-alerts.html"
+      - title: Ajouter des serveurs syslog pour les alertes
+        url: "/sm-settings/add-syslog-servers-for-alerts.html"
+      - title: Supprimez les serveurs syslog pour les alertes
+        url: "/sm-settings/delete-syslog-servers-for-alerts.html"
+  - title: FAQ
+    entries:
+    - title: Que se passe-t-il si les alertes sont désactivées ?
+      url: "/sm-settings/what-if-alerts-are-disabled.html"
+    - title: Comment configurer les alertes SNMP ou syslog ?
+      url: "/sm-settings/how-do-i-configure-snmp-or-syslog-alerts.html"
+    - title: Pourquoi les horodatages sont-ils incohérents entre la baie et les alertes
+        ?
+      url: "/sm-settings/why-are-timestamps-inconsistent-between-the-array-and-alerts.html"
+- title: 'Système : paramètres de la matrice de stockage'
+  entries:
+  - title: Concepts
+    entries:
+    - title: Paramètres du cache et performances
+      url: "/sm-settings/cache-settings-and-performance.html"
+    - title: Vue d'ensemble de l'équilibrage automatique de la charge
+      url: "/sm-settings/automatic-load-balancing-overview.html"
+    - title: Type de système d'exploitation hôte par défaut
+      url: "/sm-settings/default-host-operating-system-type.html"
+  - title: Comment
+    entries:
+    - title: Modifier le nom de la matrice de stockage
+      url: "/sm-settings/edit-storage-array-name.html"
+    - title: Activez les voyants de localisation de la matrice de stockage
+      url: "/sm-settings/turn-on-storage-array-locator-lights.html"
+    - title: Synchroniser les horloges de la matrice de stockage
+      url: "/sm-settings/synchronize-storage-array-clocks.html"
+    - title: Enregistrer la configuration de la matrice de stockage
+      url: "/sm-settings/save-storage-array-configuration.html"
+    - title: Effacez la configuration de la matrice de stockage
+      url: "/sm-settings/clear-storage-array-configuration.html"
+    - title: Configurer la bannière de connexion
+      url: "/sm-settings/configure-login-banner.html"
+    - title: Gérer les délais d'expiration des sessions
+      url: "/sm-settings/manage-session-timeouts-sam.html"
+    - title: Modifiez les paramètres de cache de la matrice de stockage
+      url: "/sm-settings/change-cache-settings-for-storage-array.html"
+    - title: Définissez les rapports sur la connectivité hôte
+      url: "/sm-settings/set-host-connectivity-reporting.html"
+    - title: Définir l'équilibrage automatique de la charge
+      url: "/sm-settings/set-automatic-load-balancing.html"
+    - title: Modifier le type d'hôte par défaut
+      url: "/sm-settings/change-default-host-type.html"
+    - title: Activez ou désactivez l'interface de gestion héritée
+      url: "/sm-settings/enable-or-disable-legacy-management-interface.html"
+  - title: FAQ
+    entries:
+    - title: Qu'est-ce que le cache du contrôleur ?
+      url: "/sm-settings/what-is-controller-cache.html"
+    - title: Qu'est-ce que le vidage du cache ?
+      url: "/sm-settings/what-is-cache-flushing.html"
+    - title: Quelle est la taille de bloc du cache ?
+      url: "/sm-settings/what-is-cache-block-size.html"
+    - title: Quand dois-je synchroniser les horloges de la matrice de stockage ?
+      url: "/sm-settings/when-should-i-synchronize-storage-array-clocks.html"
+    - title: Qu'est-ce que le reporting sur la connectivité hôte ?
+      url: "/sm-settings/what-is-host-connectivity-reporting.html"
+- title: 'Système : paramètres iSCSI'
+  entries:
+  - title: Concepts
+    entries:
+    - title: Terminologie iSCSI
+      url: "/sm-settings/iscsi-terminology.html"
+  - title: Comment
+    entries:
+    - title: Configurez les ports iSCSI
+      url: "/sm-settings/configure-iscsi-ports-system.html"
+    - title: Configurez l'authentification iSCSI
+      url: "/sm-settings/configure-iscsi-authentication.html"
+    - title: Activer les paramètres de découverte iSCSI
+      url: "/sm-settings/enable-iscsi-discovery-settings.html"
+    - title: Afficher les modules de statistiques iSCSI
+      url: "/sm-settings/view-iscsi-statistics-packages-system.html"
+    - title: Afficher les sessions iSCSI
+      url: "/sm-settings/view-iscsi-sessions-system.html"
+    - title: Mettez fin à la session iSCSI
+      url: "/sm-settings/end-iscsi-session-system.html"
+    - title: Configurez iser sur les ports InfiniBand
+      url: "/sm-settings/configure-iser-over-infiniband-ports-system.html"
+    - title: Afficher les statistiques iser sur InfiniBand
+      url: "/sm-settings/view-iser-over-infiniband-statistics-system.html"
+  - title: FAQ
+    entries:
+    - title: Que se passe-t-il lorsque j'utilise un serveur iSNS pour l'enregistrement
+        ?
+      url: "/sm-settings/what-happens-when-i-use-an-isns-server.html"
+    - title: Quelles sont les méthodes d'enregistrement automatiquement prises en
+        charge pour iSCSI ?
+      url: "/sm-settings/which-registration-methods-are-automatically-supported-for-iscsi.html"
+    - title: Comment interpréter les statistiques iser sur InfiniBand ?
+      url: "/sm-settings/how-do-i-interpret-iser-over-infiniband-statistics.html"
+    - title: Que dois-je faire d'autre pour configurer ou diagnostiquer iser sur InfiniBand
+        ?
+      url: "/sm-settings/what-else-do-i-need-to-do-to-configure-or-diagnose-iser-over-infiniband.html"
+- title: 'Système : paramètres NVMe'
+  entries:
+  - title: Concepts
+    entries:
+    - title: Présentation de NVMe
+      url: "/sm-settings/nvme-overview.html"
+    - title: Terminologie NVMe
+      url: "/sm-settings/nvme-terminology.html"
+  - title: Comment
+    entries:
+    - title: Configurer les ports NVMe over InfiniBand
+      url: "/sm-settings/configure-nvme-over-infiniband-ports-system.html"
+    - title: Configurez les ports NVMe over RoCE
+      url: "/sm-settings/configure-nvme-over-roce-ports-system.html"
+    - title: Affichez les statistiques NVMe over Fabrics
+      url: "/sm-settings/view-nvme-over-fabrics-statistics-system.html"
+  - title: FAQ
+    entries:
+    - title: Comment interpréter les statistiques NVMe over Fabrics ?
+      url: "/sm-settings/how-do-i-interpret-nvme-over-fabrics-statistics.html"
+    - title: Que dois-je faire d'autre pour configurer ou diagnostiquer NVMe over
+        InfiniBand ?
+      url: "/sm-settings/what-else-do-i-need-to-do-to-configure-or-diagnose-nvme-over-infiniband.html"
+    - title: Que dois-je faire pour configurer ou diagnostiquer NVMe over RoCE ?
+      url: "/sm-settings/what-else-do-i-need-to-do-to-configure-or-diagnose-nvme-over-roce.html"
+    - title: Pourquoi y a-t-il deux adresses IP pour un port physique ?
+      url: "/sm-settings/why-are-there-two-ip-addresses-for-one-physical-port.html"
+    - title: Pourquoi y a-t-il deux ensembles de paramètres pour un port physique
+        ?
+      url: "/sm-settings/why-are-there-two-sets-of-parameters-for-one-physical-port.html"
+- title: 'Système : fonctions complémentaires'
+  entries:
+  - title: Concepts
+    entries:
+    - title: Fonctionnement des fonctions complémentaires
+      url: "/sm-settings/how-add-on-features-work.html"
+    - title: Terminologie des fonctions complémentaires
+      url: "/sm-settings/add-on-feature-terminology.html"
+  - title: Comment
+    entries:
+    - title: Obtenir un fichier de clé de fonction
+      url: "/sm-settings/obtain-a-feature-key-file.html"
+    - title: Activez une fonctionnalité Premium
+      url: "/sm-settings/enable-premium-feature.html"
+    - title: Activer le pack de fonctions
+      url: "/sm-settings/enable-feature-pack.html"
+    - title: Télécharger l'interface de ligne de commande
+      url: "/sm-settings/download-cli.html"
+- title: 'Système : gestion des clés de sécurité'
+  entries:
+  - title: Concepts
+    entries:
+    - title: Fonctionnement de la fonction de sécurité du lecteur
+      url: "/sm-settings/how-the-drive-security-feature-works.html"
+    - title: Fonctionnement de la gestion des clés de sécurité
+      url: "/sm-settings/how-security-key-management-works.html"
+    - title: Terminologie de sécurité des lecteurs
+      url: "/sm-settings/drive-security-terminology.html"
+  - title: Comment
+    entries:
+    - title: Créer une clé de sécurité interne
+      url: "/sm-settings/create-internal-security-key.html"
+    - title: Créer une clé de sécurité externe
+      url: "/sm-settings/create-external-security-key.html"
+    - title: Modifier la clé de sécurité
+      url: "/sm-settings/change-security-key.html"
+    - title: Passez de la gestion externe des clés à la gestion interne des clés
+      url: "/sm-settings/switch-from-external-to-internal-key-management.html"
+    - title: Modifier les paramètres du serveur de gestion des clés
+      url: "/sm-settings/edit-key-management-server-settings.html"
+    - title: Sauvegarder la clé de sécurité
+      url: "/sm-settings/back-up-security-key.html"
+    - title: Validation de la clé de sécurité
+      url: "/sm-settings/validate-security-key.html"
+    - title: Déverrouillez les disques à l'aide d'une clé de sécurité
+      url: "/sm-settings/unlock-drives-using-an-internal-security-key.html"
+  - title: FAQ
+    entries:
+    - title: Que dois-je savoir avant de créer une clé de sécurité ?
+      url: "/sm-settings/what-do-i-need-to-know-before-creating-a-security-key.html"
+    - title: Pourquoi dois-je définir une phrase de passe ?
+      url: "/sm-settings/why-do-i-need-to-define-a-pass-phrase.html"
+    - title: Pourquoi est-il important d'enregistrer les informations relatives aux
+        clés de sécurité ?
+      url: "/sm-settings/why-is-it-important-to-record-security-key-information.html"
+    - title: Que dois-je savoir avant de sauvegarder une clé de sécurité ?
+      url: "/sm-settings/what-do-i-need-to-know-before-backing-up-a-security-key.html"
+    - title: Que dois-je savoir avant de déverrouiller les lecteurs sécurisés ?
+      url: "/sm-settings/what-do-i-need-to-know-before-unlocking-secure-drives.html"
+    - title: Qu'est-ce que l'accessibilité en lecture/écriture ?
+      url: "/sm-settings/what-is-read-write-accessibility.html"
+    - title: Que dois-je savoir sur la validation de la clé de sécurité ?
+      url: "/sm-settings/what-do-i-need-to-know-about-validating-the-security-key.html"
+    - title: Quelle est la différence entre une clé de sécurité interne et une gestion
+        externe des clés de sécurité ?
+      url: "/sm-settings/what-is-the-difference-between-internal-security-key-and-external-security-key-management.html"
+- title: Gestion des accès
+  entries:
+  - title: Concepts
+    entries:
+    - title: Fonctionnement de Access Management
+      url: "/sm-settings/how-access-management-works.html"
+    - title: Terminologie de la gestion des accès
+      url: "/sm-settings/access-management-terminology.html"
+    - title: Autorisations pour les rôles mappés
+      url: "/sm-settings/permissions-for-mapped-roles.html"
+    - title: Gestion des accès avec rôles d'utilisateur local
+      url: "/sm-settings/access-management-with-local-user-roles.html"
+    - title: Gestion des accès avec les services d'annuaire
+      url: "/sm-settings/access-management-with-directory-services.html"
+    - title: Gestion des accès avec SAML
+      url: "/sm-settings/access-management-with-saml.html"
+  - title: Comment
+    entries:
+    - title: Afficher les rôles d'utilisateur local
+      url: "/sm-settings/view-local-user-roles.html"
+    - title: Modifier les mots de passe
+      url: "/sm-settings/change-passwords.html"
+    - title: Modifier les paramètres de mot de passe de l'utilisateur local
+      url: "/sm-settings/change-local-user-passwords-settings.html"
+    - title: Ajouter un serveur de répertoire
+      url: "/sm-settings/add-directory-server.html"
+    - title: Modifier les paramètres du serveur d'annuaire et les mappages de rôles
+      url: "/sm-settings/edit-directory-server-settings.html"
+    - title: Supprimer le serveur de répertoire
+      url: "/sm-settings/remove-directory-server.html"
+    - title: Configurez SAML
+      url: "/sm-settings/configure-saml.html"
+    - title: Modifier les mappages de rôles SAML
+      url: "/sm-settings/change-saml-role-mappings.html"
+    - title: Exporter les fichiers SAML Service Provider
+      url: "/sm-settings/export-saml-service-provider-files.html"
+    - title: Afficher l'activité du journal d'audit
+      url: "/sm-settings/view-audit-log-activity.html"
+    - title: Définissez des règles de journal d'audit
+      url: "/sm-settings/define-log-policies.html"
+    - title: Supprimer des événements du journal d'audit
+      url: "/sm-settings/delete-events-from-the-audit-log.html"
+    - title: Configuration du serveur syslog pour les journaux d'audit
+      url: "/sm-settings/configure-syslog-server-for-audit-logs.html"
+    - title: Modifier les paramètres du serveur syslog pour les enregistrements du
+        journal d'audit
+      url: "/sm-settings/edit-syslog-server-settings-for-audit-log-records.html"
+  - title: FAQ
+    entries:
+    - title: Pourquoi ne puis-je pas me connecter ?
+      url: "/sm-settings/why-cant-i-log-in.html"
+    - title: Que dois-je savoir avant d'ajouter un serveur d'annuaire ?
+      url: "/sm-settings/what-do-i-need-to-know-before-adding-a-directory-server.html"
+    - title: De quoi ai-je besoin savoir concernant le mappage aux rôles de la baie
+        de stockage ?
+      url: "/sm-settings/what-do-i-need-to-know-about-mapping-storage-array-roles.html"
+    - title: Quels outils de gestion externe peuvent être affectés par ce changement
+        ?
+      url: "/sm-settings/which-external-management-tools-may-be-affected-by-this-change.html"
+    - title: Que dois-je savoir avant de configurer et d'activer le langage SAML ?
+      url: "/sm-settings/what-do-i-need-to-know-before-configuring-and-enabling-saml.html"
+    - title: Quels types d'événements sont enregistrés dans le journal d'audit ?
+      url: "/sm-settings/what-types-of-events-are-recorded-in-the-audit-log.html"
+    - title: Que dois-je savoir avant de configurer un serveur syslog ?
+      url: "/sm-settings/what-do-i-need-to-know-before-configuring-a-syslog-server.html"
+    - title: Le serveur syslog ne reçoit plus les journaux d'audit. Que dois-je faire
+        ?
+      url: "/sm-settings/the-syslog-server-is-no-longer-receiving-audit-logs-what-do-i-do.html"
+- title: Certificats
+  entries:
+  - title: Concepts
+    entries:
+    - title: Fonctionnement des certificats
+      url: "/sm-settings/how-certificates-work-sam.html"
+    - title: Terminologie du certificat
+      url: "/sm-settings/certificate-terminology.html"
+  - title: Comment
+    entries:
+    - title: Utiliser des certificats signés CA pour les contrôleurs
+      url: "/sm-settings/use-ca-signed-certificates-for-controllers.html"
+    - title: Réinitialisez les certificats de gestion
+      url: "/sm-settings/reset-management-certificates.html"
+    - title: Afficher les informations de certificat importé
+      url: "/sm-settings/view-imported-certificates.html"
+    - title: Importer des certificats pour les contrôleurs lorsqu'ils agissent en
+        tant que clients
+      url: "/sm-settings/import-trusted-certificates-for-controllers-acting-as-client.html"
+    - title: Activez la vérification de révocation de certificats
+      url: "/sm-settings/enable-certificate-revocation-checking.html"
+    - title: Supprimer les certificats de confiance
+      url: "/sm-settings/delete-trusted-certificates.html"
+    - title: Utilisez des certificats signés par l'autorité de certification pour
+        l'authentification avec un serveur de gestion des clés
+      url: "/sm-settings/use-ca-signed-certificates-for-authentication-with-a-key-management-server.html"
+    - title: Exporter les certificats du serveur de gestion des clés
+      url: "/sm-settings/export-key-management-certificates.html"
+  - title: FAQ
+    entries:
+    - title: Pourquoi la boîte de dialogue Impossible d'accéder à un autre contrôleur
+        s'affiche-t-elle ?
+      url: "/sm-settings/why-does-the-cannot-access-other-controller-dialog-appear.html"
+    - title: Comment puis-je savoir quels certificats doivent être téléchargés sur
+        System Manager pour la gestion externe des clés ?
+      url: "/sm-settings/how-do-i-know-what-certificates-need-to-be-uploaded-to-system-manager.html"
+    - title: Que dois-je savoir au sujet de la vérification de révocation de certificats
+        ?
+      url: "/sm-settings/what-do-i-need-to-know-about-certificate-revocation-checking.html"
+    - title: Pour quels types de serveurs la vérification de révocation sera-t-elle
+        activée ?
+      url: "/sm-settings/what-types-of-servers-will-revocation-checking-be-enabled-for.html"

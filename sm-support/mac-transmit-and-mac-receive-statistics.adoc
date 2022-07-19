@@ -1,0 +1,234 @@
+---
+permalink: sm-support/mac-transmit-and-mac-receive-statistics.html 
+sidebar: sidebar 
+keywords: transmit, receive, statistics, ethernet, transmit 
+summary: Statistiques de transmission ET de réception MAC 
+---
+= Statistiques de transmission ET de réception MAC
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+Lorsque vous sélectionnez les statistiques MAC Ethernet, ces statistiques de transmission MAC s'affichent. Vous pouvez afficher chacune de ces statistiques sous forme de statistiques brutes ou en tant que statistiques de base.
+
+[cols="2*"]
+|===
+| Statistique | Définition 
+
+
+ a| 
+F
+ a| 
+Nombre de trames
+
+
+
+ a| 
+B
+ a| 
+Nombre d'octets
+
+
+
+ a| 
+MF
+ a| 
+Nombre de trames multicast
+
+
+
+ a| 
+BF
+ a| 
+Nombre d'images de diffusion
+
+
+
+ a| 
+PF
+ a| 
+Nombre de trames pause
+
+
+
+ a| 
+FC
+ a| 
+Nombre de châssis de commande
+
+
+
+ a| 
+FDF
+ a| 
+Nombre de report d'image
+
+
+
+ a| 
+FED
+ a| 
+Nombre de report de châssis en excès
+
+
+
+ a| 
+FLC
+ a| 
+Nombre de collisions tardives de trames
+
+
+
+ a| 
+FA
+ a| 
+Nombre d'abandon de trame
+
+
+
+ a| 
+FSC
+ a| 
+Nombre de collisions uniques
+
+
+
+ a| 
+FMC
+ a| 
+Nombre de collisions multiples par trame
+
+
+
+ a| 
+FC
+ a| 
+Nombre de collisions d'images
+
+
+
+ a| 
+FDR
+ a| 
+Nombre de trames tombé
+
+
+
+ a| 
+JF
+ a| 
+Nombre de trames Jumbo
+
+|===
+Lorsque vous sélectionnez Ethernet MAC Statistics (statistiques MAC Ethernet), ces statistiques de réception MAC apparaissent.
+
+[cols="2*"]
+|===
+| Statistique | Définition 
+
+
+ a| 
+F
+ a| 
+Nombre de trames
+
+
+
+ a| 
+B
+ a| 
+Nombre d'octets
+
+
+
+ a| 
+MF
+ a| 
+Nombre de trames multicast
+
+
+
+ a| 
+BF
+ a| 
+Nombre d'images de diffusion
+
+
+
+ a| 
+PF
+ a| 
+Nombre de trames pause
+
+
+
+ a| 
+FC
+ a| 
+Nombre de châssis de commande
+
+
+
+ a| 
+FLE
+ a| 
+Nombre d'erreurs de longueur de trame
+
+
+
+ a| 
+FD
+ a| 
+Nombre de trames tombé
+
+
+
+ a| 
+FCRCE
+ a| 
+Nombre d'erreurs CRC de trame
+
+
+
+ a| 
+FRAIS
+ a| 
+Nombre d'erreurs de codage de trame
+
+
+
+ a| 
+LFE
+ a| 
+Nombre d'erreurs de trames importantes
+
+
+
+ a| 
+SFE
+ a| 
+Nombre d'erreurs de petites trames
+
+
+
+ a| 
+J
+ a| 
+Nombre de Jabber
+
+
+
+ a| 
+UCC
+ a| 
+Nombre de trames de contrôle inconnu
+
+
+
+ a| 
+CSE
+ a| 
+Nombre d'erreurs de détection de porteuse
+
+|===

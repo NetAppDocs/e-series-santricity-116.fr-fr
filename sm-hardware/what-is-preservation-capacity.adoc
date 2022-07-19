@@ -1,0 +1,18 @@
+---
+permalink: sm-hardware/what-is-preservation-capacity.html 
+sidebar: sidebar 
+keywords: preservation capacity, reserved pool, support, potential drive, failures 
+summary: 'La capacité de conservation correspond à la capacité (nombre de disques) réservée dans un pool afin de prendre en charge les défaillances potentielles de disque.' 
+---
+= Qu'est-ce que la capacité de préservation ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La capacité de conservation correspond à la capacité (nombre de disques) réservée dans un pool afin de prendre en charge les défaillances potentielles de disque.
+
+Lors de la création d'un pool, System Manager réserve automatiquement une capacité de préservation par défaut, en fonction du nombre de disques du pool.
+
+Les pools utilisent une capacité de conservation lors de la reconstruction, tandis que les groupes de volumes utilisent des disques de secours pour la même utilisation. La méthode de préservation de la capacité est une amélioration par rapport aux disques de secours, car elle permet d'accélérer la reconstruction. La capacité de conservation est répartie sur plusieurs disques du pool au lieu d'un disque dans le cas d'un disque de secours. Vous n'êtes donc pas limité par la vitesse ou la disponibilité d'un disque.

@@ -1,0 +1,56 @@
+---
+permalink: sm-settings/add-trap-destinations-for-snmp-alerts.html 
+sidebar: sidebar 
+keywords: ten server, snmp traps, sending 
+summary: 'Vous pouvez ajouter jusqu"à 10 serveurs pour envoyer des interruptions SNMP.' 
+---
+= Ajoutez des destinations d'interruption pour les alertes SNMP
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez ajouter jusqu'à 10 serveurs pour envoyer des interruptions SNMP.
+
+.Avant de commencer
+* Le serveur réseau que vous souhaitez ajouter doit être configuré avec une application de service SNMP. Vous avez besoin de l'adresse réseau de ce serveur (soit une adresse IPv4, soit une adresse IPv6), de sorte que le moniteur d'événements puisse envoyer des messages d'interruption à cette adresse. Vous pouvez utiliser plusieurs serveurs (jusqu'à 10 serveurs sont autorisés).
+* Un nom de communauté doit être créé, composé uniquement de caractères ASCII imprimables. Le nom de communauté, qui est une chaîne qui agit comme un mot de passe pour les serveurs réseau, est généralement créé par un administrateur réseau. Il est possible de créer jusqu'à 256 communautés.
+* Le fichier MIB (Management information base) a été copié et compilé sur le serveur avec l'application de service SNMP. Ce fichier MIB définit les données en cours de contrôle et de gestion.
++
+Si vous ne possédez pas le fichier MIB, vous pouvez l'obtenir sur le site de support NetApp :
+
++
+** Accédez à https://mysupport.netapp.com/site/["Support NetApp"^].
+** Cliquez sur *Téléchargements*.
+** Cliquez sur *logiciel*.
+** Recherchez votre logiciel de gestion (par exemple, SANtricity System Manager), puis cliquez sur *Go!* à droite.
+** Cliquez sur *View & Download* sur la dernière version.
+** Cliquez sur *Continuer* en bas de la page.
+** Acceptez le CLUF.
+** Faites défiler vers le bas jusqu'à ce que vous voyez le fichier *MIB pour les interruptions SNMP*, puis cliquez sur le lien pour télécharger le fichier.
+
+
+
+
+.Étapes
+. Sélectionnez *Paramètres* > *alertes*.
+. Sélectionnez l'onglet *SNMP*.
++
+Les destinations d'interruption actuellement définies apparaissent dans le tableau.
+
+. Sélectionnez *Ajouter des déations de recouvrement*.
++
+La boîte de dialogue Ajouter des destinations de recouvrement s'ouvre.
+
+. Entrez une ou plusieurs destinations d'interruption, sélectionnez leurs noms de communauté associés, puis cliquez sur *Ajouter*.
++
+** *Trap destination* -- Entrez une adresse IPv4 ou IPv6 du serveur exécutant un service SNMP.
+** *Nom de communauté* -- dans la liste déroulante, sélectionnez le nom de communauté pour cette destination de déroutement. (Si vous avez défini un seul nom de communauté, le nom apparaît déjà dans ce champ.)
+** *Send Authentication Failure Trap* -- sélectionnez cette option (la case à cocher) si vous souhaitez alerter la destination de l'interruption lorsqu'une requête SNMP est rejetée en raison d'un nom de communauté non reconnu. Après avoir cliqué sur *Ajouter*, les destinations de déroutement et les noms de communauté associés apparaissent dans le tableau.
+
+
+. Pour vous assurer qu'une interruption est valide, sélectionnez une destination d'interruption dans le tableau, puis cliquez sur *Test Trap destination* pour envoyer une interruption de test à l'adresse configurée.
+
+
+Le moniteur d'événements envoie des interruptions SNMP au(x) serveur(s) chaque fois qu'un événement alertable se produit.

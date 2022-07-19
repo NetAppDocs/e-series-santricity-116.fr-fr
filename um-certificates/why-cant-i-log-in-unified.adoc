@@ -1,0 +1,29 @@
+---
+permalink: um-certificates/why-cant-i-log-in-unified.html 
+sidebar: sidebar 
+keywords: receive, error, attempt, santricity, unified, manager, causes 
+summary: Si vous recevez une erreur lors de votre tentative de connexion à SANtricity Unified Manager, consultez les causes possibles. 
+---
+= Pourquoi ne puis-je pas me connecter ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si vous recevez une erreur lors de votre tentative de connexion à SANtricity Unified Manager, consultez les causes possibles.
+
+Des erreurs de connexion à Unified Manager peuvent se produire pour l'une des raisons suivantes :
+
+* Vous avez saisi un nom d'utilisateur ou un mot de passe incorrect.
+* Vous disposez de privilèges insuffisants.
+* Le serveur d'annuaire (si configuré) est peut-être indisponible. Si c'est le cas, essayez de vous connecter avec un rôle d'utilisateur local.
+* Vous avez tenté de vous connecter plusieurs fois sans succès, ce qui a déclenché le mode de verrouillage. Attendez 10 minutes pour vous reconnecter.
+
+
+Les erreurs de connexion à une baie de stockage distante pour les tâches de mise en miroir peuvent se produire pour l'une des raisons suivantes :
+
+* Vous avez saisi un mot de passe incorrect.
+* Vous avez tenté de vous connecter plusieurs fois sans succès, ce qui a déclenché le mode de verrouillage. Attendez 10 minutes pour vous reconnecter.
+* Le nombre maximal de connexions client utilisées sur le contrôleur a été atteint. Recherchez plusieurs utilisateurs ou clients.
+

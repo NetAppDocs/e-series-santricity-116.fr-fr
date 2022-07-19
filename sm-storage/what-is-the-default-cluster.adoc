@@ -1,0 +1,23 @@
+---
+permalink: sm-storage/what-is-the-default-cluster.html 
+sidebar: sidebar 
+keywords: default, cluster, system, defined, entity, allow, unassociated, host, bus, adapter, port, identifier, logged, storage, array, gain, access, volumes, assign, physically, installed, particular 
+summary: 'Le cluster par défaut est une entité définie par le système qui autorise tout identificateur de port hôte non associé de l"adaptateur de bus hôte (HBA) connecté à la matrice de stockage pour accéder à tous les volumes affectés au cluster par défaut. Un identifiant de port hôte non associé est un port hôte qui, bien que physiquement installé dans un hôte et connecté à la matrice de stockage, n"est pas logiquement associé à un hôte particulier.' 
+---
+= À quoi correspond le cluster par défaut ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le cluster par défaut est une entité définie par le système qui autorise tout identificateur de port hôte non associé de l'adaptateur de bus hôte (HBA) connecté à la matrice de stockage pour accéder à tous les volumes affectés au cluster par défaut. Un identifiant de port hôte non associé est un port hôte qui, bien que physiquement installé dans un hôte et connecté à la matrice de stockage, n'est pas logiquement associé à un hôte particulier.
+
+[NOTE]
+====
+Si vous souhaitez que vos hôtes disposent d'un accès spécifique à certains volumes de la baie de stockage, vous devez _pas_ utiliser le cluster par défaut. À la place, vous devez associer les identificateurs de port hôte à leurs hôtes correspondants. Cette opération peut être effectuée manuellement à l'aide de System Manager lors de l'opération Créer un hôte ou automatiquement à l'aide de l'agent de contexte hôte (HCA) installé sur chaque hôte. Ensuite, vous affectez des volumes à un hôte individuel ou à un cluster hôte.
+
+====
+Vous devez _uniquement_ utiliser le cluster par défaut dans des situations spéciales où votre environnement de stockage externe est recommandé pour permettre à tous les hôtes et tous les identificateurs de port hôte connectés à la matrice de stockage ont accès à tous les volumes (mode accès total) Sans spécifiquement faire connaître les hôtes aux baies de stockage ou à System Manager.
+
+Initialement, vous pouvez affecter des volumes uniquement au cluster par défaut via l'interface de ligne de commande. Toutefois, après avoir affecté au moins un volume au cluster par défaut, cette entité (appelée cluster par défaut) s'affiche dans System Manager, et vous pouvez ensuite utiliser System Manager pour gérer cette entité.

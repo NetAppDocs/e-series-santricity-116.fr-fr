@@ -1,0 +1,110 @@
+---
+permalink: sm-settings/nvme-terminology.html 
+sidebar: sidebar 
+keywords: nvme, terms, storage array 
+summary: Découvrez les conditions générales NVMe applicables à votre baie de stockage. 
+---
+= Terminologie NVMe
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Découvrez les conditions générales NVMe applicables à votre baie de stockage.
+
+[cols="1a,3a"]
+|===
+| Durée | Description 
+
+
+ a| 
+InfiniBand
+ a| 
+InfiniBand (IB) est une norme de communication pour la transmission des données entre les serveurs hautes performances et les systèmes de stockage.
+
+
+
+ a| 
+Espace de noms
+ a| 
+Un espace de noms est un stockage NVM formaté pour un accès au bloc. Il est similaire à une unité logique de SCSI, qui se rapporte à un volume de la baie de stockage.
+
+
+
+ a| 
+ID d'espace de noms
+ a| 
+L'ID de namespace est l'identifiant unique du contrôleur NVMe pour le namespace et peut être défini sur une valeur comprise entre 1 et 255. Il est similaire à un numéro d'unité logique (LUN) dans SCSI.
+
+
+
+ a| 
+NQN
+ a| 
+Le nom qualifié NVMe (NQN) est utilisé pour identifier la cible de stockage à distance (la baie de stockage).
+
+
+
+ a| 
+NVM
+ a| 
+La mémoire non volatile (NVM) est la mémoire persistante utilisée dans de nombreux types de périphériques de stockage.
+
+
+
+ a| 
+NVMe
+ a| 
+Le protocole NVMe (non-volatile Memory Express) est une interface conçue pour les périphériques de stockage Flash, tels que les disques SSD. NVMe réduit la surcharge E/S et améliore les performances par rapport aux interfaces de périphérique logique précédentes.
+
+
+
+ a| 
+NVMe-of
+ a| 
+NVMe-of (non-volatile Memory Express over Fabrics) est une spécification qui permet le transfert des commandes et des données NVMe sur un réseau entre un hôte et un système de stockage.
+
+
+
+ a| 
+Contrôleur NVMe
+ a| 
+Un contrôleur NVMe est créé lors du processus de connexion de l'hôte. Il fournit un chemin d'accès entre un hôte et les espaces de noms dans la baie de stockage.
+
+
+
+ a| 
+File d'attente NVMe
+ a| 
+Une file d'attente permet de transmettre des commandes et des messages via l'interface NVMe.
+
+
+
+ a| 
+Sous-système NVMe
+ a| 
+La baie de stockage avec une connexion hôte NVMe.
+
+
+
+ a| 
+RDMA
+ a| 
+L'accès direct à la mémoire à distance (RDMA) permet un déplacement plus direct des données depuis et vers un serveur en implémentant un protocole de transport sur le matériel des cartes d'interface réseau (NIC).
+
+
+
+ a| 
+ROCE
+ a| 
+RDMA over Converged Ethernet (RoCE) est un protocole réseau qui permet un accès direct à la mémoire à distance (RDMA over Converged Ethernet) sur un réseau Ethernet.
+
+
+
+ a| 
+SSD
+ a| 
+Les disques SSD sont des dispositifs de stockage de données qui utilisent la mémoire Flash pour stocker les données de manière persistante. Les SSD émulent des disques durs classiques et sont disponibles avec les mêmes interfaces que les disques durs.
+
+|===

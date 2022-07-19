@@ -1,0 +1,143 @@
+---
+section: sm-hardware
+title: Sous-jacent
+entries:
+- title: Tiroirs
+  entries:
+  - title: Concepts
+    entries:
+    - title: Présentation de la page de matériel
+      url: "/sm-hardware/hardware-page-overview.html"
+    - title: Terminologie matérielle
+      url: "/sm-hardware/hardware-terminology.html"
+  - title: Comment
+    entries:
+    - title: Afficher les composants matériels
+      url: "/sm-hardware/view-hardware-components.html"
+    - title: Afficher ou masquer l'état des composants
+      url: "/sm-hardware/show-or-hide-component-status.html"
+    - title: Permet de basculer entre les vues avant et arrière
+      url: "/sm-hardware/switch-between-front-and-back-views.html"
+    - title: Modifier l'ordre d'affichage des étagères
+      url: "/sm-hardware/change-view-order-of-shelves.html"
+    - title: Allumer le feu de localisation de tablette
+      url: "/sm-hardware/turn-on-shelf-locator-light.html"
+    - title: Modifiez les ID de tiroir
+      url: "/sm-hardware/change-shelf-ids.html"
+    - title: Consultez l'état et les paramètres des composants du tiroir
+      url: "/sm-hardware/view-shelf-component-status-and-settings.html"
+    - title: Mettre à jour les cycles d'apprentissage de la batterie
+      url: "/sm-hardware/update-battery-learn-cycles.html"
+  - title: FAQ
+    entries:
+    - title: Qu'est-ce que la protection contre les pertes de tablette et la protection
+        contre les pertes de tiroir ?
+      url: "/sm-hardware/what-is-shelf-loss-protection-and-drawer-loss-protection.html"
+    - title: Quels sont les cycles d'apprentissage de la batterie ?
+      url: "/sm-hardware/what-are-battery-learn-cycles.html"
+- title: Contrôleurs
+  entries:
+  - title: Concepts
+    entries:
+    - title: Terminologie du contrôleur
+      url: "/sm-hardware/controller-terminology.html"
+    - title: États du contrôleur
+      url: "/sm-hardware/controller-states.html"
+    - title: Considérations relatives à l'attribution d'adresses IP
+      url: "/sm-hardware/considerations-for-assigning-ip-addresses.html"
+  - title: Comment
+    entries:
+    - title: Configurez le port de gestion
+      url: "/sm-hardware/configure-management-ports.html"
+    - title: Configurez les ports iSCSI
+      url: "/sm-hardware/configure-iscsi-ports-hardware.html"
+    - title: Configurez iser sur les ports InfiniBand
+      url: "/sm-hardware/configure-iser-over-infiniband-ports-hardware.html"
+    - title: Configurer les ports NVMe over InfiniBand
+      url: "/sm-hardware/configure-nvme-over-infiniband-ports-hardware.html"
+    - title: Configurez les ports NVMe over RoCE
+      url: "/sm-hardware/configure-nvme-over-roce-ports-hardware.html"
+    - title: Configurez les adresses des serveurs NTP
+      url: "/sm-hardware/configure-ntp-server-addresses.html"
+    - title: Configurez les adresses des serveurs DNS
+      url: "/sm-hardware/configure-dns-server-addresses.html"
+    - title: Afficher les paramètres du contrôleur
+      url: "/sm-hardware/view-controller-settings.html"
+    - title: Autoriser la connexion à distance
+      url: "/sm-hardware/allow-remote-login.html"
+    - title: Mettez le contrôleur en ligne
+      url: "/sm-hardware/place-controller-online.html"
+    - title: Mettez le contrôleur hors ligne
+      url: "/sm-hardware/place-controller-offline.html"
+    - title: Placer le contrôleur en mode maintenance
+      url: "/sm-hardware/place-controller-in-service-mode.html"
+    - title: Réinitialise le contrôleur (reboot)
+      url: "/sm-hardware/reset-reboot-controller.html"
+  - title: FAQ
+    entries:
+    - title: Qu'est-ce que la négociation automatique ?
+      url: "/sm-hardware/what-is-auto-negotiation.html"
+    - title: Qu'est-ce que IPv6 sans état prend en charge la configuration automatique
+        ?
+      url: "/sm-hardware/what-is-ipv6-stateless-address-auto-configuration.html"
+    - title: 'Quel type de configuration : DHCP ou manuel ?'
+      url: "/sm-hardware/which-do-i-choose-dhcp-or-manual-configuration.html"
+    - title: Qu'est-ce qu'un serveur DHCP ?
+      url: "/sm-hardware/what-is-a-dhcp-server.html"
+    - title: Comment configurer mon serveur DHCP ?
+      url: "/sm-hardware/how-do-i-configure-my-dhcp-server.html"
+    - title: Pourquoi dois-je modifier la configuration du réseau du contrôleur ?
+      url: "/sm-hardware/why-do-i-need-to-change-the-controller-network-configuration.html"
+    - title: Où puis-je obtenir la configuration réseau ?
+      url: "/sm-hardware/where-do-i-get-the-network-configuration.html"
+    - title: Que sont les réponses PING ICMP ?
+      url: "/sm-hardware/what-are-icmp-ping-responses.html"
+    - title: Quand dois-je actualiser la configuration du port ou le serveur iSNS
+        à partir du serveur DHCP ?
+      url: "/sm-hardware/when-should-i-refresh-the-port-configuration-or-the-isns-server-from-the-dhcp-server.html"
+    - title: Que dois-je faire après avoir configuré les ports de gestion ?
+      url: "/sm-hardware/what-should-i-do-after-configuring-the-management-ports.html"
+- title: Disques
+  entries:
+  - title: Concepts
+    entries:
+    - title: Terminologie utilisée
+      url: "/sm-hardware/drive-terminology.html"
+    - title: États des disques
+      url: "/sm-hardware/drive-states.html"
+    - title: Disques SSD
+      url: "/sm-hardware/solid-state-disks-ssds.html"
+    - title: Disques de secours
+      url: "/sm-hardware/hot-spare-drives.html"
+  - title: Comment
+    entries:
+    - title: Limiter la vue de conduite
+      url: "/sm-hardware/limit-the-drive-view.html"
+    - title: Allumer le feu de position de conduite
+      url: "/sm-hardware/turn-on-drive-locator-light.html"
+    - title: Afficher l'état et les paramètres du lecteur
+      url: "/sm-hardware/view-drive-status-and-settings.html"
+    - title: Remplacer l'entraînement logiquement
+      url: "/sm-hardware/replace-drive-logically-hardware.html"
+    - title: Reconstruire le lecteur manuellement
+      url: "/sm-hardware/reconstruct-drive-manually.html"
+    - title: Initialiser (formater) le lecteur
+      url: "/sm-hardware/initialize-format-drive.html"
+    - title: Disque défaillant
+      url: "/sm-hardware/fail-drive.html"
+    - title: Affecter des disques de secours
+      url: "/sm-hardware/assign-hot-spares-hardware.html"
+    - title: Annuler l'affectation des disques de secours
+      url: "/sm-hardware/unassign-hot-spares.html"
+    - title: Effacer le lecteur sécurisé
+      url: "/sm-hardware/erase-drive.html"
+    - title: Déverrouillez ou réinitialisez les disques NVMe verrouillés
+      url: "/sm-hardware/unlock-or-reset-a-locked-nvme-drive.html"
+  - title: FAQ
+    entries:
+    - title: Qu'est-ce que la capacité de préservation ?
+      url: "/sm-hardware/what-is-preservation-capacity.html"
+    - title: Pourquoi remplacer logiquement un disque ?
+      url: "/sm-hardware/why-would-i-logically-replace-a-drive.html"
+    - title: Où puis-je afficher l'état d'un disque en cours de reconstruction ?
+      url: "/sm-hardware/where-can-i-view-the-status-of-a-drive-undergoing-reconstruction.html"

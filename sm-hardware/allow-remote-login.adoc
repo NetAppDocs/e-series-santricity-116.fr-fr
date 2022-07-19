@@ -1,0 +1,34 @@
+---
+permalink: sm-hardware/allow-remote-login.html 
+sidebar: sidebar 
+keywords: remote, login, lan, outside, ssh session, change settings, controller 
+summary: 'La connexion à distance permet aux utilisateurs de l"extérieur du réseau local de démarrer une session SSH et de modifier les paramètres sur le contrôleur.' 
+---
+= Autoriser la connexion à distance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La connexion à distance permet aux utilisateurs de l'extérieur du réseau local de démarrer une session SSH et de modifier les paramètres sur le contrôleur.
+
+[CAUTION]
+====
+*Risque de sécurité* -- pour des raisons de sécurité, activez la connexion à distance uniquement par le support technique.
+
+====
+.Étapes
+. Sélectionnez *matériel*.
+. Si le graphique montre les lecteurs, cliquez sur *Afficher le verso du tiroir*.
++
+Le graphique change pour afficher les contrôleurs au lieu des disques.
+
+. Cliquez sur le contrôleur pour lequel vous souhaitez activer la connexion à distance.
++
+Le menu contextuel du contrôleur s'affiche.
+
+. Sélectionnez *changer la connexion distante* et confirmez que vous souhaitez effectuer l'opération.
+
+
+Une fois le support technique terminé, suivez cette même procédure pour désactiver la connexion à distance. La désactivation de la connexion distante met fin à toutes les sessions SSH en cours et rejette toute nouvelle demande de connexion.

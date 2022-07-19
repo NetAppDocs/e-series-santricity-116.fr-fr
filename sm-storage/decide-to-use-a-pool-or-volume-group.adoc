@@ -1,0 +1,149 @@
+---
+permalink: sm-storage/decide-to-use-a-pool-or-volume-group.html 
+sidebar: sidebar 
+keywords: create, volumes, using, either, pool, group, selection, depend, primarily, key, storage, requirements, expect, workload, performance, data, protection 
+summary: 'Vous pouvez créer des volumes à l"aide d"un pool ou d"un groupe de volumes. La meilleure sélection dépend principalement des besoins clés en stockage, tels que la charge de travail d"E/S attendue, les exigences en termes de performances et les exigences en termes de protection des données.' 
+---
+= Vous pouvez choisir d'utiliser un pool ou un groupe de volumes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez créer des volumes à l'aide d'un pool ou d'un groupe de volumes. La meilleure sélection dépend principalement des besoins clés en stockage, tels que la charge de travail d'E/S attendue, les exigences en termes de performances et les exigences en termes de protection des données.
+
+
+
+== Raisons de choisir un pool ou un groupe de volumes
+
+*Choisissez une piscine*
+
+* Si vous avez besoin de reconstructions de disque plus rapides et d'une administration simplifiée du stockage, vous avez besoin de volumes fins et/ou d'une charge de travail hautement aléatoire.
+* Si vous souhaitez répartir les données de chaque volume de manière aléatoire sur un ensemble de disques qui composent le pool.
++
+Vous ne pouvez ni définir ni modifier le niveau RAID des pools ni des volumes dans les pools. Les pools utilisent RAID de niveau 6.
+
+
+
+*Choisissez un groupe de volumes*
+
+* Si vous avez besoin d'une bande passante système maximale, la possibilité de régler les paramètres de stockage et une charge de travail hautement séquentielle.
+* Si vous souhaitez distribuer les données à travers les lecteurs en fonction d'un niveau RAID. Vous pouvez spécifier le niveau RAID lors de la création du groupe de volumes.
+* Pour écrire les données de chaque volume de façon séquentielle sur l'ensemble de disques constituant le groupe de volumes.
+
+
+[NOTE]
+====
+Étant donné que les pools peuvent coexister avec des groupes de volumes, une baie de stockage peut contenir à la fois des pools et des groupes de volumes.
+
+====
+
+
+== Différences entre les pools et les groupes de volumes
+
+Le tableau suivant compare les groupes de volumes et les pools.
+
+[cols="3*"]
+|===
+| Utiliser | Piscine | Groupe de volumes 
+
+
+ a| 
+Charges de travail aléatoires
+ a| 
+Mieux
+ a| 
+Super
+
+
+
+ a| 
+Charge de travail séquentielle
+ a| 
+Super
+ a| 
+Mieux
+
+
+
+ a| 
+Temps de reconstruction du disque
+ a| 
+Toujours plus vite
+ a| 
+Plus lent
+
+
+
+ a| 
+Performance (mode optimal)
+ a| 
+Bon : idéal pour les charges de travail aléatoires de blocs de petite taille.
+ a| 
+Bon : adapté aux charges de travail séquentielles de blocs volumineux
+
+
+
+ a| 
+Performances (mode de reconstruction de disque)
+ a| 
+Mieux : généralement meilleur que RAID 6
+ a| 
+Dégradé : baisse des performances jusqu'à 40 %
+
+
+
+ a| 
+Pannes de disques multiples
+ a| 
+Meilleure protection des données : reconstructions plus rapides, prioritaires
+ a| 
+Moins de protection des données : reconstructions lentes, risques de perte de données plus importants
+
+
+
+ a| 
+Ajout de disques
+ a| 
+Plus rapide : ajoutez au pool à la volée
+ a| 
+Plus lent : nécessite une extension de capacité dynamique
+
+
+
+ a| 
+Prise en charge des volumes fins
+ a| 
+Oui.
+ a| 
+Non
+
+
+
+ a| 
+Prise en charge des disques SSD
+ a| 
+Oui.
+ a| 
+Oui.
+
+
+
+ a| 
+Administration simplifiée
+ a| 
+Oui : pas de disques de secours ni de paramètres RAID à configurer
+ a| 
+Non : doit allouer des disques de rechange à chaud et configurer RAID
+
+
+
+ a| 
+Performances réglables
+ a| 
+Non
+ a| 
+Oui.
+
+|===

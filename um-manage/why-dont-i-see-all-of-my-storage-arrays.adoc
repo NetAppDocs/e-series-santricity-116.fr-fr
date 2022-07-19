@@ -1,0 +1,21 @@
+---
+permalink: um-manage/why-dont-i-see-all-of-my-storage-arrays.html 
+sidebar: sidebar 
+keywords: 'why, don"t, I, see, all, of, my, storage, arrays,' 
+summary: 'Lors de l"opération Importer les paramètres, il se peut que certaines de vos matrices de stockage ne soient pas disponibles dans la boîte de dialogue de sélection de la cible.' 
+---
+= Pourquoi ne vois-je pas toutes mes baies de stockage ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Lors de l'opération Importer les paramètres, il se peut que certaines de vos matrices de stockage ne soient pas disponibles dans la boîte de dialogue de sélection de la cible.
+
+Les baies de stockage peuvent ne pas s'afficher pour les raisons suivantes :
+
+* La version du micrologiciel est inférieure à 8.50.
+* La matrice de stockage est hors ligne.
+* Unified Manager ne peut pas communiquer avec cette baie (par exemple, elle présente un certificat, un mot de passe ou des problèmes de mise en réseau).
+

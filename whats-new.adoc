@@ -1,0 +1,115 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: whats new, new features, 
+summary: Nouvelles fonctionnalités de SANtricity OS. 
+---
+= Nouveautés de SANtricity OS 11.6
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les tableaux suivants décrivent les nouvelles fonctionnalités de SANtricity OS 11.6.
+
+
+
+== Nouvelles fonctionnalités de la version 11.62
+
+[cols="35h,~"]
+|===
+| Nouvelle fonction | Description 
+
+
+ a| 
+Interface de ligne de commande téléchargeable
+ a| 
+System Manager pour les baies E5700, EF570, E2800 et EF280 inclut désormais la possibilité de télécharger et d'installer l'interface de ligne de commandes SANtricity via un lien de la page Menu :Paramètres[System > Add-ons]. Il s'agit de la version https de l'interface de ligne de commande (également appelée « Secure CLI »). Cette fonctionnalité a déjà été disponible avec la baie EF600.
+
+
+
+ a| 
+Modification de la configuration de la mise en miroir dans System Manager et Unified Manager
+ a| 
+Les tâches de configuration des paires en miroir synchrones et asynchrones ont été déplacées de System Manager vers Unified Manager. Toutes les autres tâches de gestion des paires en miroir restent dans System Manager.
+
+
+
+ a| 
+Nouvelle HIC compatible 200 Gb (baies EF600 uniquement)
+ a| 
+Cette version intègre une nouvelle HIC compatible de 200 Go pour les baies de stockage EF600. Les interfaces sont prises en charge : NVMe/IB, NVMe/RoCE et iser/IB. De plus, le protocole SRP/IB 100 Gb est pris en charge.
+
+
+
+ a| 
+Options supplémentaires pour HIC 100 Gb (baies EF600 uniquement)
+ a| 
+Les baies de stockage EF600 prennent désormais en charge les interfaces iser/IB et SRP/IB 100 Gb existantes. (Ces interfaces sont déjà prises en charge pour les baies EF570 et E5700.)
+
+
+
+ a| 
+Supprimez le serveur de messagerie dans System Manager
+ a| 
+System Manager a permis de configurer un serveur de messagerie, mais ne dispose pas d'un mécanisme facile pour le supprimer. Avec cette version, la configuration du serveur de messagerie dans System Manager peut désormais être supprimée des alertes, de sorte que les alertes ne soient plus envoyées aux adresses e-mail associées à ce serveur de messagerie.
+
+
+
+ a| 
+Ajustement de la capacité d'optimisation pour les pools et les groupes de volumes (disques SSD uniquement) dans System Manager
+ a| 
+Pour les disques SSD, un nouveau curseur de capacité d'optimisation est disponible dans System Manager pour les paramètres de pool et de groupe de volumes. Le curseur vous permet de régler l'équilibre entre capacité disponible et performances d'écriture des disques SSD et durée de vie des disques.
+
+
+
+ a| 
+Nouveaux types d'hôte dans System Manager
+ a| 
+Lorsque vous créez de nouveaux hôtes dans System Manager, les options d'hôte présentées sont désormais organisées en trois catégories afin de fournir de meilleurs conseils : communs, peu fréquents et utilisation uniquement lorsque vous êtes dirigé.
+
+|===
+
+
+== Nouvelles fonctionnalités de la version 11.61
+
+[cols="35h,~"]
+|===
+| Nouvelle fonction | Description 
+
+
+ a| 
+Prise en charge de Fibre Channel pour EF600
+ a| 
+Cette version ajoute la prise en charge d'hôtes Fibre Channel au système de stockage EF600. Il s'agit du premier hôte SCSI pris en charge par le système EF600, initialement équipé de tous les protocoles hôte NVMe over Fabrics. Vous pouvez consulter et gérer un seul contrôleur pour la baie EF600 dans System Manager. Plusieurs systèmes de stockage EF600 peuvent être affichés et gérés dans Unified Manager.
+
+
+
+ a| 
+Exigences de mot de passe pour l'utilisateur admin
+ a| 
+Pour la première connexion dans Unified Manager, vous devez maintenant saisir un mot de passe pour l'utilisateur administrateur. Il n'y a plus de mot de passe « admin » par défaut.
+
+|===
+
+
+== Nouvelles fonctionnalités de la version 11.60
+
+[cols="35h,~"]
+|===
+| Nouvelle fonction | Description 
+
+
+ a| 
+Nouveau modèle de système de stockage EF600
+ a| 
+Cette version propose un nouveau système de stockage 100 % Flash EF600. L'EF600 inclut les interfaces hôtes NVMe-of et les SSD NVMe.
+
+La baie EF600 améliore considérablement le débit et réduit la latence. Les interfaces hôtes prises en charge incluent NVMe over IB, NVMe over RoCE et NVMe over FC, qui peuvent être configurées dans System Manager. Plusieurs systèmes de stockage EF600 peuvent être affichés et gérés dans Unified Manager.
+
+
+
+| Interface de ligne de commande téléchargeable | System Manager inclut désormais la possibilité de télécharger et d'installer l'interface de ligne de commande SANtricity via un lien de la page Menu:Paramètres[système > modules d'extension]. Il s'agit de la version https de l'interface de ligne de commandes. Le pack SANtricity Storage Manager existant continue également d'inclure l'interface de ligne de commandes. 
+|===

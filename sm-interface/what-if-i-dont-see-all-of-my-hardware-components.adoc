@@ -1,0 +1,16 @@
+---
+permalink: sm-interface/what-if-i-dont-see-all-of-my-hardware-components.html 
+sidebar: sidebar 
+keywords: hardware components, verify hardware, dialog box, drive shelf, connected, installed, incompatible 
+summary: 'Si vous ne voyez pas tous les composants matériels dans la boîte de dialogue vérifier le matériel, un tiroir disque peut ne pas être connecté correctement, ou qu"un tiroir incompatible est installé dans la baie de stockage.' 
+---
+= Que faire si je ne vois pas tous mes composants matériels ?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si vous ne voyez pas tous vos composants matériels dans la boîte de dialogue *vérifier le matériel*, cela peut signifier qu'un tiroir de disque n'est pas connecté correctement ou qu'un tiroir incompatible est installé dans la matrice de stockage.
+
+Vérifiez que tous les tiroirs disques sont correctement connectés. En cas de doute sur la compatibilité des tiroirs disques, contactez le support technique.
