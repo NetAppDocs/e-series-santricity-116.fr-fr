@@ -36,6 +36,7 @@ L'activité du journal d'audit s'affiche sous forme de tableau, qui contient les
 . Utilisez les sélections de la page Journal d'audit pour afficher et gérer les événements.
 +
 .Détails de la sélection
+[%collapsible]
 ====
 [cols="1a,3a"]
 |===

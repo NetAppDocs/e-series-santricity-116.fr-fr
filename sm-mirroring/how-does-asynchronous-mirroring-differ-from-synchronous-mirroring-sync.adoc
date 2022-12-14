@@ -18,6 +18,7 @@ Avec la mise en miroir synchrone, l'état du volume primaire n'est pas capturé 
 Avec la mise en miroir asynchrone, la baie de stockage distante n'est pas entièrement synchronisée avec la baie de stockage locale. Par conséquent, si l'application doit passer à la baie de stockage distante en raison d'une perte de la baie de stockage locale, certaines transactions peuvent être perdues.
 
 .Comparaison entre les fonctions de mise en miroir
+[%collapsible]
 ====
 [cols="3a,3a"]
 |===

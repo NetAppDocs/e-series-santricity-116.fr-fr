@@ -14,6 +14,7 @@ summary: Si vous avez configuré la gestion externe des clés, vous pouvez affic
 [role="lead"]
 Si vous avez configuré la gestion externe des clés, vous pouvez afficher et modifier les paramètres du serveur de gestion des clés à tout moment.
 
+.Avant de commencer
 La gestion externe des clés doit être configurée.
 
 .Étapes

@@ -24,6 +24,7 @@ Les disques sécurisés peuvent être des disques FDE (Full Disk Encryption) ou 
 
 
 
+.Description de la tâche
 Pour les pools, vous pouvez ajouter un maximum de 60 disques à la fois ou jusqu'à 60 disques par multiples de 5. Pour les groupes de volumes, vous pouvez ajouter deux lecteurs au maximum à la fois. Si vous devez ajouter plus de lecteurs que le nombre maximal, répétez la procédure. (Un pool ne peut pas contenir plus de disques que la limite maximale d'une matrice de stockage.)
 
 [NOTE]
@@ -48,6 +49,7 @@ Le firmware du contrôleur organise les disques non assignés avec les meilleure
 
 +
 .Détails du champ
+[%collapsible]
 ====
 [cols="1a,3a"]
 |===
@@ -124,4 +126,5 @@ Si vous ajoutez des disques à un pool ou à un groupe de volumes, une boîte de
 
 Pour continuer, cliquez sur *Oui* ; sinon, cliquez sur *Annuler*.
 
+.Résultats
 Après avoir ajouté les disques non assignés à un pool ou à un groupe de volumes, les données de chaque volume du pool ou du groupe de volumes sont redistribuées pour inclure les disques supplémentaires.

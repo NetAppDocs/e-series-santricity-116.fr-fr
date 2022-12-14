@@ -7493,4 +7493,5 @@
   <block id="55e878fc13382ea836032d0ec0a75105" category="sidebar">Administration de Unified Manager</block>
   <block id="87f96b0027c75822fb47500bccdbe043" category="sidebar">Certificats et authentification</block>
   <block id="8e98fe16abd52051c3a673ef6c4b861a" category="sidebar">Gestion des certificats</block>
+  <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">Résultat</block>
 </blocks>

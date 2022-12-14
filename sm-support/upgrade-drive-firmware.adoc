@@ -211,4 +211,5 @@ Contactez le support technique pour résoudre ce problème.
 Contactez le support technique pour résoudre ce problème.
 
 |===
+.Une fois que vous avez terminé
 La mise à niveau du micrologiciel de votre lecteur est terminée. Vous pouvez reprendre les opérations normales.

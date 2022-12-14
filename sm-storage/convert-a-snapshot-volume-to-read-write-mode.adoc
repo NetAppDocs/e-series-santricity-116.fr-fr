@@ -42,6 +42,7 @@ La boîte de dialogue *Modifier les paramètres* apparaît.
 . Acceptez ou spécifiez les paramètres du volume de snapshot selon les besoins, puis sélectionnez *Finish* pour convertir le volume de snapshot.
 +
 .Détails du champ
+[%collapsible]
 ====
 [cols="1a,3a"]
 |===

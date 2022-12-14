@@ -17,6 +17,7 @@ Pour interrompre la connexion entre un serveur d'annuaire et Web Services Proxy,
 * Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Dans le cas contraire, les fonctions de gestion des accès ne s'affichent pas.
 
 
+.Description de la tâche
 Une fois cette tâche terminée, toutes les sessions utilisateur actives sont arrêtées. Seule votre session utilisateur actuelle est conservée.
 
 .Étapes

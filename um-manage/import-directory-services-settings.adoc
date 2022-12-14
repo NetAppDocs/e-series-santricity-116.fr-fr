@@ -19,6 +19,7 @@ Vous pouvez importer une configuration de services d'annuaire d'une matrice de s
 * La configuration existante des baies de stockage cibles est sauvegardée dans SANtricity System Manager (menu : Paramètres [système > Enregistrer la configuration de la baie de stockage]).
 
 
+.Description de la tâche
 Les paramètres importés comprennent le nom de domaine et l'URL d'un serveur LDAP (Lightweight Directory Access Protocol), ainsi que les mappages entre les groupes d'utilisateurs du serveur LDAP et les rôles prédéfinis de la baie de stockage.
 
 .Étapes
@@ -44,4 +45,5 @@ La page *opérations* affiche les résultats de l'opération d'importation. Si l
 
 
 
+.Résultats
 Les matrices de stockage cibles sont maintenant configurées avec les mêmes services de répertoire que la matrice source.

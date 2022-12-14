@@ -31,4 +31,5 @@ Le menu contextuel du contrôleur s'affiche.
 . Sélectionnez *changer la connexion distante* et confirmez que vous souhaitez effectuer l'opération.
 
 
+.Résultats
 Une fois le support technique terminé, suivez cette même procédure pour désactiver la connexion à distance. La désactivation de la connexion distante met fin à toutes les sessions SSH en cours et rejette toute nouvelle demande de connexion.

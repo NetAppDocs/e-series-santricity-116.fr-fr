@@ -14,6 +14,7 @@ summary: 'System Manager peut afficher les valeurs de capacité soit en gibiocte
 [role="lead"]
 System Manager peut afficher les valeurs de capacité soit en gibioctets (Gio), soit en Tio.
 
+.Description de la tâche
 ++ ++
 
 [cols="2a,3a"]

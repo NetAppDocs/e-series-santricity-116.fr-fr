@@ -14,6 +14,7 @@ summary: 'Vous devez affecter un volume à un hôte ou à un cluster hôte afin 
 [role="lead"]
 Vous devez affecter un volume à un hôte ou à un cluster hôte afin qu'il puisse être utilisé pour les opérations d'E/S. Cette affectation permet à un hôte ou un cluster hôte d'accéder à un ou plusieurs volumes d'une baie de stockage.
 
+.Avant de commencer
 Gardez ces consignes à l'esprit lorsque vous attribuez des volumes :
 
 * Vous ne pouvez affecter un volume qu'à un seul hôte ou cluster hôte à la fois.
@@ -34,6 +35,7 @@ La possibilité d'attribuer un volume n'est pas disponible dans les conditions s
 * Toutes les affectations de volume ont été définies.
 
 
+.Description de la tâche
 Tous les volumes non attribués s'affichent, mais les fonctions des hôtes avec ou sans Data assurance (DA) s'appliquent comme suit :
 
 * Pour un hôte compatible DA, vous pouvez sélectionner des volumes qui sont soit activés DA, soit non activés DA.
@@ -50,6 +52,7 @@ Une boîte de dialogue s'affiche et répertorie tous les volumes pouvant être a
 . Cliquez sur *attribuer* pour terminer l'opération.
 
 
+.Résultats
 Après avoir attribué un ou plusieurs volumes à un hôte ou à un cluster hôte, le système effectue les opérations suivantes :
 
 * Le volume affecté reçoit le prochain numéro de LUN disponible. L'hôte utilise le numéro de LUN pour accéder au volume.

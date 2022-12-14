@@ -31,6 +31,7 @@ Certains onglets ont un lien pour *Afficher plus de paramètres* en haut à droi
 
 +
 .Détails du champ
+[%collapsible]
 ====
 [cols="1a,3a"]
 |===

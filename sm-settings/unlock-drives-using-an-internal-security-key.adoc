@@ -20,6 +20,7 @@ Si vous déplacez des lecteurs sécurisés d'une matrice de stockage à une autr
 * Le fichier de clé de sécurité est disponible sur le client de gestion (le système avec un navigateur utilisé pour accéder à System Manager). Si vous déplacez les disques vers une matrice de stockage gérée par un autre système, vous devez déplacer le fichier de clé de sécurité vers ce client de gestion.
 
 
+.Description de la tâche
 Cette tâche explique comment déverrouiller les données des disques sécurisés qui ont été supprimés d'une matrice de stockage et réinstallés dans une autre. Une fois que la baie détecte les disques, une condition « nécessite une intervention » s'affiche avec l'état « clé de sécurité requise » pour ces disques rélocalisés. Vous pouvez déverrouiller les données du lecteur en important leur clé de sécurité dans la matrice de stockage. Au cours de ce processus, vous sélectionnez le fichier de clé de sécurité et entrez la phrase de passe de la clé.
 
 [NOTE]
@@ -50,4 +51,5 @@ Si l'opération de déverrouillage a réussi, la boîte de dialogue affiche : «
 
 
 
+.Résultats
 Lorsque tous les disques sont verrouillés et déverrouillés, chaque contrôleur de la baie de stockage est redémarré. Toutefois, si certains disques sont déjà déverrouillés dans la baie de stockage cible, les contrôleurs ne redémarreront pas.

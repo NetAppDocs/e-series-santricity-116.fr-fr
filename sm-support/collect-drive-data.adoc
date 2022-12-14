@@ -14,6 +14,7 @@ summary: Vous pouvez collecter des données de journal de tous les lecteurs de v
 [role="lead"]
 Vous pouvez collecter des données de journal de tous les lecteurs de votre matrice de stockage et envoyer le fichier au support technique pour analyse.
 
+.Description de la tâche
 Les données du journal sont des informations statistiques gérées par chacun des lecteurs de votre matrice de stockage. Le support technique peut utiliser ces informations pour analyser les performances de vos disques et pour résoudre les problèmes potentiels.
 
 [NOTE]

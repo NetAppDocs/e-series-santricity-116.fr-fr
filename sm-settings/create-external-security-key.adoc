@@ -26,6 +26,7 @@ Si des disques FDE et FIPS sont tous deux installés dans la baie de stockage, i
 * Les certificats client et serveur sont disponibles sur votre hôte local afin que la matrice de stockage et le serveur de gestion des clés puissent s'authentifier mutuellement. Le certificat client valide les contrôleurs, tandis que le certificat serveur valide le serveur de gestion des clés.
 
 
+.Description de la tâche
 Dans cette tâche, vous définissez l'adresse IP du serveur de gestion des clés et le numéro de port qu'il utilise, puis chargez les certificats pour la gestion des clés externes.
 
 .Étapes
@@ -89,6 +90,7 @@ Les résultats du test s'affichent dans la boîte de dialogue.
 
 
 
+.Résultats
 Lorsque la gestion externe des clés est activée, vous pouvez créer des groupes ou des pools de volumes sécurisés ou activer la sécurité sur les groupes et pools de volumes existants.
 
 [NOTE]

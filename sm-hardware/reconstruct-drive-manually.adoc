@@ -13,6 +13,7 @@ summary: 'La reconstruction du disque démarre normalement automatiquement aprè
 [role="lead"]
 La reconstruction du disque démarre normalement automatiquement après le remplacement d'un disque. Si la reconstruction de disque ne démarre pas automatiquement, vous pouvez démarrer la reconstruction manuellement.
 
+.Description de la tâche
 ++ ++
 
 [NOTE]

@@ -13,8 +13,10 @@ summary: 'Vous pouvez effacer un disque sécurisé afin qu"il puisse être réut
 [role="lead"]
 Vous pouvez effacer un disque sécurisé afin qu'il puisse être réutilisé dans un autre groupe de volumes, un pool, un cache SSD ou dans une autre baie de stockage. Cette procédure réinitialise les attributs de sécurité du lecteur et garantit que les données ne peuvent pas être lues à nouveau.
 
+.Avant de commencer
 Le lecteur sécurisé doit être à l'état non affecté.
 
+.Description de la tâche
 Utilisez l'option Suppression sécurisée uniquement si vous souhaitez supprimer toutes les données d'un disque sécurisé et réinitialiser les attributs de sécurité du disque.
 
 [CAUTION]
@@ -61,4 +63,5 @@ Pour les disques SED NVMe, vous devez fournir l'ID PSID. Vous trouverez le PSID 
 . Confirmez l'opération, puis cliquez sur *Effacer*.
 
 
+.Résultats
 Le lecteur peut désormais être utilisé dans un autre groupe de volumes ou un autre pool de disques, ou dans une autre matrice de stockage.

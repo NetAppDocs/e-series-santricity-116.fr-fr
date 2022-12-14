@@ -24,6 +24,7 @@ La boîte de dialogue *Paramètres de volume d'instantané* s'affiche.
 . Affichez ou modifiez les paramètres du volume de snapshot selon les besoins.
 +
 .Détails du champ
+[%collapsible]
 ====
 [cols="1a,3a"]
 |===

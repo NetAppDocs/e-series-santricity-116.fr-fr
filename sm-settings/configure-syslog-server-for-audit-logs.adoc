@@ -50,4 +50,5 @@ Après avoir cliqué sur *Ajouter*, la boîte de dialogue *configurer les serveu
 . Pour tester la connexion du serveur avec la matrice de stockage, sélectionnez *Tester tout*.
 
 
+.Résultats
 Après la configuration, tous les nouveaux journaux d'audit sont envoyés au serveur syslog. Les journaux précédents ne sont pas transférés.

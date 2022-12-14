@@ -14,6 +14,7 @@ summary: 'Vous mettez à jour l"adresse IP de la matrice de stockage distante lo
 Vous mettez à jour l'adresse IP de votre matrice de stockage distante lorsque l'adresse IP d'un port iSCSI change et que la matrice de stockage locale ne parvient pas à communiquer avec la matrice de stockage distante.
 
 .En savoir plus sur l'adresse IP distante
+[%collapsible]
 ====
 Lors de l'établissement d'une relation de mise en miroir asynchrone avec une connexion iSCSI, les matrices de stockage locales et distantes stockent un enregistrement de l'adresse IP de la matrice de stockage distante dans la configuration de mise en miroir asynchrone. Si l'adresse IP d'un port iSCSI change, la matrice de stockage distante qui tente d'utiliser ce port rencontre une erreur de communication.
 

@@ -14,6 +14,7 @@ summary: 'Vous pouvez ajouter jusqu"à 256 noms de communauté pour les interrup
 [role="lead"]
 Vous pouvez ajouter jusqu'à 256 noms de communauté pour les interruptions SNMP.
 
+.Avant de commencer
 Le ou les noms de communauté doivent être créés. Le nom de communauté, qui est une chaîne qui agit comme un mot de passe pour les serveurs réseau, est généralement créé par un administrateur réseau. Il se compose uniquement de caractères ASCII imprimables.
 
 .Étapes
@@ -30,4 +31,5 @@ La boîte de dialogue configurer les communautés s'ouvre.
 . Entrez le nouveau nom de communauté, puis cliquez sur *Enregistrer*.
 
 
+.Résultats
 Le nouveau nom de communauté apparaît dans l'onglet *SNMP* de la page *alertes*.

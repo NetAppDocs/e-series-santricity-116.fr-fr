@@ -18,6 +18,7 @@ Dans l'onglet rôles utilisateur local, vous pouvez afficher les mappages des pr
 * Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Dans le cas contraire, les fonctions de gestion des accès ne s'affichent pas.
 
 
+.Description de la tâche
 Les profils utilisateur et les mappages ne peuvent pas être modifiés. Seuls les mots de passe peuvent être modifiés.
 
 .Étapes

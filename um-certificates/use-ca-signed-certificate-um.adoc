@@ -17,6 +17,7 @@ Vous pouvez obtenir et importer des certificats signés par une autorité de cer
 * Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Sinon, les fonctions de certificat n'apparaissent pas.
 
 
+.Description de la tâche
 L'utilisation de certificats signés CA est une procédure en deux étapes.
 
 
@@ -29,6 +30,7 @@ Vous devez d'abord générer un fichier de demande de signature de certificat (C
 * Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Sinon, les fonctions de certificat n'apparaissent pas.
 
 
+.Description de la tâche
 Cette tâche décrit comment générer le fichier CSR que vous envoyez à une autorité de certification pour recevoir des certificats de gestion signés pour le système hébergeant Unified Manager et le proxy des services Web. Vous devez fournir des informations sur votre organisation, ainsi que l'adresse IP ou le nom DNS du système hôte.
 
 [CAUTION]
@@ -62,6 +64,7 @@ Un fichier CSR est téléchargé sur votre système local. L'emplacement du doss
 . Soumettez le fichier CSR à une autorité de certification et demandez des certificats signés au format PEM ou DER.
 
 
+.Une fois que vous avez terminé
 Attendez que l'autorité de certification retourne les fichiers de certificat, puis allez à link:step-3-import-management-certificates-unified.html["Étape 2 : certificats de gestion des importations"].
 
 
@@ -91,4 +94,5 @@ Les noms de fichier s'affichent dans la boîte de dialogue.
 . Cliquez sur *Importer*.
 
 
+.Résultats
 Les fichiers sont chargés et validés. Les informations de certificat s'affichent sur la page gestion des certificats.

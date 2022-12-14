@@ -14,8 +14,10 @@ summary: Vous pouvez à tout moment remplacer une clé de sécurité par une nou
 [role="lead"]
 Vous pouvez à tout moment remplacer une clé de sécurité par une nouvelle clé. Vous devrez peut-être modifier une clé de sécurité dans les cas où votre entreprise est susceptible de violer la sécurité et voulez vous assurer que le personnel non autorisé ne puisse pas accéder aux données des disques.
 
+.Avant de commencer
 Une clé de sécurité existe déjà.
 
+.Description de la tâche
 Cette tâche décrit comment modifier une clé de sécurité et la remplacer par une nouvelle. À l'issue de ce processus, l'ancienne clé n'est plus validée.
 
 .Étapes
@@ -61,4 +63,5 @@ Le chemin du fichier téléchargé peut dépendre de l'emplacement de téléchar
 . Enregistrez votre identifiant de clé, votre phrase de passe et l'emplacement du fichier de clé téléchargé, puis cliquez sur *Fermer*.
 
 
+.Une fois que vous avez terminé
 Vous devez valider la clé de sécurité pour vous assurer que le fichier clé n'est pas corrompu.

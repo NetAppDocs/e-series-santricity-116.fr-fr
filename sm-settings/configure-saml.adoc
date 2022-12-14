@@ -14,6 +14,7 @@ summary: 'Pour configurer l"authentification pour Access Management, vous pouvez
 [role="lead"]
 Pour configurer l'authentification pour Access Management, vous pouvez utiliser les fonctionnalités SAML (Security assertion Markup Language) intégrées à la matrice de stockage. Cette configuration établit une connexion entre un fournisseur d'identité et le fournisseur de stockage.
 
+.Description de la tâche
 Un fournisseur d'identité (IDP) est un système externe utilisé pour demander des informations d'identification à un utilisateur et déterminer si cet utilisateur est correctement authentifié. Le IDP peut être configuré pour fournir une authentification multifacteur et utiliser n'importe quelle base de données utilisateur, telle qu'Active Directory. Votre équipe de sécurité est responsable du maintien du PDI. Un SP (Service Provider) est un système qui contrôle l'authentification des utilisateurs et l'accès. Lorsque Access Management est configuré avec SAML, la baie de stockage agit comme fournisseur de services pour demander l'authentification auprès du fournisseur d'identités. Pour établir une connexion entre le IDP et la matrice de stockage, vous partagez les fichiers de métadonnées entre ces deux entités. Ensuite, vous associez les entités utilisateur IDP aux rôles de baie de stockage. Enfin, vous testez la connexion et les connexions SSO avant d'activer SAML.
 
 [NOTE]
@@ -42,6 +43,7 @@ Pour fournir à la baie de stockage des informations de connexion IDP, vous impo
 * Un fichier de métadonnées IDP est téléchargé depuis le système IDP et disponible sur le système local utilisé pour accéder à System Manager.
 
 
+.Description de la tâche
 Dans cette tâche, vous téléchargez un fichier de métadonnées depuis l'IDP dans System Manager. Le système IDP a besoin de ces métadonnées pour rediriger les demandes d'authentification vers l'URL correcte et valider les réponses reçues. Il vous suffit de charger un seul fichier de métadonnées pour la baie de stockage, même s'il existe deux contrôleurs.
 
 .Étapes
@@ -71,6 +73,7 @@ Pour établir une relation de confiance entre le fournisseur de services intégr
 * Vous connaissez l'adresse IP ou le nom de domaine de chaque contrôleur de la matrice de stockage.
 
 
+.Description de la tâche
 Dans cette tâche, vous exportez les métadonnées des contrôleurs (un fichier par contrôleur). Le PDI a besoin de ces métadonnées pour établir une relation de confiance avec les contrôleurs et traiter les demandes d'autorisation. Le fichier contient des informations telles que le nom de domaine du contrôleur ou l'adresse IP, afin que le IDP puisse communiquer avec les fournisseurs de services.
 
 .Étapes
@@ -101,6 +104,7 @@ Pour fournir aux utilisateurs l'autorisation et l'accès à System Manager, vous
 * Un fichier de métadonnées Service Provider pour chaque contrôleur est importé dans le système IDP pour la relation de confiance.
 
 
+.Description de la tâche
 Dans cette tâche, vous utilisez System Manager pour mapper les groupes IDP aux rôles d'utilisateur local.
 
 .Étapes
@@ -111,6 +115,7 @@ La boîte de dialogue Role Mapping s'ouvre.
 . Attribuez des attributs utilisateur IDP et des groupes aux rôles prédéfinis. Un groupe peut avoir plusieurs rôles attribués.
 +
 .Détails du champ
+[%collapsible]
 ====
 [cols="1a,3a"]
 |===
@@ -209,6 +214,7 @@ La dernière étape consiste à activer l'authentification utilisateur SAML.
 * Au moins un mappage de rôle moniteur et administrateur de sécurité est configuré.
 
 
+.Description de la tâche
 Cette tâche décrit comment terminer la configuration SAML pour l'authentification des utilisateurs. Au cours de ce processus, le système vous demande également de tester une connexion SSO. Le processus de test de connexion SSO est décrit à l'étape précédente.
 
 [NOTE]
@@ -225,4 +231,5 @@ La boîte de dialogue *confirmer l'activation de SAML* s'ouvre.
 . Saisissez les informations d'identification de l'utilisateur pour un test de connexion SSO.
 
 
+.Résultats
 Une fois que le système active SAML, il met fin à toutes les sessions actives et commence à authentifier les utilisateurs via SAML.

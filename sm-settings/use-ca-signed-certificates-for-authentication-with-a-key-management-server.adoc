@@ -18,6 +18,7 @@ Pour sécuriser les communications entre un serveur de gestion des clés et les 
 * Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Sinon, les fonctions de certificat n'apparaissent pas.
 
 
+.Description de la tâche
 L'authentification entre les contrôleurs et un serveur de gestion des clés est une procédure en deux étapes.
 
 
@@ -30,6 +31,7 @@ Vous devez d'abord générer un fichier de requête de signature de certificat (
 * Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Sinon, les fonctions de certificat n'apparaissent pas.
 
 
+.Description de la tâche
 Dans cette tâche, vous apprendrez à générer le fichier CSR que vous utiliserez ensuite pour demander un certificat client signé à partir d'une autorité de certification approuvée par le serveur de gestion des clés. Un certificat client valide les contrôleurs de la baie de stockage. Le serveur de gestion des clés peut donc faire confiance à leurs demandes KMIP (Key Management Interoperability Protocol). Au cours de cette tâche, vous devez fournir les informations relatives à votre entreprise.
 
 .Étapes
@@ -50,7 +52,7 @@ Dans cette tâche, vous apprendrez à générer le fichier CSR que vous utiliser
 Un fichier CSR est enregistré sur votre système local.
 
 . Demandez un certificat client signé à une autorité de certification approuvée par le serveur de gestion des clés.
-. Lorsque vous disposez d'un certificat client, accédez à  2: Import certificates for the key management server.
+. Lorsque vous disposez d'un certificat client, accédez à <<Étape 2 : importation de certificats pour le serveur de gestion des clés>>.
 
 
 
@@ -61,7 +63,7 @@ Lors de l'étape suivante, vous importez les certificats d'authentification entr
 
 .Avant de commencer
 * Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Sinon, les fonctions de certificat n'apparaissent pas.
-* Vous avez signé un fichier de certificat client (voir  1: Complete and submit CSR for authentication with a key management server), et vous avez copié ce fichier sur l'hôte où vous accédez à System Manager. Un certificat client valide les contrôleurs de la baie de stockage. Le serveur de gestion des clés peut donc faire confiance à leurs demandes KMIP (Key Management Interoperability Protocol).
+* Vous avez signé un fichier de certificat client (voir <<Étape 1 : compléter et soumettre une RSC pour authentification avec un serveur de gestion des clés>>), et vous avez copié ce fichier sur l'hôte où vous accédez à System Manager. Un certificat client valide les contrôleurs de la baie de stockage. Le serveur de gestion des clés peut donc faire confiance à leurs demandes KMIP (Key Management Interoperability Protocol).
 * Vous devez récupérer le fichier de certificat du serveur à partir du serveur de gestion des clés, puis copier ce fichier vers l'hôte où vous accédez à System Manager. Un certificat de serveur de gestion des clés valide le serveur de gestion des clés. La baie de stockage peut donc avoir confiance en son adresse IP.
 +
 [NOTE]
@@ -71,6 +73,7 @@ Pour plus d'informations sur le certificat du serveur, consultez la documentatio
 ====
 
 
+.Description de la tâche
 Cette tâche décrit comment télécharger des fichiers de certificat pour l'authentification entre les contrôleurs de la matrice de stockage et le serveur de gestion des clés. Vous devez charger à la fois le fichier de certificat client pour les contrôleurs et le fichier de certificat de serveur pour le serveur de gestion des clés.
 
 .Étapes

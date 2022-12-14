@@ -18,6 +18,7 @@ Vous pouvez obtenir des certificats signés par une autorité de certification p
 * Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Sinon, les fonctions de certificat n'apparaissent pas.
 
 
+.Description de la tâche
 L'utilisation de certificats signés par l'autorité de certification est une procédure en trois étapes.
 
 
@@ -30,6 +31,7 @@ Vous devez d'abord générer un fichier de requête de signature de certificat (
 * Vous devez connaître l'adresse IP ou le nom DNS de chaque contrôleur.
 
 
+.Description de la tâche
 La RSC fournit des informations sur votre organisation, l'adresse IP ou le nom DNS du contrôleur et une paire de clés qui identifie le serveur Web dans le contrôleur. Au cours de cette tâche, un fichier CSR est généré s'il n'y a qu'un seul contrôleur dans la matrice de stockage et deux fichiers CSR s'il y a deux contrôleurs.
 
 [CAUTION]
@@ -80,7 +82,7 @@ Pour un seul contrôleur, un fichier CSR est téléchargé sur votre système lo
 
 . Localisez le(s) fichier(s) CSR téléchargé(s). L'emplacement du dossier dépend de votre navigateur.
 . Soumettez le(s) fichier(s) CSR à une autorité de certification et demandez des certificats signés au format PEM.
-. Attendez que l'AC retourne les certificats, puis allez à  2: Import signed certificates for controllers.
+. Attendez que l'AC retourne les certificats, puis allez à <<Étape 2 : importation de certificats signés pour les contrôleurs>>.
 
 
 
@@ -95,6 +97,7 @@ Une fois que vous avez reçu des certificats signés, vous importez les fichiers
 * Si l'autorité de certification a fourni un certificat chaîné (par exemple, un fichier .p7b), vous devez déballer le fichier chaîné dans des fichiers individuels : le certificat racine, un ou plusieurs certificats intermédiaires et les certificats de serveur qui identifient les contrôleurs. Vous pouvez utiliser Windows `certmgr` Utilitaire pour décompresser les fichiers (cliquez avec le bouton droit de la souris et sélectionnez *menu:toutes les tâches[Exporter]*). Une fois les exportations terminées, un fichier CER est affiché pour chaque fichier de certificat de la chaîne.
 
 
+.Description de la tâche
 Cette tâche décrit comment télécharger les fichiers de certificat.
 
 .Étapes
@@ -113,4 +116,5 @@ Le(s) fichier(s) est chargé(s) et validé(s).
 
 
 
+.Résultats
 La session est automatiquement interrompue. Vous devez vous reconnecter pour que le ou les certificats prennent effet. Lorsque vous vous connectez de nouveau, le nouveau certificat signé par l'autorité de certification est utilisé pour votre session.

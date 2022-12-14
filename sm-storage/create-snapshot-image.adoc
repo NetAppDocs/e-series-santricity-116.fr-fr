@@ -39,6 +39,7 @@ La boîte de dialogue *Modifier les paramètres* apparaît.
 . Sélectionnez les paramètres de l'image instantanée selon vos besoins et confirmez que vous souhaitez effectuer l'opération.
 +
 .Détails du champ
+[%collapsible]
 ====
 [cols="1a,3a"]
 |===

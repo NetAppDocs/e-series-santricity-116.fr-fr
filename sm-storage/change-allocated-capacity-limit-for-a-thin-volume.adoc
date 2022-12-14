@@ -24,6 +24,7 @@ SANtricity System Manager ne permet pas de créer des volumes fins. Si vous souh
 Cette fonctionnalité n'est pas disponible sur le système de stockage EF600.
 
 ====
+.Description de la tâche
 System Manager étend automatiquement la capacité allouée en fonction de la limite de capacité allouée. La limite de capacité allouée vous permet de limiter la croissance automatique du volume fin en dessous de la capacité indiquée. Lorsque le volume de données écrites se rapproche de la capacité allouée, vous pouvez modifier la limite de capacité allouée.
 
 Lors de la modification du seuil d'avertissement et de la limite de capacité allouée d'un volume fin, vous devez prendre en compte l'espace qui doit être utilisé par les données utilisateur du volume et copier les données de services.
@@ -41,6 +42,7 @@ La boîte de dialogue *Modifier la limite* s'affiche. Le paramètre limite de ca
 . Modifiez la limite de capacité allouée et le seuil d'avertissement selon les besoins.
 +
 .Détails du champ
+[%collapsible]
 ====
 [cols="1a,3a"]
 |===

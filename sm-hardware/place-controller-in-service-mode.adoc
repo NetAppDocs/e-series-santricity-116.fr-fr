@@ -18,6 +18,7 @@ Si vous y êtes invité, vous pouvez placer un contrôleur en mode maintenance.
 * Assurez-vous qu'aucun volume n'est en cours d'utilisation ou que vous avez installé un pilote multivoie sur tous les hôtes qui utilisent ces volumes.
 
 
+.Description de la tâche
 +++ +++
 
 [NOTE]

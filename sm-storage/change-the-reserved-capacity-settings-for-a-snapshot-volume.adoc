@@ -24,6 +24,7 @@ La boîte de dialogue *Snapshot Volume Reserved Capacity Settings* s'affiche.
 . Modifiez les paramètres de capacité réservée pour le volume de snapshot, le cas échéant.
 +
 .Détails du champ
+[%collapsible]
 ====
 [cols="1a,3a"]
 |===

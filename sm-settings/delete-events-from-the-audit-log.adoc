@@ -18,6 +18,7 @@ Vous pouvez effacer le journal d'audit des anciens événements, ce qui facilite
 * Vous devez être connecté avec un profil utilisateur qui inclut les autorisations d'administrateur de sécurité. Dans le cas contraire, les fonctions de gestion des accès ne s'affichent pas.
 
 
+.Description de la tâche
 Cette tâche décrit comment supprimer d'anciens événements du journal d'audit.
 
 .Étapes

@@ -19,6 +19,7 @@ Pour configurer la mise en miroir asynchrone, vous créez une paire en miroir qu
 Cette fonctionnalité n'est pas disponible sur les systèmes de stockage EF600 ou EF300.
 
 ====
+.Avant de commencer
 Avant de créer une paire en miroir, répondez aux exigences suivantes pour Unified Manager :
 
 * Le service Web Services Proxy doit être en cours d'exécution.
@@ -38,6 +39,7 @@ Assurez-vous également de répondre aux exigences suivantes pour les baies de s
 * Vous avez créé les volumes primaires et secondaires que vous souhaitez utiliser dans la relation de mise en miroir asynchrone.
 
 
+.Description de la tâche
 Le processus de création d'une paire miroir asynchrone est une procédure à plusieurs étapes.
 
 
@@ -50,6 +52,7 @@ Vous pouvez créer un nouveau groupe de cohérence miroir ou en sélectionner un
 * Pour créer un nouveau groupe de cohérence miroir, les baies de stockage locales et distantes doivent être découvertes dans Unified Manager.
 
 
+.Description de la tâche
 Un groupe de cohérence en miroir est un conteneur pour les volumes primaires et secondaires (paire en miroir), et spécifie la méthode de resynchronisation souhaitée (manuelle ou automatique) pour toutes les paires du groupe.
 
 .Étapes
@@ -89,7 +92,7 @@ Si votre matrice de stockage distante est protégée par un mot de passe, le sys
 
 
 
-. Sélectionnez *Suivant* et allez à  2: Select the primary volume.
+. Sélectionnez *Suivant* et allez à <<Étape 2 : sélectionnez le volume principal>>.
 +
 Si vous avez défini un nouveau groupe de cohérence en miroir, Unified Manager crée d'abord le groupe de cohérence en miroir sur la baie de stockage locale, puis crée le groupe de cohérence en miroir sur la baie de stockage distante. Vous pouvez afficher et gérer le groupe de cohérence miroir en lançant System Manager pour chaque baie.
 
@@ -111,6 +114,7 @@ Sélectionnez le volume primaire que vous souhaitez utiliser dans la relation de
 * Vous devez avoir créé le volume primaire sur la baie de stockage locale que vous souhaitez utiliser dans la relation de mise en miroir asynchrone.
 
 
+.Description de la tâche
 Lorsque vous sélectionnez un volume primaire sur la matrice de stockage locale, le système affiche la liste de tous les volumes éligibles pour cette paire en miroir. Les volumes qui ne peuvent pas être utilisés ne s'affichent pas dans cette liste.
 
 Tous les volumes que vous ajoutez au groupe de cohérence miroir sur la matrice de stockage locale maintiennent le rôle principal dans la relation de miroir.
@@ -132,7 +136,7 @@ Gardez à l'esprit les consignes suivantes :
 
 
 
-. Sélectionnez *Suivant* et allez à  3: Select the secondary volume.
+. Sélectionnez *Suivant* et allez à <<Étape 3 : sélectionnez le volume secondaire>>.
 
 
 
@@ -146,6 +150,7 @@ Sélectionnez le volume secondaire que vous souhaitez utiliser dans la relation 
 * Le volume secondaire doit être au moins aussi grand que le volume primaire.
 
 
+.Description de la tâche
 Lorsque vous sélectionnez un volume secondaire sur la matrice de stockage distante, le système affiche la liste de tous les volumes éligibles pour cette paire en miroir. Les volumes qui ne peuvent pas être utilisés ne s'affichent pas dans cette liste.
 
 Tout volume ajouté au groupe de cohérence miroir sur la matrice de stockage distante contient le rôle secondaire dans la relation miroir.
@@ -170,6 +175,7 @@ Gardez à l'esprit les consignes suivantes :
 . Sélectionnez *Finish* pour terminer la séquence de mise en miroir asynchrone.
 
 
+.Résultats
 Unified Manager effectue les actions suivantes :
 
 * Commence la synchronisation initiale entre la matrice de stockage locale et la matrice de stockage distante.

@@ -24,6 +24,7 @@ La boîte de dialogue *Paramètres de capacité réservée du volume de paire en
 . Modifiez les paramètres de capacité réservée pour le volume de paire en miroir selon les besoins.
 +
 .Détails du champ
+[%collapsible]
 ====
 [cols="1a,3a"]
 |===
@@ -56,4 +57,5 @@ Vous pouvez choisir l'une des règles suivantes :
 . Cliquez sur *Enregistrer* pour appliquer vos modifications.
 
 
+.Résultat
 System Manager modifie les paramètres de capacité réservée pour le volume membre, ainsi que les paramètres de capacité réservée pour tous les volumes membres du groupe de cohérence.

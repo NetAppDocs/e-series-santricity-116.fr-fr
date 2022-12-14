@@ -20,6 +20,7 @@ Vous pouvez effectuer une restauration pour modifier le contenu des volumes memb
 * Le volume sélectionné n'a pas encore d'opération de retour arrière en cours.
 
 
+.Description de la tâche
 La séquence de démarrage de restauration permet de lancer la restauration sur une image instantanée d'un groupe de cohérence de snapshot tout en offrant des options permettant d'ajouter de la capacité de stockage. Vous ne pouvez pas démarrer plusieurs opérations de restauration simultanément pour un groupe de cohérence Snapshot.
 
 [NOTE]
@@ -29,9 +30,9 @@ L'hôte a un accès immédiat aux nouveaux volumes transférés, mais les volume
 ====
 Le processus permettant de démarrer la restauration d'une image snapshot d'un groupe de cohérence de snapshot est une procédure en plusieurs étapes :
 
-*  1: Select members
-*  2: Review capacity
-*  3: Edit priority
+* <<Étape 1 : sélectionnez les membres>>
+* <<Étape 2 : examiner la capacité>>
+* <<Étape 3 : modifier la priorité>>
 
 
 
@@ -51,8 +52,8 @@ La boîte de dialogue *Démarrer la restauration* apparaît.
 . Sélectionnez le ou les volumes membres.
 . Cliquez sur *Suivant* et effectuez l'une des opérations suivantes :
 +
-** Si l'un des volumes membres sélectionnés est associé à plusieurs objets de capacité réservée qui stockent des images instantanées, la boîte de dialogue *capacité de révision* s'affiche. Accédez à ,Étape 2 : examiner la capacité.
-** Si aucun des volumes membres sélectionnés n'est associé à plusieurs objets de capacité réservée qui stockent des images instantanées, la boîte de dialogue *Modifier la priorité* s'affiche. Accédez à ,Étape 3 : modifier la priorité.
+** Si l'un des volumes membres sélectionnés est associé à plusieurs objets de capacité réservée qui stockent des images instantanées, la boîte de dialogue *capacité de révision* s'affiche. Accédez à <<TASK_3CC5A20F26E44B9DBDDBCF422EDBBB4C,Étape 2 : examiner la capacité>>.
+** Si aucun des volumes membres sélectionnés n'est associé à plusieurs objets de capacité réservée qui stockent des images instantanées, la boîte de dialogue *Modifier la priorité* s'affiche. Accédez à <<TASK_2C49B5B3933341D1BA737F00EBBC1698,Étape 3 : modifier la priorité>>.
 
 
 
@@ -73,7 +74,7 @@ La boîte de dialogue *augmenter la capacité réservée* s'affiche.
 +
 Si la capacité disponible n'existe pas dans le pool ou le groupe de volumes qui contient l'objet de stockage sélectionné et que la baie de stockage dispose de la capacité non affectée, vous pouvez ajouter de la capacité. Vous pouvez créer un nouveau pool ou groupe de volumes et réessayer cette opération en utilisant la nouvelle capacité disponible sur ce pool ou ce groupe de volumes.
 
-. Cliquez sur *Suivant* et allez à ,Étape 3 : modifier la priorité.
+. Cliquez sur *Suivant* et allez à <<TASK_2C49B5B3933341D1BA737F00EBBC1698,Étape 3 : modifier la priorité>>.
 +
 La boîte de dialogue *Modifier la priorité* apparaît.
 
@@ -86,6 +87,7 @@ La boîte de dialogue *Modifier la priorité* apparaît.
 [role="lead"]
 Vous pouvez modifier la priorité de l'opération de restauration si nécessaire.
 
+.Description de la tâche
 La priorité de restauration détermine le nombre de ressources système dédiées à l'opération de restauration, aux dépens des performances du système.
 
 .Étapes
@@ -93,6 +95,7 @@ La priorité de restauration détermine le nombre de ressources système dédié
 . Confirmez que vous souhaitez effectuer cette opération, puis cliquez sur *Terminer*.
 
 
+.Résultats
 System Manager effectue les actions suivantes :
 
 * Restaure les volumes membres du groupe de cohérence de snapshot avec le contenu enregistré sur l'image snapshot sélectionnée.

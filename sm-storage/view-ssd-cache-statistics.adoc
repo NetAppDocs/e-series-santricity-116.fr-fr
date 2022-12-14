@@ -14,6 +14,7 @@ summary: 'Vous pouvez afficher les statistiques du module SSD cache, telles que 
 [role="lead"]
 Vous pouvez afficher les statistiques du module SSD cache, telles que les lectures, les écritures, les accès au cache, le pourcentage d'allocation du cache, et le pourcentage d'utilisation du cache.
 
+.Description de la tâche
 ++ ++
 
 [NOTE]
@@ -33,6 +34,7 @@ La boîte de dialogue *Afficher les statistiques de cache SSD* s'affiche et affi
 
 +
 .Détails du champ
+[%collapsible]
 ====
 [cols="1a,3a"]
 |===

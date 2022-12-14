@@ -140,4 +140,5 @@ Le rôle Monitor est requis pour tous les utilisateurs, y compris l'administrate
 . Cliquez sur *Enregistrer*.
 
 
+.Résultats
 Une fois cette tâche terminée, toutes les sessions utilisateur actives sont arrêtées. Seule votre session utilisateur actuelle est conservée.

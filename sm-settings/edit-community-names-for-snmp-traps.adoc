@@ -14,6 +14,7 @@ summary: Vous pouvez modifier les noms de communauté pour les interruptions SNM
 [role="lead"]
 Vous pouvez modifier les noms de communauté pour les interruptions SNMP et associer un nom de communauté différent à une destination de déroutement SNMP.
 
+.Avant de commencer
 Un nom de communauté doit être créé, composé uniquement de caractères ASCII imprimables. Le nom de communauté, qui est une chaîne qui agit comme un mot de passe pour les serveurs réseau, est créé par un administrateur réseau.
 
 .Étapes
@@ -36,4 +37,5 @@ Pour annuler les modifications, sélectionnez l'icône *Annuler* (X).
 
 
 
+.Résultats
 L'onglet *SNMP* de la page *alertes* affiche les communautés mises à jour.
