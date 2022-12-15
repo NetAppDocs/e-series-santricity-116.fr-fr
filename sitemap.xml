@@ -1840,13 +1840,6 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-116/sm-mirroring/</loc>
-      
-      <lastmod>2022-11-15T19:27:41+00:00</lastmod>
-      
-    </url>
-  
-    <url>
       <loc>https://docs.netapp.com/fr-fr/e-series-santricity-116/um-manage/</loc>
       
       <lastmod>2022-11-15T19:27:41+00:00</lastmod>
@@ -1854,35 +1847,7 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-116/sm-support/</loc>
-      
-      <lastmod>2022-11-15T19:27:41+00:00</lastmod>
-      
-    </url>
-  
-    <url>
       <loc>https://docs.netapp.com/fr-fr/e-series-santricity-116/sm-settings/</loc>
-      
-      <lastmod>2022-11-15T19:27:41+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-116/sm-interface/</loc>
-      
-      <lastmod>2022-11-15T19:27:41+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-116/sm-hardware/</loc>
-      
-      <lastmod>2022-11-15T19:27:41+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-116/sm-storage/</loc>
       
       <lastmod>2022-11-15T19:27:41+00:00</lastmod>
       
@@ -1897,6 +1862,41 @@
   
     <url>
       <loc>https://docs.netapp.com/fr-fr/e-series-santricity-116/um-certificates/</loc>
+      
+      <lastmod>2022-11-15T19:27:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-116/sm-interface/</loc>
+      
+      <lastmod>2022-11-15T19:27:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-116/sm-mirroring/</loc>
+      
+      <lastmod>2022-11-15T19:27:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-116/sm-storage/</loc>
+      
+      <lastmod>2022-11-15T19:27:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-116/sm-hardware/</loc>
+      
+      <lastmod>2022-11-15T19:27:41+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/fr-fr/e-series-santricity-116/sm-support/</loc>
       
       <lastmod>2022-11-15T19:27:41+00:00</lastmod>
       
@@ -2402,7 +2402,7 @@
     <url>
       <loc>https://docs.netapp.com/fr-fr/e-series-santricity-116//search.html</loc>
       
-      <lastmod>2022-11-15T19:27:59+00:00</lastmod>
+      <lastmod>2022-12-15T12:18:36+00:00</lastmod>
       
     </url>
   
