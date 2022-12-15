@@ -10634,7 +10634,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-11-15 19:27:41 +0000">11/15/2022</time>
+    <time datetime="2022-12-15 15:13:45 +0000">12/15/2022</time>
     
   
 
@@ -10650,6 +10650,7 @@
 <p>Pour configurer l&#8217;authentification pour Access Management, vous pouvez utiliser les fonctionnalités SAML (Security assertion Markup Language) intégrées à la matrice de stockage. Cette configuration établit une connexion entre un fournisseur d&#8217;identité et le fournisseur de stockage.</p>
 </div>
 <div class="paragraph">
+<div class="title">Description de la tâche</div>
 <p>Un fournisseur d&#8217;identité (IDP) est un système externe utilisé pour demander des informations d&#8217;identification à un utilisateur et déterminer si cet utilisateur est correctement authentifié. Le IDP peut être configuré pour fournir une authentification multifacteur et utiliser n&#8217;importe quelle base de données utilisateur, telle qu&#8217;Active Directory. Votre équipe de sécurité est responsable du maintien du PDI. Un SP (Service Provider) est un système qui contrôle l&#8217;authentification des utilisateurs et l&#8217;accès. Lorsque Access Management est configuré avec SAML, la baie de stockage agit comme fournisseur de services pour demander l&#8217;authentification auprès du fournisseur d&#8217;identités. Pour établir une connexion entre le IDP et la matrice de stockage, vous partagez les fichiers de métadonnées entre ces deux entités. Ensuite, vous associez les entités utilisateur IDP aux rôles de baie de stockage. Enfin, vous testez la connexion et les connexions SSO avant d&#8217;activer SAML.</p>
 </div>
 <div class="admonitionblock note">
@@ -10712,6 +10713,7 @@
 </ul>
 </div>
 <div class="paragraph">
+<div class="title">Description de la tâche</div>
 <p>Dans cette tâche, vous téléchargez un fichier de métadonnées depuis l&#8217;IDP dans System Manager. Le système IDP a besoin de ces métadonnées pour rediriger les demandes d&#8217;authentification vers l&#8217;URL correcte et valider les réponses reçues. Il vous suffit de charger un seul fichier de métadonnées pour la baie de stockage, même s&#8217;il existe deux contrôleurs.</p>
 </div>
 <div class="olist arabic">
@@ -10760,6 +10762,7 @@
 </ul>
 </div>
 <div class="paragraph">
+<div class="title">Description de la tâche</div>
 <p>Dans cette tâche, vous exportez les métadonnées des contrôleurs (un fichier par contrôleur). Le PDI a besoin de ces métadonnées pour établir une relation de confiance avec les contrôleurs et traiter les demandes d&#8217;autorisation. Le fichier contient des informations telles que le nom de domaine du contrôleur ou l&#8217;adresse IP, afin que le IDP puisse communiquer avec les fournisseurs de services.</p>
 </div>
 <div class="olist arabic">
@@ -10811,6 +10814,7 @@
 </ul>
 </div>
 <div class="paragraph">
+<div class="title">Description de la tâche</div>
 <p>Dans cette tâche, vous utilisez System Manager pour mapper les groupes IDP aux rôles d&#8217;utilisateur local.</p>
 </div>
 <div class="olist arabic">
@@ -10824,8 +10828,8 @@
 </li>
 <li>
 <p>Attribuez des attributs utilisateur IDP et des groupes aux rôles prédéfinis. Un groupe peut avoir plusieurs rôles attribués.</p>
-<div class="exampleblock">
-<div class="title">Exemple 1. Détails du champ</div>
+<details>
+<summary class="title">Détails du champ</summary>
 <div class="content">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -10866,7 +10870,7 @@
 </tbody>
 </table>
 </div>
-</div>
+</details>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -10982,6 +10986,7 @@
 </ul>
 </div>
 <div class="paragraph">
+<div class="title">Description de la tâche</div>
 <p>Cette tâche décrit comment terminer la configuration SAML pour l&#8217;authentification des utilisateurs. Au cours de ce processus, le système vous demande également de tester une connexion SSO. Le processus de test de connexion SSO est décrit à l&#8217;étape précédente.</p>
 </div>
 <div class="admonitionblock note">
@@ -11016,6 +11021,7 @@
 </ol>
 </div>
 <div class="paragraph">
+<div class="title">Résultats</div>
 <p>Une fois que le système active SAML, il met fin à toutes les sessions actives et commence à authentifier les utilisateurs via SAML.</p>
 </div>
 </div>

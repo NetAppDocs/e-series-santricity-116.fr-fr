@@ -10634,7 +10634,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-11-15 19:27:41 +0000">11/15/2022</time>
+    <time datetime="2022-12-15 15:13:45 +0000">12/15/2022</time>
     
   
 
@@ -10650,6 +10650,7 @@
 <p>Vous créez des volumes pour ajouter de la capacité de stockage à une charge de travail spécifique aux applications et rendre les volumes créés visibles pour un hôte ou un cluster hôte spécifique. En outre, la séquence de création de volumes offre des options permettant d&#8217;allouer des quantités spécifiques de capacité à chaque volume que vous souhaitez créer.</p>
 </div>
 <div class="paragraph">
+<div class="title">Description de la tâche</div>
 <p>La plupart des types d&#8217;application par défaut à une configuration de volume définie par l&#8217;utilisateur. Une configuration intelligente est appliquée à certains types d&#8217;applications lors de la création du volume. Par exemple, si vous créez des volumes pour une application Microsoft Exchange, vous devez connaître le nombre de boîtes aux lettres dont vous avez besoin, les besoins moyens de vos boîtes aux lettres et le nombre de copies de la base de données que vous souhaitez. System Manager utilise ces informations pour créer une configuration de volume optimale, qui peut être modifiée selon vos besoins.</p>
 </div>
 <div class="admonitionblock note">
@@ -10692,6 +10693,7 @@
 </ul>
 </div>
 <div class="paragraph">
+<div class="title">Description de la tâche</div>
 <p>Gardez ces consignes à l&#8217;esprit lorsque vous attribuez des volumes :</p>
 </div>
 <div class="ulist">
@@ -10740,7 +10742,7 @@
 <p>Dans la liste déroulante, sélectionnez un hôte ou un cluster hôte spécifique auquel vous souhaitez attribuer des volumes ou choisissez d&#8217;affecter ultérieurement l&#8217;hôte ou le cluster hôte.</p>
 </li>
 <li>
-<p>Pour continuer la séquence de création du volume pour l&#8217;hôte ou le cluster hôte sélectionné, cliquez sur <strong>Suivant</strong> et allez à  2: Select a workload for a volume.</p>
+<p>Pour continuer la séquence de création du volume pour l&#8217;hôte ou le cluster hôte sélectionné, cliquez sur <strong>Suivant</strong> et allez à <a href="#étape-2-sélectionnez-une-charge-de-travail-pour-un-volume">Étape 2 : sélectionnez une charge de travail pour un volume</a>.</p>
 <div class="paragraph">
 <p>La boîte de dialogue <strong>Sélectionner charge de travail</strong> s&#8217;affiche.</p>
 </div>
@@ -10756,6 +10758,7 @@
 <p>Sélectionnez une charge de travail pour personnaliser la configuration de la baie de stockage pour une application spécifique, telle que Microsoft SQL Server, Microsoft Exchange, les applications de vidéosurveillance ou VMware. Vous pouvez sélectionner « autre application » si l&#8217;application que vous souhaitez utiliser sur cette baie de stockage n&#8217;est pas répertoriée.</p>
 </div>
 <div class="paragraph">
+<div class="title">Description de la tâche</div>
 <p>Cette tâche décrit comment créer des volumes pour une charge de travail existante.</p>
 </div>
 <div class="ulist">
@@ -10801,7 +10804,7 @@
 <p>Cliquez sur <strong>Suivant</strong>.</p>
 </li>
 <li>
-<p>Si votre charge de travail est associée à un type d&#8217;application pris en charge, entrez les informations requises. Sinon, rendez-vous à  3: Add or edit volumes.</p>
+<p>Si votre charge de travail est associée à un type d&#8217;application pris en charge, entrez les informations requises. Sinon, rendez-vous à <a href="#étape-3-ajout-ou-modification-de-volumes">Étape 3 : ajout ou modification de volumes</a>.</p>
 </li>
 </ol>
 </div>
@@ -10821,8 +10824,8 @@
 </li>
 <li>
 <p>Pour créer un volume activé pour Data assurance (DA), la connexion hôte que vous prévoyez d&#8217;utiliser doit prendre en charge DA.</p>
-<div class="exampleblock">
-<div class="title">Exemple 1. Sélection d&#8217;un pool ou d&#8217;un groupe de volumes capable d&#8217;être DA</div>
+<details>
+<summary class="title">Sélection d&#8217;un pool ou d&#8217;un groupe de volumes capable d&#8217;être DA</summary>
 <div class="content">
 <div class="paragraph">
 <p>Si vous souhaitez créer un volume DA activé, sélectionnez un pool ou un groupe de volumes qui est compatible DA (recherchez <strong>Oui</strong> en regard de "DA" dans la table des candidats de groupe de volumes et de pools).</p>
@@ -10846,12 +10849,12 @@ DA n&#8217;est pas pris en charge par iSCSI sur TCP/IP ou par SRP sur InfiniBand
 </table>
 </div>
 </div>
-</div>
+</details>
 </li>
 <li>
 <p>Pour créer un volume sécurisé, une clé de sécurité doit être créée pour la matrice de stockage.</p>
-<div class="exampleblock">
-<div class="title">Exemple 2. Sélection d&#8217;un pool ou d&#8217;un groupe de volumes qui prend en charge la sécurité</div>
+<details>
+<summary class="title">Sélection d&#8217;un pool ou d&#8217;un groupe de volumes qui prend en charge la sécurité</summary>
 <div class="content">
 <div class="paragraph">
 <p>Si vous souhaitez créer un volume sécurisé, sélectionnez un pool ou un groupe de volumes qui est sécurisé et capable (recherchez <strong>Oui</strong> en regard de « sécurisé » dans la table des candidats de groupe de volumes et de pools).</p>
@@ -10863,11 +10866,12 @@ DA n&#8217;est pas pris en charge par iSCSI sur TCP/IP ou par SRP sur InfiniBand
 <p>Un pool ou un groupe de volumes peut contenir à la fois des disques sécurisés et non sécurisés, mais tous les disques doivent être sécurisés pour utiliser leurs fonctionnalités de chiffrement.</p>
 </div>
 </div>
-</div>
+</details>
 </li>
 </ul>
 </div>
 <div class="paragraph">
+<div class="title">Description de la tâche</div>
 <p>La création de volumes s&#8217;effectue à partir de pools ou de groupes de volumes. La boîte de dialogue <strong>Ajout/modification de volumes</strong> affiche tous les pools et groupes de volumes éligibles de la matrice de stockage. Pour chaque pool et groupe de volumes éligibles, le nombre de disques disponibles et la capacité totale disponible s&#8217;affichent.</p>
 </div>
 <div class="paragraph">
@@ -10882,8 +10886,8 @@ DA n&#8217;est pas pris en charge par iSCSI sur TCP/IP ou par SRP sur InfiniBand
 <ul>
 <li>
 <p><strong>Autre</strong>&#8201;&#8212;&#8201;cliquez sur <strong>Ajouter nouveau volume</strong> dans chaque pool ou groupe de volumes que vous souhaitez utiliser pour créer un ou plusieurs volumes.</p>
-<div class="exampleblock">
-<div class="title">Exemple 3. Détails du champ</div>
+<details>
+<summary class="title">Détails du champ</summary>
 <div class="content">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -10986,12 +10990,12 @@ DA n&#8217;est pas pris en charge par iSCSI sur TCP/IP ou par SRP sur InfiniBand
 </tbody>
 </table>
 </div>
-</div>
+</details>
 </li>
 <li>
 <p><strong>Charge de travail spécifique à une application</strong>&#8201;&#8212;&#8201;cliquez sur <strong>Suivant</strong> pour accepter les volumes et les caractéristiques recommandés par le système pour la charge de travail sélectionnée, ou cliquez sur <strong>Modifier les volumes</strong> pour modifier, ajouter ou supprimer les volumes et les caractéristiques recommandés par le système pour la charge de travail sélectionnée.</p>
-<div class="exampleblock">
-<div class="title">Exemple 4. Détails du champ</div>
+<details>
+<summary class="title">Détails du champ</summary>
 <div class="content">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -11099,13 +11103,13 @@ DA n&#8217;est pas pris en charge par iSCSI sur TCP/IP ou par SRP sur InfiniBand
 </tbody>
 </table>
 </div>
-</div>
+</details>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p>Pour continuer la séquence de création du volume pour l&#8217;application sélectionnée, cliquez sur <strong>Suivant</strong> et allez à  4: Review volume configuration.</p>
+<p>Pour continuer la séquence de création du volume pour l&#8217;application sélectionnée, cliquez sur <strong>Suivant</strong> et allez à <a href="#étape-4-consultez-la-configuration-du-volume">Étape 4 : consultez la configuration du volume</a>.</p>
 </li>
 </ol>
 </div>
@@ -11129,6 +11133,7 @@ DA n&#8217;est pas pris en charge par iSCSI sur TCP/IP ou par SRP sur InfiniBand
 </ol>
 </div>
 <div class="paragraph">
+<div class="title">Résultats</div>
 <p>System Manager crée les nouveaux volumes dans les pools et groupes de volumes sélectionnés, puis affiche les nouveaux volumes dans la table tous les volumes.</p>
 </div>
 <div class="ulist">
